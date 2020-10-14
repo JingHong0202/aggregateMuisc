@@ -1,0 +1,121 @@
+{
+  "id": "1998237",
+  "name": "aggregate",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "157226",
+      "name": "词",
+      "font_class": "ci",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "12936989",
+      "name": "return",
+      "font_class": "return",
+      "unicode": "e987",
+      "unicode_decimal": 59783
+    },
+    {
+      "icon_id": "7800980",
+      "name": "list statistical",
+      "font_class": "liststatistical",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "13249575",
+      "name": "list",
+      "font_class": "list1",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "2939066",
+      "name": "prev",
+      "font_class": "prev2",
+      "unicode": "e782",
+      "unicode_decimal": 59266
+    },
+    {
+      "icon_id": "12061500",
+      "name": "pause",
+      "font_class": "pause",
+      "unicode": "e9aa",
+      "unicode_decimal": 59818
+    },
+    {
+      "icon_id": "3248084",
+      "name": "play",
+      "font_class": "play",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "11962545",
+      "name": "prev",
+      "font_class": "prev1",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "6948010",
+      "name": "music box",
+      "font_class": "musicbox",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "8122791",
+      "name": "Icons／music／循环播放",
+      "font_class": "Iconsmusicxunhuanbofang",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "8122794",
+      "name": "Icons／music／随机播放",
+      "font_class": "Iconsmusicsuijibofang",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "8122801",
+      "name": "Icons／music／单曲循环",
+      "font_class": "Iconsmusicdanquxunhuan",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "8191251",
+      "name": "music16",
+      "font_class": "music",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "10102825",
+      "name": "music-off",
+      "font_class": "music-off",
+      "unicode": "e722",
+      "unicode_decimal": 59170
+    },
+    {
+      "icon_id": "10562539",
+      "name": "Notes, music",
+      "font_class": "Notesmusic",
+      "unicode": "e6af",
+      "unicode_decimal": 59055
+    },
+    {
+      "icon_id": "12429171",
+      "name": "tz-movies-music",
+      "font_class": "tz-movies-music",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    }
+  ]
+}

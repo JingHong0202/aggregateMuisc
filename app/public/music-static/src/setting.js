@@ -75,4 +75,4 @@ export default {
   transition: {
     active: true
   }
-}
+};

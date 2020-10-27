@@ -9,21 +9,21 @@
 module.exports = option => {
   return async function Verify(ctx, next) {
     try {
-      let ClientUsername = ctx.cookies.get('d2admin-1.14.0-uuid', {
+      let ClientUserName = ctx.cookies.get('d2admin-1.14.0-uuid', {
         signed: false
       })
       let authorization = ctx.headers.authorization.replace(/^Bearer\s*/g, '')
-      let verifyUser = await ctx.service.tools.verifyUser(authorization, ClientUsername, 'token')
+      let verifyUser = await ctx.service.tools.verifyUser(authorization, ClientUserName, 'token')
       if (!verifyUser) {
         throw Error('Token无效')
       }
-      let verifyState = await ctx.service.tools.verifyUser(authorization, ClientUsername, 'state')
+      let verifyState = await ctx.service.tools.verifyUser(authorization, ClientUserName, 'state')
       if (!verifyState) {
         throw Error('该用户被封禁')
       }
       await next()
     } catch (error) {
-      return ctx.helper.ReturnErrorCode(401)
+      return ctx.helper.ReturnErrorCode(403, error)
     }
   }
 }

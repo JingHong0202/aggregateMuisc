@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-29 18:45:16
- * @LastEditTime: 2020-09-27 13:56:14
+ * @LastEditTime: 2020-10-23 09:51:54
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\views\user\user-role\index.vue
@@ -36,7 +36,26 @@
       </el-table-column>
       <el-table-column type="expand">
         <template slot-scope="props">
-          <span>{{ props }}</span>
+          <el-form class="custom-form">
+            <el-form-item label="播放器创建最大值：">
+              <span>{{ JSON.parse(props.row.permissions).playerCount }}</span>
+            </el-form-item>
+            <el-form-item label="歌单创建最大值：">
+              <span>{{ JSON.parse(props.row.permissions).playlistCount }}</span>
+            </el-form-item>
+            <el-form-item label="歌曲最大值：">
+              <span>{{ JSON.parse(props.row.permissions).songlistCount }}</span>
+            </el-form-item>
+            <el-form-item label="域名绑定最大值：">
+              <span>{{ JSON.parse(props.row.permissions).domainCount }}</span>
+            </el-form-item>
+            <!-- <el-form-item label="所属店铺">
+            <span>{{ props.row.shop }}</span>
+          </el-form-item>
+          <el-form-item label="商品 ID">
+            <span>{{ props.row.id }}</span>
+          </el-form-item> -->
+          </el-form>
         </template>
       </el-table-column>
       <template slot="empty">
@@ -233,7 +252,7 @@ export default {
   async created() {
     this.tableLoading = true;
     await this.list();
-    let commonRules = await this.$api.SYS_ROLE_COMMON_RULES();
+    const commonRules = await this.$api.SYS_ROLE_COMMON_RULES();
     this.commonRules = commonRules;
 
     this.tableLoading = false;
@@ -248,7 +267,7 @@ export default {
       await this.list(this.currentPage, this.pageCount);
     },
     async addRule() {
-      let { rolename, roledesc } = this.addForm;
+      const { rolename, roledesc } = this.addForm;
       await this.$api.SYS_ROLE_ADD_RULES({
         rolename,
         roledesc,
@@ -261,13 +280,13 @@ export default {
       this.dialogFormVisible2 = true;
     },
     async list() {
-      let res = await this.$api.SYS_ROLE_LIST();
+      const res = await this.$api.SYS_ROLE_LIST();
       this.tableData = res.data;
       this.count = res.count;
     },
     async submit() {
-      let permissions = JSON.stringify(this.Rules),
-        { rolename, roledesc } = this.form;
+      const permissions = JSON.stringify(this.Rules);
+      const { rolename, roledesc } = this.form;
       await this.$api.SYS_ROLE_UPDATE_RULES({
         roledesc,
         rolename,
@@ -278,7 +297,7 @@ export default {
     },
     handleEdit(i, current) {
       this.dialogFormVisible = true;
-      let { rolename, roledesc, permissions } = current;
+      const { rolename, roledesc, permissions } = current;
       this.form.rolename = rolename;
       this.form.roledesc = roledesc;
       this.Rules = permissions ? JSON.parse(permissions) : {};
@@ -303,3 +322,14 @@ export default {
   }
 };
 </script>
+<style lang="scss" scoped>
+.custom-form {
+  ::v-deep label {
+    color: #99a9bf;
+  }
+  ::v-deep .el-form-item {
+    display: flex;
+    justify-content: center;
+  }
+}
+</style>

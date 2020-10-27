@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex'
+import { mapState, mapActions } from 'vuex';
 
 export default {
   name: 'd2-header-color',
@@ -23,7 +23,7 @@ export default {
         '#1e90ff',
         '#c71585'
       ]
-    }
+    };
   },
   computed: {
     ...mapState('d2admin/color', [
@@ -32,7 +32,7 @@ export default {
   },
   watch: {
     value (value) {
-      this.set(value)
+      this.set(value);
     }
   },
   methods: {
@@ -40,5 +40,5 @@ export default {
       'set'
     ])
   }
-}
+};
 </script>

@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import themeList from './components/d2-theme-list'
+import themeList from './components/d2-theme-list';
 export default {
   components: {
     'd2-theme-list': themeList
@@ -32,7 +32,7 @@ export default {
   data () {
     return {
       dialogVisible: false
-    }
+    };
   }
-}
+};
 </script>

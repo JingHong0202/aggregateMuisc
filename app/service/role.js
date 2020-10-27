@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-09-18 09:11:23
- * @LastEditTime: 2020-10-13 14:38:27
+ * @LastEditTime: 2020-10-22 20:24:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\app\service\role.js
@@ -41,7 +41,7 @@ class roleService extends egg.Service {
     })
     let res = await app.mysql.insert('role', { ...ctx.request.body })
     if (res.affectedRows) {
-      ctx.helper.ReturnSuccessCode(200, '角色添加成功')
+      ctx.helper.ReturnCustomCode(200, '角色添加成功')
     } else {
       ctx.helper.ReturnErrorCode(403, '角色添加失败')
     }
@@ -70,7 +70,7 @@ class roleService extends egg.Service {
       })
       if (res.affectedRows) {
         await conn.commit()
-        ctx.helper.ReturnSuccessCode(200, '角色删除成功')
+        ctx.helper.ReturnCustomCode(200, '角色删除成功')
       }
     } catch (error) {
       await conn.rollback()
@@ -79,8 +79,8 @@ class roleService extends egg.Service {
   }
 
   async update() {
-    let { ctx, app } = this,
-      { CommonRules } = app.config
+    let { ctx, app } = this
+    // { CommonRules } = app.config
 
     ctx.validate({
       rolename: {
@@ -104,7 +104,7 @@ class roleService extends egg.Service {
         },
         { where: { rolename } }
       )
-      ctx.helper.ReturnSuccessCode(200, '角色更新成功')
+      ctx.helper.ReturnCustomCode(200, '角色更新成功')
     } catch (error) {
       ctx.helper.ReturnErrorCode(403, '角色更新失败')
     }
@@ -128,10 +128,6 @@ class roleService extends egg.Service {
       default:
         break
     }
-
-    // if (players.length >= permissions.playerCount) {
-
-    // }
 
     permissions = JSON.parse(permissions)
   }

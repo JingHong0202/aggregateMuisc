@@ -21,8 +21,8 @@ function supplementPath(menu) {
     path: e.path || uniqueId("d2-menu-empty-"),
     ...(e.children
       ? {
-          children: supplementPath(e.children)
-        }
+        children: supplementPath(e.children)
+      }
       : {})
   }));
 }

@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-24 13:38:36
- * @LastEditTime: 2020-08-03 18:39:52
+ * @LastEditTime: 2020-10-21 20:27:03
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\views\play\components\rankPlaylist\index.vue
@@ -55,8 +55,8 @@ export default {
     };
   },
   async created() {
-    let { data } = await this.$api.SYS_PLAY_RANK();
-    this.data = [...data.netease, ...data.tencent];
+    const { data } = await this.$api.SYS_PLAY_RANK();
+    this.data = [...data.netease];
   },
   methods: {
     addRankPlaylist(row) {

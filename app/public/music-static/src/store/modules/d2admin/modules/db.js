@@ -1,6 +1,6 @@
-import router from '@/router'
-import { cloneDeep } from 'lodash'
-import { database as getDatabase, dbGet, dbSet } from '@/libs/util.db'
+import router from '@/router';
+import { cloneDeep } from 'lodash';
+import { database as getDatabase, dbGet, dbSet } from '@/libs/util.db';
 
 export default {
   namespaced: true,
@@ -20,7 +20,7 @@ export default {
       value = '',
       user = false
     }) {
-      dbSet({ dbName, path, value, user })
+      dbSet({ dbName, path, value, user });
     },
     /**
      * @description 获取数据
@@ -37,7 +37,7 @@ export default {
       defaultValue = '',
       user = false
     }) {
-      return dbGet({ dbName, path, defaultValue, user })
+      return dbGet({ dbName, path, defaultValue, user });
     },
     /**
      * @description 获取存储数据库对象
@@ -50,7 +50,7 @@ export default {
       return getDatabase({
         user,
         defaultValue: {}
-      })
+      });
     },
     /**
      * @description 清空存储数据库对象
@@ -64,7 +64,7 @@ export default {
         user,
         validator: () => false,
         defaultValue: {}
-      })
+      });
     },
     /**
      * @description 获取存储数据库对象 [ 区分页面 ]
@@ -80,7 +80,7 @@ export default {
         path: `$page.${router.app.$route[basis]}`,
         user,
         defaultValue: {}
-      })
+      });
     },
     /**
      * @description 清空存储数据库对象 [ 区分页面 ]
@@ -97,7 +97,7 @@ export default {
         user,
         validator: () => false,
         defaultValue: {}
-      })
+      });
     },
     /**
      * @description 快速将页面当前的数据 ( $data ) 持久化
@@ -116,7 +116,7 @@ export default {
         user,
         validator: () => false,
         defaultValue: cloneDeep(instance.$data)
-      })
+      });
     },
     /**
      * @description 快速获取页面快速持久化的数据
@@ -134,7 +134,7 @@ export default {
         path: `$page.${router.app.$route[basis]}.$data`,
         user,
         defaultValue: cloneDeep(instance.$data)
-      })
+      });
     },
     /**
      * @description 清空页面快照
@@ -151,7 +151,7 @@ export default {
         user,
         validator: () => false,
         defaultValue: {}
-      })
+      });
     }
   }
-}
+};

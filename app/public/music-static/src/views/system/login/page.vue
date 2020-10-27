@@ -80,38 +80,40 @@
 </template>
 
 <script>
-import dayjs from 'dayjs'
+import dayjs from "dayjs";
 // import localeMixin from "@/locales/mixin.js";
-import loginComponent from '@/views/system/login/default/page'
-import registerComponent from '@/views/system/login/register/page'
-import forgetComponent from '@/views/system/login/forget/page'
+import loginComponent from "@/views/system/login/default/page";
+import registerComponent from "@/views/system/login/register/page";
+import forgetComponent from "@/views/system/login/forget/page";
 export default {
   // mixins: [localeMixin],
   components: { loginComponent, registerComponent, forgetComponent },
-  data () {
+  data() {
     return {
       timeInterval: null,
-      time: dayjs().format('HH:mm:ss'),
-      currentComponent: loginComponent
-    }
+      time: dayjs().format("HH:mm:ss"),
+      currentComponent: !this.$route.query.captcha
+        ? loginComponent
+        : forgetComponent
+    };
   },
-  mounted () {
+  mounted() {
     this.timeInterval = setInterval(() => {
-      this.refreshTime()
-    }, 1000)
+      this.refreshTime();
+    }, 1000);
   },
-  beforeDestroy () {
-    clearInterval(this.timeInterval)
+  beforeDestroy() {
+    clearInterval(this.timeInterval);
   },
   methods: {
-    changePage (str) {
-      this.currentComponent = `${str}Component`
+    changePage(str) {
+      this.currentComponent = `${str}Component`;
     },
-    refreshTime () {
-      this.time = dayjs().format('HH:mm:ss')
+    refreshTime() {
+      this.time = dayjs().format("HH:mm:ss");
     }
   }
-}
+};
 </script>
 
 <style lang="scss">

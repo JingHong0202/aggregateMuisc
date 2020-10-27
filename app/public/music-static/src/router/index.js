@@ -40,9 +40,9 @@ const router = new VueRouter({
 });
 
 async function addMenu(menu, name) {
-  let list = await Vue.prototype.$api["SYS_PLAY_COMM_FIND"](name),
-    playlist = menu.find(item => item.title === "歌单管理"),
-    player = menu.find(item => item.title === "播放器设置");
+  const list = await Vue.prototype.$api.SYS_PLAY_COMM_FIND(name);
+  const playlist = menu.find(item => item.title === "歌单管理");
+  const player = menu.find(item => item.title === "播放器设置");
   Vue.prototype.$playlist = list.data.playlist;
   playlist.children = list.data.playlist.map(item => {
     return {
@@ -71,7 +71,7 @@ router.beforeEach(async (to, from, next) => {
   await store.dispatch("d2admin/size/isLoaded");
   // 进度条
   NProgress.start();
-  let { role, name } = store.state.d2admin.user.info;
+  const { role, name } = store.state.d2admin.user.info;
   // 获取 播放器\歌单 子菜单
   await addMenu(menuAside, name);
   // 关闭搜索面板

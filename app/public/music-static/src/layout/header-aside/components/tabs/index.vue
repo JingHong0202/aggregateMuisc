@@ -57,8 +57,8 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex'
-import Sortable from 'sortablejs'
+import { mapState, mapActions } from 'vuex';
+import Sortable from 'sortablejs';
 
 export default {
   components: {
@@ -80,7 +80,7 @@ export default {
         { icon: 'times-circle', title: '关闭全部', value: 'all' }
       ],
       tagName: '/index'
-    }
+    };
   },
   computed: {
     ...mapState('d2admin/page', [
@@ -102,28 +102,28 @@ export default {
      * @param {Object} page 其中一个标签页
      */
     isTabClosable (page) {
-      return page.name !== 'index'
+      return page.name !== 'index';
     },
     /**
      * @description 右键菜单功能点击
      * @param {Object} event 事件
      */
     handleContextmenu (event) {
-      let target = event.target
+      let target = event.target;
       // fix https://github.com/d2-projects/d2-admin/issues/54
-      let flag = false
-      if (target.className.indexOf('el-tabs__item') > -1) flag = true
+      let flag = false;
+      if (target.className.indexOf('el-tabs__item') > -1) flag = true;
       else if (target.parentNode.className.indexOf('el-tabs__item') > -1) {
-        target = target.parentNode
-        flag = true
+        target = target.parentNode;
+        flag = true;
       }
       if (flag) {
-        event.preventDefault()
-        event.stopPropagation()
-        this.contentmenuX = event.clientX
-        this.contentmenuY = event.clientY
-        this.tagName = target.getAttribute('aria-controls').slice(5)
-        this.contextmenuFlag = true
+        event.preventDefault();
+        event.stopPropagation();
+        this.contentmenuX = event.clientX;
+        this.contentmenuY = event.clientY;
+        this.tagName = target.getAttribute('aria-controls').slice(5);
+        this.contextmenuFlag = true;
       }
     },
     /**
@@ -131,7 +131,7 @@ export default {
      * @param {String} command 事件类型
      */
     contextmenuClick (command) {
-      this.handleControlItemClick(command, this.tagName)
+      this.handleControlItemClick(command, this.tagName);
     },
     /**
      * @description 接收点击关闭控制上选项的事件
@@ -139,14 +139,14 @@ export default {
      * @param {String} tagName tab 名称
      */
     handleControlItemClick (command, tagName = null) {
-      if (tagName) this.contextmenuFlag = false
-      const params = { pageSelect: tagName }
+      if (tagName) this.contextmenuFlag = false;
+      const params = { pageSelect: tagName };
       switch (command) {
-        case 'left': this.closeLeft(params); break
-        case 'right': this.closeRight(params); break
-        case 'other': this.closeOther(params); break
-        case 'all': this.closeAll(); break
-        default: this.$message.error('无效的操作'); break
+        case 'left': this.closeLeft(params); break;
+        case 'right': this.closeRight(params); break;
+        case 'other': this.closeOther(params); break;
+        case 'all': this.closeAll(); break;
+        default: this.$message.error('无效的操作'); break;
       }
     },
     /**
@@ -156,10 +156,10 @@ export default {
      */
     handleClick (tab, event) {
       // 找到点击的页面在 tag 列表里是哪个
-      const page = this.opened.find(page => page.fullPath === tab.name)
+      const page = this.opened.find(page => page.fullPath === tab.name);
       if (page) {
-        const { name, params, query } = page
-        this.$router.push({ name, params, query })
+        const { name, params, query } = page;
+        this.$router.push({ name, params, query });
       }
     },
     /**
@@ -167,17 +167,17 @@ export default {
      * @param {String} tagName tab 名称
      */
     handleTabRemove (tagName) {
-      this.close({ tagName })
+      this.close({ tagName });
     }
   },
   mounted () {
-    const el = document.querySelectorAll('.d2-multiple-page-sort .el-tabs__nav')[0]
+    const el = document.querySelectorAll('.d2-multiple-page-sort .el-tabs__nav')[0];
     Sortable.create(el, {
       onEnd: (evt) => {
-        const { oldIndex, newIndex } = evt
-        this.openedSort({ oldIndex, newIndex })
+        const { oldIndex, newIndex } = evt;
+        this.openedSort({ oldIndex, newIndex });
       }
-    })
+    });
   }
-}
+};
 </script>

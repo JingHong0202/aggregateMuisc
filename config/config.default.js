@@ -51,7 +51,13 @@ module.exports = appInfo => {
       maxAge: 86400,
       buffer: false
     },
-    middleware: ['error'],
+    gzip: {
+      threshold: 1024
+    },
+    isAdmin: {
+      roles: ['admin']
+    },
+    middleware: ['gzip','error'],
     cache: {
       default: 'fsStore',
       stores: {

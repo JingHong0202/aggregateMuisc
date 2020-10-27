@@ -1,4 +1,4 @@
-import UaParser from 'ua-parser-js'
+import UaParser from 'ua-parser-js';
 
 export default {
   namespaced: true,
@@ -12,7 +12,7 @@ export default {
      * @param {Object} state state
      */
     get (state) {
-      state.data = new UaParser().getResult()
+      state.data = new UaParser().getResult();
     }
   }
-}
+};

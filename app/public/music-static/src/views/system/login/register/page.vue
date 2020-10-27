@@ -173,10 +173,8 @@ export default {
     submit() {
       this.$refs.registerForm.validate(async valid => {
         if (valid) {
-          let res = await this.$api.SYS_USER_REGISTRY(this.formRegister);
-          Object.keys(this.formRegister).forEach(item => {
-            this.formRegister[item] = "";
-          });
+          const res = await this.$api.SYS_USER_REGISTRY(this.formRegister);
+          this.restField(this.formRegister);
           this.toPage("login");
         } else {
           // 登录表单校验失败

@@ -14,7 +14,7 @@
           :model="formForget"
           size="default"
           status-icon
-          v-show="!isUser"
+          v-show="!$route.query.captcha"
         >
           <el-form-item prop="username">
             <el-input
@@ -43,7 +43,7 @@
           </el-form-item>
           <el-button
             size="default"
-            @click="submit"
+            @click="sendEmail"
             type="primary"
             class="button-login"
           >
@@ -57,7 +57,7 @@
           :model="formForget2"
           size="default"
           status-icon
-          v-show="isUser"
+          v-show="$route.query.captcha"
         >
           <el-form-item prop="password">
             <el-input
@@ -87,8 +87,8 @@
                 <img
                   class="login-code"
                   src="/captcha"
-                  @click="refreshCaptcha"
-                  ref="code"
+                  @click="refreshCaptcha($event, 'code2')"
+                  ref="code2"
                 />
               </template>
             </el-input>
@@ -121,9 +121,13 @@ export default {
   activated() {
     this.refreshCaptcha();
   },
+  computed: {
+    // toggle () {
+    //   return this.
+    // }
+  },
   data() {
     return {
-      isUser: true,
       // 表单
       formForget: {
         username: "",
@@ -131,7 +135,7 @@ export default {
       },
       formForget2: {
         password: "",
-        newPassword: "",
+        repassword: "",
         code: ""
       },
       // 表单校验
@@ -187,20 +191,15 @@ export default {
     /**
      * @description 提交表单
      */
-    submit() {
-      this.$refs.forgetForm.validate(valid => {
+    sendEmail() {
+      this.$refs.forgetForm.validate(async valid => {
         if (valid) {
-          // 注意 这里的演示没有传验证码
-          // 具体需要传递的数据请自行修改代码
-          // this.login({
-          //   username: this.formForget.username,
-          //   password: this.formForget.password
-          // }).then(() => {
-          //   // 重定向对象不存在则返回顶层路径
-          //   this.$router.replace(this.$route.query.redirect || "/");
-          // });
+          await this.$api.SYS_USER_FORGET({
+            username: this.formForget.username,
+            code: this.formForget.code
+          });
           this.refreshCaptcha();
-          this.isUser = true;
+          this.restField(formForget);
         } else {
           // 登录表单校验失败
           this.$message.error("表单校验失败，请检查");
@@ -208,18 +207,19 @@ export default {
       });
     },
     submit2() {
-      this.$refs.fogetForm2.validate(valid => {
+      this.$refs.fogetForm2.validate(async valid => {
         if (valid) {
-          // 注意 这里的演示没有传验证码
-          // 具体需要传递的数据请自行修改代码
-          // this.login({
-          //   username: this.formForget.username,
-          //   password: this.formForget.password
-          // }).then(() => {
-          //   // 重定向对象不存在则返回顶层路径
-          //   this.$router.replace(this.$route.query.redirect || "/");
-          // });
-          alert("success");
+          const email = window.location.href.match(/&?email=(.*)&?/)[1];
+          const captcha = window.location.href.match(/&?captcha=(.*)&?/)[1];
+
+          await this.$api.SYS_USER_FORGET_UPDATE(
+            email,
+            captcha,
+            this.formForget2
+          );
+          this.refreshCaptcha(this.$event, "code2");
+          this.restField(this.formForget2);
+          this.toPage("login");
         } else {
           // 登录表单校验失败
           this.$message.error("表单校验失败，请检查");

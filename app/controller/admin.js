@@ -32,7 +32,7 @@ class adminController extends egg.Controller {
       { sign, state, role } = await ctx.service.admin.login(username, password)
     if (sign) {
       ctx.session.sign = sign
-      ctx.helper.ReturnSuccessCode(200, '登录成功', { sign, username, state, role })
+      ctx.helper.ReturnCustomCode(200, '登录成功', { sign, username, state, role })
     } else {
       ctx.helper.ReturnErrorCode(403, '账户密码错误,请重试')
     }
@@ -68,7 +68,7 @@ class adminController extends egg.Controller {
     }
     let res = await ctx.service.admin.registry(username, password, email)
     if (res.state) {
-      ctx.helper.ReturnSuccessCode(200, res.msg)
+      ctx.helper.ReturnCustomCode(200, res.msg)
     } else {
       ctx.helper.ReturnErrorCode(403, res.msg)
     }

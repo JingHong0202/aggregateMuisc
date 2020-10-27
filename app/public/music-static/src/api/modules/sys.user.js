@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-29 18:45:13
- * @LastEditTime: 2020-07-15 21:38:53
+ * @LastEditTime: 2020-10-20 16:09:02
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\api\modules\sys.user.js
@@ -74,6 +74,20 @@ export default ({ service, request, faker, tools }) => ({
     });
   },
 
+  SYS_USER_FORGET(data) {
+    return request({
+      url: "/forget",
+      method: "POST",
+      data
+    });
+  },
+  SYS_USER_FORGET_UPDATE(email, captcha, data) {
+    return request({
+      url: "/ForgetPassWord/" + email + "?a=ForgetPassWord&captcha=" + captcha,
+      method: "POST",
+      data
+    });
+  },
   /**
    * @description: 删除用户信息
    * @param {username}  id

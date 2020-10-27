@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-07-18 10:36:18
- * @LastEditTime: 2020-10-13 14:46:59
+ * @LastEditTime: 2020-10-23 08:59:16
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\app\service\playlist.js
@@ -42,7 +42,7 @@ class playlistService extends egg.Service {
         name,
         uuid
       })
-      ctx.helper.ReturnSuccessCode(200, '歌单添加成功', { uuid })
+      ctx.helper.ReturnCustomCode(200, '歌单添加成功', { uuid })
     } catch (error) {
       ctx.helper.ReturnErrorCode(
         403,
@@ -71,7 +71,7 @@ class playlistService extends egg.Service {
 
       if (res.affectedRows) {
         await conn.commit()
-        ctx.helper.ReturnSuccessCode(200, '歌单删除成功')
+        ctx.helper.ReturnCustomCode(200, '歌单删除成功')
       } else {
         new Error('歌单删除失败')
       }
@@ -114,13 +114,14 @@ class playlistService extends egg.Service {
       await ctx.service.tools.playListFile(uuid, username, { content: playlist })
       if (updateRes.affectedRows) {
         await conn.commit()
-        ctx.helper.ReturnSuccessCode(200, '歌单更新成功')
+        ctx.helper.ReturnCustomCode(200, '歌单更新成功')
       } else {
         new Error('歌单更新失败')
       }
     } catch (error) {
+      let message = error.code === 'ER_DUP_ENTRY' ? '歌单更新失败,名称重复' : ''
       await conn.rollback()
-      ctx.helper.ReturnErrorCode(403, error)
+      ctx.helper.ReturnErrorCode(403, message || error)
     }
   }
   async find() {

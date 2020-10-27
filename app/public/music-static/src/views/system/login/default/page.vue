@@ -123,7 +123,7 @@ export default {
     submit() {
       this.$refs.loginForm.validate(valid => {
         if (valid) {
-          let { username, password, code } = this.formLogin;
+          const { username, password, code } = this.formLogin;
           this.login({
             username,
             password,

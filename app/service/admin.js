@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-07-06 14:37:04
- * @LastEditTime: 2020-10-14 14:28:09
+ * @LastEditTime: 2020-10-23 10:19:03
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\app\service\admin.js
@@ -29,6 +29,11 @@ class adminService extends egg.Service {
           ctx.helper.ReturnErrorCode(403, '账号未激活或被封禁,请先去注册邮箱激活账号')
         // 获取用户秘钥
         let secret = isUser[0].secret
+        await this.app.mysql.query(
+          'UPDATE `users` SET `lastTime` = CURRENT_TIMESTAMP() WHERE username = "' +
+            isUser[0].username +
+            '"'
+        )
         //签名
         return {
           sign: this.app.jwt.sign(

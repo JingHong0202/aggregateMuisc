@@ -1,19 +1,19 @@
-import low from 'lowdb'
-import LocalStorage from 'lowdb/adapters/LocalStorage'
-import util from '@/libs/util'
-import { cloneDeep } from 'lodash'
+import low from 'lowdb';
+import LocalStorage from 'lowdb/adapters/LocalStorage';
+import util from '@/libs/util';
+import { cloneDeep } from 'lodash';
 
-const adapter = new LocalStorage(`d2admin-${process.env.VUE_APP_VERSION}`)
-const db = low(adapter)
+const adapter = new LocalStorage(`d2admin-${process.env.VUE_APP_VERSION}`);
+const db = low(adapter);
 
 db
   .defaults({
     sys: {},
     database: {}
   })
-  .write()
+  .write();
 
-export default db
+export default db;
 
 /**
  * @description 检查路径是否存在 不存在的话初始化
@@ -31,15 +31,15 @@ export function pathInit ({
   validator = () => true,
   defaultValue = ''
 }) {
-  const uuid = util.cookies.get('uuid') || 'ghost-uuid'
-  const currentPath = `${dbName}.${user ? `user.${uuid}` : 'public'}${path ? `.${path}` : ''}`
-  const value = db.get(currentPath).value()
+  const uuid = util.cookies.get('uuid') || 'ghost-uuid';
+  const currentPath = `${dbName}.${user ? `user.${uuid}` : 'public'}${path ? `.${path}` : ''}`;
+  const value = db.get(currentPath).value();
   if (!(value !== undefined && validator(value))) {
     db
       .set(currentPath, defaultValue)
-      .write()
+      .write();
   }
-  return currentPath
+  return currentPath;
 }
 
 /**
@@ -60,7 +60,7 @@ export function dbSet ({
     dbName,
     path,
     user
-  }), value).write()
+  }), value).write();
 }
 
 /**
@@ -82,7 +82,7 @@ export function dbGet ({
     path,
     user,
     defaultValue
-  })).value())
+  })).value());
 }
 
 /**
@@ -98,5 +98,5 @@ export function database ({
 } = {}) {
   return db.get(pathInit({
     dbName, path, user, validator, defaultValue
-  }))
+  }));
 }

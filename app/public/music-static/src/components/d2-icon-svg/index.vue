@@ -15,8 +15,8 @@ export default {
   },
   computed: {
     icon () {
-      return `#d2-${this.name}`
+      return `#d2-${this.name}`;
     }
   }
-}
+};
 </script>

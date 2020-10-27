@@ -209,12 +209,12 @@ export default {
       await this.getList(page, this.wd);
     },
     async getRoles() {
-      let roles = await this.$api.SYS_ROLE_LIST();
+      const roles = await this.$api.SYS_ROLE_LIST();
       this.roles = roles.data.map(item => item.rolename);
     },
     async getList(page, wd = "") {
       this.loading = true;
-      let res = await this.$api.SYS_USER_LIST(page || "", this.pageSize, wd);
+      const res = await this.$api.SYS_USER_LIST(page || "", this.pageSize, wd);
       this.tableData = res.data;
       this.total = res.count;
       this.$nextTick(() => {

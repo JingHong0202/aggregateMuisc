@@ -1,4 +1,4 @@
-import setting from '@/setting.js'
+import setting from '@/setting.js';
 
 export default {
   namespaced: true,
@@ -19,7 +19,7 @@ export default {
      * @param {Object} state state
      */
     toggle (state) {
-      state.active = !state.active
+      state.active = !state.active;
     },
     /**
      * @description 设置激活模式
@@ -27,7 +27,7 @@ export default {
      * @param {Boolean} active active
      */
     set (state, active) {
-      state.active = active
+      state.active = active;
     },
     /**
      * @description 初始化
@@ -35,21 +35,21 @@ export default {
      * @param {Array} menu menu
      */
     init (state, menu) {
-      const pool = []
+      const pool = [];
       const push = function (menu, titlePrefix = []) {
         menu.forEach(m => {
           if (m.children) {
-            push(m.children, [...titlePrefix, m.title])
+            push(m.children, [...titlePrefix, m.title]);
           } else {
             pool.push({
               ...m,
               fullTitle: [...titlePrefix, m.title].join(' / ')
-            })
+            });
           }
-        })
-      }
-      push(menu)
-      state.pool = pool
+        });
+      };
+      push(menu);
+      state.pool = pool;
     }
   }
-}
+};

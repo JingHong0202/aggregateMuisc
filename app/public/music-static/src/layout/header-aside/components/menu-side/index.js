@@ -19,12 +19,12 @@ export default {
         >
           {this.aside.map(menu => createMenu.call(this, h, menu))}
           <el-menu-item onClick={() => this.addPlaylist()} key={ `addplaylist` }
-    index={ 'addplaylist' } >
+            index={ 'addplaylist' } >
             <i class={`fa fa-plus`} />
             <span slot="title">添加歌单</span>
           </el-menu-item>
           <el-menu-item onClick={() => this.addPlayer()} key={ `addplayer` }
-    index={ 'addplayer' } >
+            index={ 'addplayer' } >
             <i class={`fa fa-plus`} />
             <span slot="title">添加播放器</span>
           </el-menu-item>
@@ -68,13 +68,13 @@ export default {
   },
   methods: {
     addPlaylist() {
-      let username = this.info.name;
+      const username = this.info.name;
       this.$prompt("请输入歌单名称", "添加歌单", {
         confirmButtonText: "确定",
         cancelButtonText: "取消"
       })
         .then(async ({ value }) => {
-          let res = await this.$api.SYS_PLAYLIST_ADD({
+          const res = await this.$api.SYS_PLAYLIST_ADD({
             name: value,
             username
           });
@@ -84,13 +84,13 @@ export default {
         .catch(() => {});
     },
     addPlayer() {
-      let username = this.info.name;
+      const username = this.info.name;
       this.$prompt("请输入播放器名称", "添加播放器", {
         confirmButtonText: "确定",
         cancelButtonText: "取消"
       })
         .then(async ({ value }) => {
-          let res = await this.$api.SYS_PLAYER_ADD({
+          const res = await this.$api.SYS_PLAYER_ADD({
             name: value,
             username
           });

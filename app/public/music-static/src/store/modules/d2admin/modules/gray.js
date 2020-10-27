@@ -10,7 +10,7 @@ export default {
      * @param {Object} state state
      */
     toggle (state) {
-      state.active = !state.active
+      state.active = !state.active;
     },
     /**
      * @description 设置灰度模式
@@ -18,7 +18,7 @@ export default {
      * @param {Boolean} active active
      */
     set (state, active) {
-      state.active = active
+      state.active = active;
     }
   }
-}
+};

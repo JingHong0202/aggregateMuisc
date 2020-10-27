@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-07-08 12:46:51
- * @LastEditTime: 2020-10-13 13:47:47
+ * @LastEditTime: 2020-10-22 20:29:40
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\app\service\tools.js
@@ -61,13 +61,6 @@ class toolsService extends egg.Service {
           success = true
         }
         break
-      // case 'domain':
-
-      //   break
-      case 'playlist':
-        break
-      case 'player':
-        break
     }
 
     return success
@@ -96,22 +89,24 @@ class toolsService extends egg.Service {
     let success = false,
       currentDomain = ctx.request.header['x-forwarded-host'],
       currentHostDomain = ctx.host
+    if (ctx.request.headers['host'].indexOf(currentHostDomain) !== -1) {
+      success = true
+    } else {
+      let domains = JSON.parse(
+        (
+          await app.mysql.get('player', {
+            uuid
+          })
+        ).domains
+      )
 
-    let domains = JSON.parse(
-      (
-        await app.mysql.get('player', {
-          uuid
-        })
-      ).domains
-    )
+      domains.forEach(({ domainName }) => {
+        if (domainName.indexOf(currentDomain) !== -1) {
+          success = true
+        }
+      })
+    }
 
-    domains.forEach(({ domainName }) => {
-      if (domainName.indexOf(currentDomain) !== -1) {
-        success = true
-      } else if (ctx.request.headers['host'].indexOf(currentHostDomain) !== -1) {
-        success = true
-      }
-    })
     return success
   }
   async active(sign, option) {
@@ -152,11 +147,42 @@ class toolsService extends egg.Service {
     let { app } = this
     return await app.mailer.send({
       from: app.config.mailer.auth.user, // 发件人地址, [可选] 默认为用户名
-      to: to, // 接收人名单
+      to, // 接收人名单
       subject: str, // 主题
       text: str,
       html // html body
     })
+  }
+  encry_ForgetPassowrd(str) {
+    return crypto
+      .createHash('md5')
+      .update(new Buffer(str, 'base64').toString() + 'POST' + 'encryption')
+      .digest('hex')
+  }
+  async forGet() {
+    let { ctx, app } = this
+    let user = await app.mysql.get('users', { username: ctx.request.body.username })
+    if (!user) ctx.helper.ReturnErrorCode(403, '此邮箱没有绑定用户')
+    let s = this.encry_ForgetPassowrd(JSON.stringify(user))
+    let token = this.app.jwt.sign(
+      {
+        username: user.username
+      },
+      s,
+      { expiresIn: '30min' }
+    )
+    try {
+      await this.sendMail(
+        user.email,
+        `${app.config.domain}/ForgetPassWord/${new Buffer(user.email).toString(
+          'base64'
+        )}?s=${token}&a=ForgetPassWord`,
+        '密码找回'
+      )
+      ctx.helper.ReturnCustomCode(200, '请到' + user.email + '邮箱查收')
+    } catch (error) {
+      ctx.helper.ReturnErrorCode(500)
+    }
   }
   async ReadWords() {
     let file = path.join(__dirname, '../../data/words.json')
@@ -237,7 +263,7 @@ class toolsService extends egg.Service {
       let result = await fs.promises.truncate(path.join(logDir, dirent.name), 0)
       if (result) return ctx.helper.ReturnErrorCode(500)
     }
-    return ctx.helper.ReturnSuccessCode(200, '日志清空成功')
+    return ctx.helper.ReturnCustomCode(200, '日志清空成功')
   }
 
   async readPlayerJS() {

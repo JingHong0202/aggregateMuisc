@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-07-17 22:21:02
- * @LastEditTime: 2020-09-15 19:51:06
+ * @LastEditTime: 2020-10-25 22:23:09
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\api\modules\sys.play.js
@@ -14,6 +14,7 @@ export default ({ service, request, faker, tools }) => ({
    */
 
   SYS_PLAYLIST_FIND(id) {
+    if (!id) return false;
     return request({
       url: "/play/playlist?a=find&uuid=" + id,
       method: "GET"

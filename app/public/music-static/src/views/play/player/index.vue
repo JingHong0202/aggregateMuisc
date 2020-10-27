@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-17 12:40:22
- * @LastEditTime: 2020-09-15 19:48:04
+ * @LastEditTime: 2020-10-25 21:28:38
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\views\play\player\index.vue
@@ -126,6 +126,7 @@ import commonPlaylist from "../components/commonPlaylist";
 import rankPlaylist from "../components/rankPlaylist";
 import { mapState } from "vuex";
 export default {
+  name: "player",
   components: {
     tabs,
     getCode,
@@ -154,8 +155,9 @@ export default {
     //   });
     // },
     async addplaylist(current) {
-      if (this.loadedPlayList.find(item => item.uuid === current.uuid))
+      if (this.loadedPlayList.find(item => item.uuid === current.uuid)) {
         return this.$message.warning("不能重复添加");
+      }
       this.loadedPlayList.push(current);
       this.$set(current, "disabled", true);
     },
@@ -173,8 +175,9 @@ export default {
       );
     },
     async addAuth({ desc, domain }) {
-      if (this.domains.find(item => item.domainName === domain))
+      if (this.domains.find(item => item.domainName === domain)) {
         return this.$message.warning("不能重复添加");
+      }
       this.domains.push({ domainName: domain, domainDesc: desc });
     },
     async save(setting, name) {
@@ -187,8 +190,8 @@ export default {
       this.$router.go(0);
     },
     async init() {
-      let res = await this.$api.SYS_PLAYER_FIND(this.$route.params.id),
-        { setting, desc, domains, loadedPlayList, name } = res.data;
+      const res = await this.$api.SYS_PLAYER_FIND(this.$route.params.id);
+      const { setting, desc, domains, loadedPlayList, name } = res.data;
       this.setting = JSON.parse(setting);
       this.domains = JSON.parse(domains);
       this.loadedPlayList = JSON.parse(loadedPlayList);

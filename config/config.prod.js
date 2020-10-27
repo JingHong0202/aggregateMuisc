@@ -1,15 +1,27 @@
+/*
+ * @Author: your name
+ * @Date: 2020-06-29 18:24:47
+ * @LastEditTime: 2020-10-22 20:24:01
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \music\config\config.prod.js
+ */
 const path = require('path')
 
 module.exports = appInfo => {
   return {
-    keys: 'jinghong-music',
+    staticDomain: 'http://localhost:8080',
+    domain: 'http://127.0.0.1:7001',
+    keys: 'aggregateMusic',
     security: {
       csrf: {
-        enable: false
+        enable: false,
+        ignoreJSON: true
       },
       xframe: {
         enable: false
-      }
+      },
+      domainWhiteList: ['*']
     },
     mysql: {
       client: {
@@ -22,9 +34,7 @@ module.exports = appInfo => {
       app: true
     },
     cors: {
-      enable: true,
-      package: 'egg-cors',
-      origin: '*',
+      // origin: '*',
       allowMehtods: 'GET,HEAD,PUT,OPTIONS,POST,DELETE,PATCH',
       credentials: true
     },

@@ -1,5 +1,5 @@
-import store from '@/store'
-import util from '@/libs/util'
+import store from '@/store';
+import util from '@/libs/util';
 
 export default {
   install (Vue, options) {
@@ -14,12 +14,12 @@ export default {
           // eg: this.$log.push('foo text')
           store.dispatch('d2admin/log/push', {
             message: data
-          })
+          });
         } else if (typeof data === 'object') {
           // 如果传递来的数据是对象
-          store.dispatch('d2admin/log/push', data)
+          store.dispatch('d2admin/log/push', data);
         }
       }
-    }
+    };
   }
-}
+};

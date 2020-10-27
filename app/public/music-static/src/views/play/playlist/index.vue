@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-17 12:40:22
- * @LastEditTime: 2020-08-07 13:28:26
+ * @LastEditTime: 2020-10-25 22:39:08
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\views\play\player\index.vue
@@ -21,6 +21,7 @@
               <el-table
                 :data="songlistTableData"
                 style="width: 100%;border:none"
+                v-loading="loading2"
               >
                 <el-table-column prop="name" label="歌名" width="200">
                   <template slot-scope="{ row }">

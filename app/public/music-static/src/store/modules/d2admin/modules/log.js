@@ -1,6 +1,6 @@
-import dayjs from 'dayjs'
-import { get } from 'lodash'
-import util from '@/libs/util.js'
+import dayjs from 'dayjs';
+import { get } from 'lodash';
+import util from '@/libs/util.js';
 
 export default {
   namespaced: true,
@@ -19,14 +19,14 @@ export default {
      * @param {*} state vuex state
      */
     length (state) {
-      return state.log.length
+      return state.log.length;
     },
     /**
      * @description 返回现存 log (error) 的条数
      * @param {*} state vuex state
      */
     lengthError (state) {
-      return state.log.filter(log => log.type === 'danger').length
+      return state.log.filter(log => log.type === 'danger').length;
     }
   },
   actions: {
@@ -54,7 +54,7 @@ export default {
           // 用户设置
           ...meta
         }
-      })
+      });
     }
   },
   mutations: {
@@ -64,7 +64,7 @@ export default {
      * @param {Object} log data
      */
     push (state, log) {
-      state.log.push(log)
+      state.log.push(log);
     },
     /**
      * @description 清空日志
@@ -72,7 +72,7 @@ export default {
      */
     clean (state) {
       // store 赋值
-      state.log = []
+      state.log = [];
     }
   }
-}
+};

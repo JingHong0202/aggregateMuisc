@@ -22,16 +22,16 @@ module.exports = option => {
         }
         break
 
-      case 'tencent':
-        var { mode, a, p, n, zhida } = ctx.query,
-          str = `${platform}-${mode}-${a}${p ? `-${p}` : ''}${n ? `-${n}` : ''}${
-            zhida ? `-${zhida}` : ''
-          }`
-        if (await ctx.app.cache.has(str)) {
-          // console.log('success')
-          return (ctx.body = await ctx.app.cache.get(str))
-        }
-        break
+      // case 'tencent':
+      //   var { mode, a, p, n, zhida } = ctx.query,
+      //     str = `${platform}-${mode}-${a}${p ? `-${p}` : ''}${n ? `-${n}` : ''}${
+      //       zhida ? `-${zhida}` : ''
+      //     }`
+      //   if (await ctx.app.cache.has(str)) {
+      //     // console.log('success')
+      //     return (ctx.body = await ctx.app.cache.get(str))
+      //   }
+      //   break
     }
     await next()
   }

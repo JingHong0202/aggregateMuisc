@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2020-06-29 18:45:15
- * @LastEditTime: 2020-07-10 11:39:48
- * @LastEditors: your name
+ * @LastEditTime: 2020-10-21 15:53:59
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\locales\mixin.js
  */
@@ -30,8 +30,8 @@ export default {
 
 export const refresh = {
   methods: {
-    refreshCaptcha() {
-      this.$refs.code.src = `/captcha?${Math.random()}`;
+    refreshCaptcha(evnet, codeName = "code") {
+      this.$refs[codeName].src = `/captcha?${Math.random()}`;
     }
   }
 };
@@ -40,6 +40,25 @@ export const PageUtil = {
   methods: {
     toPage(str) {
       this.$emit("toPage", str);
+      if (/&?captcha=.*&?/.test(window.location.href)) {
+        window.history.pushState(
+          {},
+          0,
+          window.location.href.replace(/&?captcha=.*&?/, "")
+        );
+        window.history.pushState(
+          {},
+          0,
+          window.location.href.replace(/&?email=.*&?/, "")
+        );
+      }
+      this.$route.query.captcha = "";
+      this.$route.query.email = "";
+    },
+    restField(obj) {
+      return Object.keys(obj).forEach(item => {
+        obj[item] = "";
+      });
     }
   }
 };

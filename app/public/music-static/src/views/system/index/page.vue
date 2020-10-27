@@ -1,13 +1,13 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-29 18:45:16
- * @LastEditTime: 2020-10-14 14:44:27
+ * @LastEditTime: 2020-10-25 21:57:02
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\views\system\index\page.vue
 -->
 <template>
-  <d2-container class="page " type="ghost">
+  <d2-container class="page " type="ghost" better-scroll>
     <template slot="header">首頁</template>
     <div class="d2-p-10  m-container m-i-c1">
       <el-card class="d2-card d2-mr">
@@ -197,9 +197,10 @@
 <script>
 import list from "@/plugin/charts/list/_mixin/list.js";
 export default {
+  name: "index",
   async created() {
     this.table.loading = true;
-    let res = await Promise.all([
+    const res = await Promise.all([
       this.$api.SYS_USER_LIST(),
       this.$api.SYS_DASHBOARD_DATA(),
       this.$api.SYS_WORDS_DATA()
@@ -218,7 +219,7 @@ export default {
     },
     async load() {
       this.table.loading = true;
-      let res = await this.$api.SYS_USER_LIST((this.page += 1));
+      const res = await this.$api.SYS_USER_LIST((this.page += 1));
       if (!res.data.length) {
         this.$message("到最底了!");
         this.table.loading = false;
@@ -234,31 +235,31 @@ export default {
     setDashBoard(data) {
       if (!data) return;
       this.user.userChartData.rows = Object.keys(data.users).map(item => {
-        let current = data.users[item];
+        const current = data.users[item];
         return {
           日期: item,
           已激活: current.state1,
           未激活: current.state0
         };
       });
-      let songMaxVal = Object.keys(data.playlist);
+      const songMaxVal = Object.keys(data.playlist);
       if (songMaxVal.length) {
         this.dashboardNumber.songList =
           data.playlist[songMaxVal[songMaxVal.length - 1]];
         this.songList.songListChartData.rows = songMaxVal.map(item => {
-          let current = data.playlist[item];
+          const current = data.playlist[item];
           return {
             日期: item,
             歌单数: current
           };
         });
       }
-      let domainMaxVal = Object.keys(data.domain);
+      const domainMaxVal = Object.keys(data.domain);
       if (domainMaxVal.length) {
         this.dashboardNumber.domain =
           data.domain[domainMaxVal[domainMaxVal.length - 1]];
         this.domain.domainChartData.rows = domainMaxVal.map(item => {
-          let current = data.domain[item];
+          const current = data.domain[item];
           return {
             日期: item,
             授权量: current
@@ -266,12 +267,12 @@ export default {
         });
       }
 
-      let usedMaxVal = Object.keys(data.used);
+      const usedMaxVal = Object.keys(data.used);
       if (usedMaxVal.length) {
         this.dashboardNumber.used =
           data.used[usedMaxVal[usedMaxVal.length - 1]];
         this.used.usedChartData.rows = usedMaxVal.map(item => {
-          let current = data.used[item];
+          const current = data.used[item];
           console.log(current);
           return {
             日期: item,
@@ -283,7 +284,7 @@ export default {
     setUser(data) {
       this.dashboardNumber.user = data.count;
       this.table.tableData = data.data;
-      let dashboard = Object.keys(data.sumRole).map((item, i) => {
+      const dashboard = Object.keys(data.sumRole).map((item, i) => {
         return {
           role: item,
           value: data.sumRole[item]

@@ -33,7 +33,7 @@ export default {
       // uuid 是用户身份唯一标识 用户注册的时候确定 并且不可改变 不可重复
       // token 代表用户当前登录状态 建议在网络请求中携带 token
       // 如有必要 token 需要定时更新，默认保存一天
-      let { sign, state, role } = res.data;
+      const { sign, state, role } = res.data;
 
       util.cookies.set("uuid", res.data.username);
       util.cookies.set("token", sign);

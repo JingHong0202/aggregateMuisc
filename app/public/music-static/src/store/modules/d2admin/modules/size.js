@@ -1,5 +1,5 @@
-import Vue from 'vue'
-import router from '@/router'
+import Vue from 'vue';
+import router from '@/router';
 
 export default {
   namespaced: true,
@@ -14,10 +14,10 @@ export default {
      * @param {Boolean} refresh 是否在设置之后刷新页面
      */
     apply ({ state, commit }, refresh) {
-      Vue.prototype.$ELEMENT.size = state.value
+      Vue.prototype.$ELEMENT.size = state.value;
       if (refresh) {
-        commit('d2admin/page/keepAliveClean', null, { root: true })
-        router.replace('/refresh')
+        commit('d2admin/page/keepAliveClean', null, { root: true });
+        router.replace('/refresh');
       }
     },
     /**
@@ -25,12 +25,12 @@ export default {
      * @param {Object} context
      */
     isLoaded ({ state }) {
-      if (state.value) return Promise.resolve()
+      if (state.value) return Promise.resolve();
       return new Promise(resolve => {
         const timer = setInterval(() => {
-          if (state.value) resolve(clearInterval(timer))
-        }, 10)
-      })
+          if (state.value) resolve(clearInterval(timer));
+        }, 10);
+      });
     },
     /**
      * @description 设置尺寸
@@ -39,16 +39,16 @@ export default {
      */
     async set ({ state, dispatch }, size) {
       // store 赋值
-      state.value = size
+      state.value = size;
       // 应用
-      dispatch('apply', true)
+      dispatch('apply', true);
       // 持久化
       await dispatch('d2admin/db/set', {
         dbName: 'sys',
         path: 'size.value',
         value: state.value,
         user: true
-      }, { root: true })
+      }, { root: true });
     },
     /**
      * @description 从持久化数据读取尺寸设置
@@ -61,9 +61,9 @@ export default {
         path: 'size.value',
         defaultValue: 'default',
         user: true
-      }, { root: true })
+      }, { root: true });
       // 应用
-      dispatch('apply')
+      dispatch('apply');
     }
   }
-}
+};

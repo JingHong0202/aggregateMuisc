@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-07-18 10:36:11
- * @LastEditTime: 2020-10-14 14:40:22
+ * @LastEditTime: 2020-10-23 08:54:17
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\app\service\player.js
@@ -58,10 +58,10 @@ class playerService extends egg.Service {
           // position: 'leftBottom',
           color: '',
           style: '',
-          mode: 1
+          mode: '1'
         })
       })
-      ctx.helper.ReturnSuccessCode(200, '播放器添加成功', { uuid })
+      ctx.helper.ReturnCustomCode(200, '播放器添加成功', { uuid })
     } catch (error) {
       ctx.helper.ReturnErrorCode(
         403,
@@ -113,20 +113,23 @@ class playerService extends egg.Service {
     } catch (error) {
       ctx.helper.ReturnErrorCode(400)
     }
-    let res = await app.mysql.update(
-      'player',
-      {
-        ...ctx.request.body,
-        setting,
-        loadedPlayList,
-        domains,
-        domainCount
-      },
-      { where: { uuid } }
-    )
-    res.affectedRows
-      ? ctx.helper.ReturnSuccessCode(200, '播放器更新成功')
-      : ctx.helper.ReturnErrorCode(403, '播放器更新失败')
+    try {
+      let res = await app.mysql.update(
+        'player',
+        {
+          ...ctx.request.body,
+          setting,
+          loadedPlayList,
+          domains,
+          domainCount
+        },
+        { where: { uuid } }
+      )
+      ctx.helper.ReturnCustomCode(200, '播放器更新成功')
+    } catch (error) {
+      let message = error.code === 'ER_DUP_ENTRY' ? '名称重复' : ''
+      ctx.helper.ReturnErrorCode(403, '播放器更新失败，' + message)
+    }
   }
   async del() {
     let { ctx, app } = this,
@@ -145,7 +148,7 @@ class playerService extends egg.Service {
       uuid
     })
     if (res.affectedRows) {
-      ctx.helper.ReturnSuccessCode(200, '播放器删除成功')
+      ctx.helper.ReturnCustomCode(200, '播放器删除成功')
     } else {
       ctx.helper.ReturnErrorCode(403, '播放器删除失败')
     }

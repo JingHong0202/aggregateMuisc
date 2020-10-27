@@ -19,13 +19,13 @@ module.exports = class playController extends egg.Controller {
     let { a } = ctx.query
     if (!ctx.service.playlist[a]) ctx.helper.ReturnErrorCode(404)
     let res = await ctx.service.playlist[a]()
-    if (res) ctx.helper.ReturnSuccessCode(200, '', res)
+    if (res) ctx.helper.ReturnCustomCode(200, '', res)
   }
   async player(ctx) {
     let { a } = ctx.query
     if (!ctx.service.player[a]) ctx.helper.ReturnErrorCode(404)
     let res = await ctx.service.player[a]()
-    if (res) ctx.helper.ReturnSuccessCode(200, '', res)
+    if (res) ctx.helper.ReturnCustomCode(200, '', res)
   }
   async playfind(ctx) {
     let { a } = ctx.query

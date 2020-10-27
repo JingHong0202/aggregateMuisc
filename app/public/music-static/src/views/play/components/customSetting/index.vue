@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-24 13:09:59
- * @LastEditTime: 2020-09-23 14:20:41
+ * @LastEditTime: 2020-10-21 20:36:42
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\views\play\components\domainAuthorization\index.vue
@@ -164,12 +164,14 @@
         </div>
       </el-col> -->
       <el-col :lg="9" :md="24" class="d2-mt-20">
-        <el-input-number
-          v-model="setting.interval"
-          :min="1"
-          :max="10"
-          label="弹出时间"
-        ></el-input-number>
+        <el-tooltip effect="dark" content="弹出时间">
+          <el-input-number
+            v-model="setting.interval"
+            :min="1"
+            :max="10"
+            label="弹出时间"
+          ></el-input-number>
+        </el-tooltip>
       </el-col>
     </el-row>
     <el-row>
@@ -263,7 +265,7 @@ export default {
               document.querySelector(".aggregate-player")
             );
           }
-          let Script = document.createElement("script");
+          const Script = document.createElement("script");
           Script.id = "aggregate";
           Script.setAttribute("key", `${this.$route.params.id}`);
           Script.async = true;

@@ -41,8 +41,7 @@
 export default {
   methods: {
     async addAuth() {
-      if (!this.domain || !/(.+[\.]){1,2}([a-z]+)$/i.test(this.domain))
-        return this.$message.warning("域名格式错误");
+      if (!this.domain || !/(.+[\.]){1,2}([a-z]+)$/i.test(this.domain)) { return this.$message.warning("域名格式错误"); }
       this.$emit("addAuth", {
         domain: this.domain,
         desc: this.desc

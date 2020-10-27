@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-07-03 19:44:21
- * @LastEditTime: 2020-10-13 13:23:09
+ * @LastEditTime: 2020-10-23 09:05:49
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\app\service\netease.js
@@ -34,42 +34,53 @@ class neteaseService extends egg.Service {
       ctx.helper.ReturnErrorCode(403, '域名认证失败，请先绑定域名')
 
     if (nm[mode]) {
-      if (mode === 'picture') {
-        res = await nm[mode](a, ctx.query.px || 500)
-      } else if (mode === 'search') {
-        try {
-          await ctx.service.tools.Direct(a)
-          let {
-            result: { songs }
-          } = await nm[mode](a, p || 1, n || 20)
-          res = await this._parse(await Promise.all(await this._normlize(songs)))
-          res = typeof res === 'object' ? Object.keys(res).map(item => res[item]) : res
-        } catch (error) {
-          ctx.status = 500
-          res = { msg: '搜索失败' }
-        }
-      } else if (mode === 'playlist') {
-        let result = await nm[mode](a)
-        try {
-          let {
-            playlist: { tracks }
-          } = result
-          res = await this._parse(await Promise.all(await this._normlize(tracks)))
-          res = typeof res === 'object' ? Object.keys(res).map(item => res[item]) : res
-        } catch (error) {
-          ctx.status = 500
-          res = { msg: '歌单获取失败' }
-        }
-      } else if (mode === 'artist') {
-        res = await nm[mode](a, n || 60)
-      } else {
-        let params
-        try {
-          params = JSON.parse(a)
-        } catch (err) {
-          params = a
-        }
-        res = await nm[mode](params)
+      switch (mode) {
+        case 'picture':
+          res = await nm[mode](a, ctx.query.px || 500)
+
+          break
+        case 'search':
+          try {
+            await ctx.service.tools.Direct(a)
+            let {
+              result: { songs }
+            } = await nm[mode](a, p || 1, n || 20)
+            res = await this._parse(await Promise.all(await this._normlize(songs)))
+            res = typeof res === 'object' ? Object.keys(res).map(item => res[item]) : res
+          } catch (error) {
+            ctx.status = 500
+            res = { msg: '搜索失败' }
+          }
+
+          break
+        case 'playlist':
+          let result = await nm[mode](a)
+          try {
+            let {
+              playlist: { tracks }
+            } = result
+            res = await this._parse(await Promise.all(await this._normlize(tracks)))
+            res = typeof res === 'object' ? Object.keys(res).map(item => res[item]) : res
+          } catch (error) {
+            ctx.status = 500
+            res = { msg: '歌单获取失败' }
+          }
+
+          break
+        case 'artist':
+          res = await nm[mode](a, n || 60)
+
+          break
+        default:
+          let params
+          try {
+            params = JSON.parse(a)
+          } catch (err) {
+            params = a
+          }
+          res = await nm[mode](params)
+
+          break
       }
     } else if (this[mode]) {
       res = (await this[mode](a)).data
@@ -97,7 +108,7 @@ class neteaseService extends egg.Service {
   // }
 
   async ranklist() {
-    let { ctx, app } = this
+    let { ctx } = this
     // if (await app.cache.has(`netease-rank`)) {
     //   return await app.cache.get(`netease-rank`)
     // }

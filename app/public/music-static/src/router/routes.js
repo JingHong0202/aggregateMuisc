@@ -17,7 +17,8 @@ const frameIn = [
         path: "index",
         name: "index",
         meta: {
-          auth: true
+          auth: true,
+          cache: true
         },
         component: _import("system/index")
       },
@@ -27,7 +28,8 @@ const frameIn = [
         meta: {
           title: "用户管理",
           auth: true,
-          role: ["admin"]
+          role: ["admin"],
+          cache: true
         },
         component: _import("user/user-list")
       },
@@ -37,7 +39,8 @@ const frameIn = [
         meta: {
           title: "角色管理",
           auth: true,
-          role: ["admin"]
+          role: ["admin"],
+          cache: true
         },
         component: _import("user/user-role")
         // children: [

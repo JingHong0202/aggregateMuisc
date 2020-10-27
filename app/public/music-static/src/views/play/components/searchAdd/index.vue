@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-18 20:21:22
- * @LastEditTime: 2020-07-23 22:26:37
+ * @LastEditTime: 2020-10-21 19:43:01
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\views\play\components\addPlayList\index.vue
@@ -69,19 +69,18 @@ export default {
   name: "searchAdd",
   methods: {
     async search() {
-      if (!this.form.input || !this.form.platformVal || !this.form.searchItem)
-        return this.$message.warning("请选择参数");
+      if (!this.form.input || !this.form.platformVal || !this.form.searchItem) { return this.$message.warning("请选择参数"); }
       this.loading = true;
-      let { platformVal, input, searchItemVal } = this.form;
+      const { platformVal, input, searchItemVal } = this.form;
       try {
-        let params = {
+        const params = {
           platform: platformVal,
           mode: "search",
           action: input,
           limit: searchItemVal,
           uuid: this.$route.params.id
         };
-        let res = await this.$api.SYS_PLAYLIST_SEARCH(params);
+        const res = await this.$api.SYS_PLAYLIST_SEARCH(params);
         this.$emit("changeList", res, params);
       } catch (error) {
         this.loading = false;
@@ -95,8 +94,8 @@ export default {
       form: {
         input: "",
         platform: [
-          { label: "网易云", value: "netease" },
-          { label: "QQ音乐", value: "tencent" }
+          { label: "网易云", value: "netease" }
+          // { label: "QQ音乐", value: "tencent" }
         ],
         platformVal: null,
         searchItem: [

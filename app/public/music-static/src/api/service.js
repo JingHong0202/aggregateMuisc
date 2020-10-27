@@ -51,8 +51,7 @@ function createService() {
       //       break;
       //   }
       // }
-      if (response.status < 400 && response.data.msg)
-        Message.success({ message: response.data.msg, type: "success" });
+      if (response.status < 400 && response.data.msg) { Message.success({ message: response.data.msg, type: "success" }); }
       return response.data;
     },
     error => {
@@ -64,7 +63,7 @@ function createService() {
         });
         return;
       }
-      let { msg } = error.response.data;
+      const { msg } = error.response.data;
       // const status = get(error, "response.status");
       error.message = msg;
       errorLog(error);

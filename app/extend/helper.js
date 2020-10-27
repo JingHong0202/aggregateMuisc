@@ -28,7 +28,7 @@ module.exports = {
         ctx.throw('ServerError', 500)
     }
   },
-  ReturnSuccessCode(n, m, data = {}) {
+  ReturnCustomCode(n, m, data = {}) {
     let { ctx } = this
     ctx.status = n
     return (ctx.body = {

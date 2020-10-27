@@ -99,7 +99,7 @@ export default {
         type: "warning"
       })
         .then(async () => {
-          let name = this.info.name;
+          const name = this.info.name;
           await this.$api.SYS_PLAYLIST_UPDATE(this.$route.params.id, name, {
             name: this.name,
             desc: this.desc,
@@ -121,7 +121,7 @@ export default {
         type: "warning"
       })
         .then(async () => {
-          let name = this.info.name;
+          const name = this.info.name;
           await this.$api.SYS_PLAYLIST_DEL(this.$route.params.id, name);
           await this.close({ tagName: this.current });
         })

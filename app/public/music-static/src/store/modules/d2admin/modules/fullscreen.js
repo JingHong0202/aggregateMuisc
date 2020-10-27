@@ -1,4 +1,4 @@
-import screenfull from 'screenfull'
+import screenfull from 'screenfull';
 
 export default {
   namespaced: true,
@@ -14,8 +14,8 @@ export default {
     listen ({ commit }) {
       if (screenfull.isEnabled) {
         screenfull.on('change', () => {
-          if (!screenfull.isFullscreen) commit('set', false)
-        })
+          if (!screenfull.isFullscreen) commit('set', false);
+        });
       }
     },
     /**
@@ -24,11 +24,11 @@ export default {
      */
     toggle ({ commit }) {
       if (screenfull.isFullscreen) {
-        screenfull.exit()
-        commit('set', false)
+        screenfull.exit();
+        commit('set', false);
       } else {
-        screenfull.request()
-        commit('set', true)
+        screenfull.request();
+        commit('set', true);
       }
     }
   },
@@ -39,7 +39,7 @@ export default {
      * @param {Boolean} active active
      */
     set (state, active) {
-      state.active = active
+      state.active = active;
     }
   }
-}
+};

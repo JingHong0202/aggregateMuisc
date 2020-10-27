@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0b1d7b"],{2227:function(e,n,t){"use strict";t.r(n);var l=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("d2-container",[t("template",{slot:"header"},[e._v("角色详情页面")])],2)},a=[],r={name:"detail-role"},c=r,o=t("2877"),u=Object(o["a"])(c,l,a,!1,null,null,null);n["default"]=u.exports}}]);

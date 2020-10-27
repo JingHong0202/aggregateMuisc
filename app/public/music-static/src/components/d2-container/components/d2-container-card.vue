@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import scroll from './mixins/normal'
+import scroll from './mixins/normal';
 export default {
   name: 'd2-container-card',
   mixins: [
@@ -23,11 +23,11 @@ export default {
   ],
   mounted () {
     // 增加滚动事件监听
-    this.addScrollListener()
+    this.addScrollListener();
   },
   beforeDestroy () {
     // 移除滚动事件监听
-    this.removeScrollListener()
+    this.removeScrollListener();
   }
-}
+};
 </script>

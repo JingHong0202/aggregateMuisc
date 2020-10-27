@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-29 18:24:47
- * @LastEditTime: 2020-10-09 08:44:26
+ * @LastEditTime: 2020-10-23 17:54:02
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\config\config.local.js
@@ -11,6 +11,7 @@ const path = require('path')
 
 module.exports = appInfo => {
   return {
+    staticDomain: 'http://localhost:8080',
     domain: 'http://127.0.0.1:7001',
     keys: 'aggregateMusic',
     security: {
@@ -28,7 +29,7 @@ module.exports = appInfo => {
         host: 'localhost',
         port: '3306',
         user: 'root',
-        password: '',
+        password: 'xuyuxin',
         database: 'aggregateMusic'
       },
       app: true

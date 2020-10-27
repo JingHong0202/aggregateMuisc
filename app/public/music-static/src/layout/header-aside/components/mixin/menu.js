@@ -7,7 +7,7 @@ export default {
       } else if (/^https:\/\/|http:\/\//.test(index)) {
         util.open(index);
       } else if (/(addplaylist)|(addplayer)/.test(index)) {
-        
+
       } else {
         this.$router.push({
           path: index

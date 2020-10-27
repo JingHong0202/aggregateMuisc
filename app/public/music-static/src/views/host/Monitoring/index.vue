@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-11 23:14:11
- * @LastEditTime: 2020-07-17 12:10:00
+ * @LastEditTime: 2020-10-25 21:27:48
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\views\host\Monitoring\index.vue
@@ -51,6 +51,7 @@
 // import { mapState } from "vuex";
 // import { get } from "lodash";
 export default {
+  name: "monitoring",
   data() {
     return {
       uploading: false,
@@ -73,7 +74,7 @@ export default {
   },
   methods: {
     async getLogs() {
-      let logs = this._normlize(await this.$api.SYS_LOGS_DATA());
+      const logs = this._normlize(await this.$api.SYS_LOGS_DATA());
       this.data = logs;
       this.logs = logs[2].content;
       this.options = logs.map(item => {
@@ -86,13 +87,13 @@ export default {
       this.currentLogs = this.options[0].value;
     },
     _normlize(logs) {
-      let setup = logs.map(item => {
-        let content = !!item ? item.content.split("\n") : "";
+      const setup = logs.map(item => {
+        let content = item ? item.content.split("\n") : "";
         content.pop();
         content = content.map(item2 => {
-          let level = item2.match(/\"level\":\"(([\s\S]+?))\"/)[2],
-            date = item2.match(/\"date\":\"(([\s\S]+?))\"/)[2],
-            hostname = item2.match(/\"hostname\":\"(([\s\S]+?))\"/)[2];
+          const level = item2.match(/\"level\":\"(([\s\S]+?))\"/)[2];
+          const date = item2.match(/\"date\":\"(([\s\S]+?))\"/)[2];
+          const hostname = item2.match(/\"hostname\":\"(([\s\S]+?))\"/)[2];
           return {
             level,
             date,

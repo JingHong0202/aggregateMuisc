@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-18 20:21:22
- * @LastEditTime: 2020-07-23 15:06:33
+ * @LastEditTime: 2020-10-21 19:42:35
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\views\play\components\addPlayList\index.vue
@@ -55,11 +55,10 @@ export default {
   name: "addPlayList",
   methods: {
     async addplaylist() {
-      if (!this.form.input || !this.form.platformVal)
-        return this.$message.warning("请选择参数");
+      if (!this.form.input || !this.form.platformVal) { return this.$message.warning("请选择参数"); }
       let res;
       this.loading = true;
-      let { input, platformVal } = this.form;
+      const { input, platformVal } = this.form;
       try {
         res = await this.$api.SYS_PLAYLIST_LIST({
           platform: platformVal,
@@ -79,8 +78,8 @@ export default {
       form: {
         input: "",
         platform: [
-          { label: "网易云", value: "netease" },
-          { label: "QQ音乐", value: "tencent" }
+          { label: "网易云", value: "netease" }
+          // { label: "QQ音乐", value: "tencent" }
         ],
         platformVal: null
       }

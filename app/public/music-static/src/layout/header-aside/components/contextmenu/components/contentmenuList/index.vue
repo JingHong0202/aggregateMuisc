@@ -20,14 +20,14 @@ export default {
   },
   methods: {
     rowClick (event) {
-      let target = event.target
+      let target = event.target;
       while (!target.dataset.value) {
-        target = target.parentNode
+        target = target.parentNode;
       }
-      this.$emit('rowClick', target.dataset.value)
+      this.$emit('rowClick', target.dataset.value);
     }
   }
-}
+};
 </script>
 
 <style lang="scss">

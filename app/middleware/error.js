@@ -14,9 +14,9 @@ module.exports = option => {
     } catch (error) {
       let resError = error.toString() || '未知错误'
       if (!ctx.status) ctx.status = 500
-      ctx.logger.error(resError)
+      if (ctx.app.config.env === 'prod') ctx.logger.error(resError)
       ctx.body = {
-        msg: resError
+        msg: ctx.app.config.env === 'local' ? resError : 'Server Error 500'
       }
     }
   }

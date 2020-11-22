@@ -111,7 +111,7 @@ export default {
         username: [
           {
             required: true,
-            message: "请输入用户名",
+            message: "请输入用户名,长度最小6位",
             trigger: "blur",
             min: 6,
             max: 12
@@ -142,8 +142,13 @@ export default {
         ],
         code: [
           {
-            required: true,
-            message: "请输入验证码",
+            validator: (rule, value, callback) => {
+              if (value === "" || !value) callback(new Error("请输入验证码"));
+              else if (isNaN(value)) {
+                callback(new Error("请输入有效的验证码"));
+              }
+              callback();
+            },
             trigger: "blur"
           }
         ],

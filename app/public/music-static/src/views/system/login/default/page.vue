@@ -89,7 +89,7 @@ export default {
         username: [
           {
             required: true,
-            message: "请输入用户名",
+            message: "请输入用户名,长度最小6位",
             trigger: "blur",
             min: 6,
             max: 12
@@ -106,9 +106,14 @@ export default {
         ],
         code: [
           {
-            required: true,
-            message: "请输入验证码",
-            trigger: "blur"
+            trigger: "blur",
+            validator: (rule, value, callback) => {
+              if (value === "" || !value) callback(new Error("请输入验证码"));
+              else if (isNaN(value)) {
+                callback(new Error("请输入有效的验证码"));
+              }
+              callback();
+            }
           }
         ]
       }
@@ -130,7 +135,7 @@ export default {
             code
           }).then(() => {
             // 重定向对象不存在则返回顶层路径
-            console.log(this.$route.query.redirect);
+            // console.log(this.$route.query.redirect);
             this.$router.replace(this.$route.query.redirect || "/");
           });
         } else {

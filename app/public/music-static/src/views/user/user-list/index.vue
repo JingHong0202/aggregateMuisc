@@ -303,7 +303,7 @@ export default {
       form: {},
       rules: {
         username: [
-          { required: true, message: "请输入用户名", trigger: "blur" },
+          { required: true, message: "请输入用户名,长度最小6位", trigger: "blur" },
           {
             min: 6,
             max: 12,

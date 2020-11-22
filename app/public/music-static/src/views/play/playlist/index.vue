@@ -206,7 +206,7 @@ export default {
         .then(async () => {
           this.loading = true;
           try {
-            let res = await this.$api.SYS_PLAYLIST_SEARCH({
+            const res = await this.$api.SYS_PLAYLIST_SEARCH({
               ...this.searchParams,
               uuid: this.$route.params.id,
               page:
@@ -249,8 +249,7 @@ export default {
       this.$set(current, "used", false);
     },
     async addSong(current) {
-      if (this.songlistTableData.find(item => item.id === current.id))
-        return this.$message.warning("歌曲重复");
+      if (this.songlistTableData.find(item => item.id === current.id)) { return this.$message.warning("歌曲重复"); }
       this.currentCollapse.push("songlist");
       this.songlistTableData.push(current);
       this.$set(current, "used", true);
@@ -274,7 +273,7 @@ export default {
       //   background: "rgba(255, 255, 255, .4)"
       // });
       this.loading2 = true;
-      let { data } = await this.$api.SYS_PLAYLIST_FIND(this.$route.params.id);
+      const { data } = await this.$api.SYS_PLAYLIST_FIND(this.$route.params.id);
       this.name = data.name;
       this.desc = data.desc;
       this.songlistTableData = JSON.parse(data.playlist) || [];

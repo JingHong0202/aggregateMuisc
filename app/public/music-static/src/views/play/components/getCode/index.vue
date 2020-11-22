@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-24 13:09:59
- * @LastEditTime: 2020-09-15 16:12:00
+ * @LastEditTime: 2020-11-22 20:42:40
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\views\play\components\domainAuthorization\index.vue
@@ -30,7 +30,12 @@
 export default {
   created() {
     this.id = this.$route.params.id;
-    this.scription = `<script id='aggregate' key='${this.id}'  src='//localhost:7001/play/player?a=getCode' async > <\/script>`;
+    console.log(process.env.NODE);
+    this.scription = `<script id='aggregate' key='${this.id}'  src='//${
+      process.env.NODE_ENV === "production"
+        ? window.location.host
+        : "localhost:7001"
+    }/play/player?a=getCode' async > <\/script>`;
   },
   data() {
     return {

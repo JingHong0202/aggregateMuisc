@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-24 13:09:59
- * @LastEditTime: 2020-10-21 20:36:42
+ * @LastEditTime: 2020-11-22 22:40:15
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\views\play\components\domainAuthorization\index.vue
@@ -269,7 +269,11 @@ export default {
           Script.id = "aggregate";
           Script.setAttribute("key", `${this.$route.params.id}`);
           Script.async = true;
-          Script.src = "//localhost:7001/play/player?a=getCode";
+          Script.src = `//${
+            process.env.NODE_ENV === "production"
+              ? window.location.host
+              : process.env.VUE_APP_API
+          }/play/player?a=getCode`;
           document.body.appendChild(Script);
         })
         .catch(async () => {

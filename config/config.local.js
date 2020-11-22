@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-29 18:24:47
- * @LastEditTime: 2020-10-23 17:54:02
+ * @LastEditTime: 2020-11-21 21:06:14
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\config\config.local.js
@@ -30,7 +30,7 @@ module.exports = appInfo => {
         port: '3306',
         user: 'root',
         password: 'xuyuxin',
-        database: 'aggregateMusic'
+        database: 'aggregatemusic'
       },
       app: true
     },

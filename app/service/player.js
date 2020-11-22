@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-07-18 10:36:11
- * @LastEditTime: 2020-10-23 08:54:17
+ * @LastEditTime: 2020-11-22 00:28:56
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\app\service\player.js
@@ -46,7 +46,7 @@ class playerService extends egg.Service {
         domains: JSON.stringify([]),
         setting: JSON.stringify({
           notice: true,
-          autoPlay: true,
+          autoPlay: false,
           autoshowInterval: 3,
           welcomeShow: true,
           welcome: '欢迎使用聚合音乐',
@@ -56,7 +56,7 @@ class playerService extends egg.Service {
           album: '',
           interval: 1,
           // position: 'leftBottom',
-          color: '',
+          color: '#81eefffa',
           style: '',
           mode: '1'
         })

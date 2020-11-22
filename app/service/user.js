@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-07-12 21:30:25
- * @LastEditTime: 2020-10-21 15:29:59
+ * @LastEditTime: 2020-11-22 17:18:52
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\app\service\user.js
@@ -15,8 +15,9 @@ class userService extends egg.Service {
     let { app, ctx } = this,
       { page, wd, num } = ctx.query
     let like = wd ? ` WHERE username LIKE '%${wd}%' || email LIKE '%${wd}%' ` : '',
-      sql = `SELECT username,state,email,lastTime,role FROM users ${like} LIMIT ${!page ? 0 : page * +num || 5
-        },${+num || 5}`
+      sql = `SELECT username,state,email,lastTime,role FROM users ${like} LIMIT ${
+        !page ? 0 : page * +num || 5
+      },${+num || 5}`
     let res = await app.mysql.query(sql)
     // let res = await app.mysql.select('users', {
     //   columns: ['username', 'state', 'email', 'lastTime', 'role'],
@@ -33,7 +34,7 @@ class userService extends egg.Service {
     }
   }
   async add() {
-    let { ctx } = this
+    let { ctx, app } = this
     try {
       ctx.validate({
         username: {
@@ -49,10 +50,15 @@ class userService extends egg.Service {
     } catch (error) {
       ctx.helper.ReturnErrorCode(400)
     }
-    let { username, password, email } = ctx.request.body
+    let { username, password, email, state, role } = ctx.request.body
     let res = await ctx.service.admin.registry(username, password, email)
     if (res.state) {
-      ctx.helper.ReturnCustomCode(200, res.msg)
+      await app.mysql.update(
+        'users',
+        { role, state: state ? 1 : 0 },
+        { where: { username, email } }
+      )
+      ctx.helper.ReturnCustomCode(200, '用户添加成功')
     } else {
       ctx.helper.ReturnErrorCode(403, res.msg)
     }
@@ -105,13 +111,29 @@ class userService extends egg.Service {
       ctx.helper.ReturnErrorCode(400)
     }
     let { username, email } = ctx.request.body
-    let res = await app.mysql.delete('users', {
-      username,
-      email
-    })
-    return res.affectedRows === 1
-      ? ctx.helper.ReturnCustomCode(200, '删除成功')
-      : ctx.helper.ReturnErrorCode(403, '删除失败')
+    let conn = await app.mysql.beginTransaction()
+    try {
+      await conn.delete('users', {
+        username,
+        email
+      })
+      await conn.delete('player', {
+        username
+      })
+      await conn.delete('playlist', {
+        username
+      })
+      let delFile = await ctx.service.tools.truncateUserFile(username)
+      if (delFile) {
+        await conn.commit()
+        ctx.helper.ReturnCustomCode(200, '删除成功')
+      } else {
+        new Error()
+      }
+    } catch (error) {
+      await conn.rollback()
+      ctx.helper.ReturnErrorCode(403, '删除失败')
+    }
   }
 
   async count(like) {
@@ -140,13 +162,13 @@ class userService extends egg.Service {
       })
     } catch (error) {
       if (error.errors[0].field === 'repassword') {
-        return (error.errors[0].message)
+        return error.errors[0].message
         // ctx.helper.ReturnErrorCode(403, error.errors[0].message)
       }
-      return ('账户或密码格式错误')
+      return '格式错误'
     }
     if (!this.ctx.service.tools.verifyCaptcha(ctx.request.body.code)) {
-      return ('验证码错误')
+      return '验证码错误'
     }
 
     let secret = await ctx.service.tools.randomSecret()
@@ -163,7 +185,7 @@ class userService extends egg.Service {
       )
       return '密码修改成功'
     } catch (error) {
-      return ('密码更改失败')
+      return '密码更改失败'
     }
   }
   async ForgetPassWord() {
@@ -186,7 +208,7 @@ class userService extends egg.Service {
           isVerify = true
         }
         if (captcha) {
-          ctx.helper.ReturnCustomCode(403, (await this.updatePassword(user.username)))
+          ctx.helper.ReturnCustomCode(403, await this.updatePassword(user.username))
         }
       }
     })

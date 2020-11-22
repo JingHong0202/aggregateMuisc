@@ -16,12 +16,12 @@
     "egg-validate": "^2.0.2",
     "egg-view-ejs": "^2.0.1",
     "simple-netease-cloud-music": "^0.5.0",
-    "svg-captcha": "^1.4.0"
+    "svg-captcha": "^1.4.0",
+    "egg": "^2.16.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",
     "autod-egg": "^1.1.0",
-    "egg": "^2.16.0",
     "egg-bin": "^4.11.0",
     "egg-ci": "^1.11.0",
     "egg-mock": "^3.21.0",

@@ -1,4 +1,4 @@
-logs/
+logs/aggregate-music
 npm-debug.log
 node_modules/
 coverage/
@@ -6,6 +6,6 @@ coverage/
 run/
 .DS_Store
 *.swp
-cache/
-data/
+cache/*
+data/*
 

@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+
+  aggregate:
+    build: .
+    ports: 
+      - 7001:7001 
+    container_name: aggregate
+    restart: always
+    depends_on:
+      - aggregateMusic_db
+
+  aggregateMusic_db:
+    image: mariadb
+    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
+    restart: always
+    container_name: aggregateMusic_db
+    volumes:
+      - mariadb:/var/lib/mysql
+    env_file:
+      - ./env/db.env
+volumes:
+  mariadb:

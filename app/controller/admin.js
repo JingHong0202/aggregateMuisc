@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-07-06 14:00:45
- * @LastEditTime: 2020-10-14 15:14:08
+ * @LastEditTime: 2020-11-22 12:52:34
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\app\controller\admin.js
@@ -23,7 +23,7 @@ class adminController extends egg.Controller {
         code: 'number'
       })
     } catch (error) {
-      ctx.helper.ReturnErrorCode(403, '账户或密码格式错误')
+      ctx.helper.ReturnErrorCode(403, '格式错误')
     }
     if (!ctx.service.tools.verifyCaptcha(ctx.request.body.code)) {
       ctx.helper.ReturnErrorCode(403, '验证码错误')
@@ -60,7 +60,7 @@ class adminController extends egg.Controller {
       if (error.errors[0].field === 'repassword') {
         ctx.helper.ReturnErrorCode(403, error.errors[0].message)
       }
-      ctx.helper.ReturnErrorCode(403, '账户或密码格式错误')
+      ctx.helper.ReturnErrorCode(403, '格式错误')
     }
     let { username, password, code, email } = ctx.request.body
     if (!ctx.service.tools.verifyCaptcha(code)) {

@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-07-08 12:46:51
- * @LastEditTime: 2020-10-22 20:29:40
+ * @LastEditTime: 2020-11-22 17:09:43
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\app\service\tools.js
@@ -222,6 +222,25 @@ class toolsService extends egg.Service {
     let file = path.join(__dirname, '../../data/dashboard.json')
     await fs.promises.writeFile(file, JSON.stringify(data))
   }
+
+  async truncateUserFile(username) {
+    let dirPath = path.join(__dirname, '../../data/playlist'),
+      targetDir = path.join(dirPath, `/${username}`)
+    if (!fs.existsSync(targetDir)) {
+      return true
+    }
+    try {
+      let files = await fs.promises.readdir(targetDir)
+      for await (const file of files) {
+        await fs.promises.unlink(path.join(targetDir, `/${file}`))
+      }
+      await fs.promises.rmdir(targetDir)
+      return true
+    } catch (error) {
+      return false
+    }
+  }
+
   async playListFile(uuid, name, option = {}) {
     let dirPath = path.join(__dirname, '../../data/playlist'),
       targetDir = path.join(dirPath, `/${name}`)
@@ -244,13 +263,12 @@ class toolsService extends egg.Service {
   }
   async getlogs() {
     let logDir = path.join(__dirname, '../../logs/aggregate-music')
-    let readDIr = await fs.promises.opendir(logDir)
+    let readDIr = await fs.promises.readdir(logDir)
     let res = []
     for await (let dirent of readDIr) {
-      if (/\.json\.log(.*)$/.test(dirent.name)) {
-        let content = await fs.promises.readFile(path.join(logDir, dirent.name), 'utf8'),
-          name = dirent.name
-        res.push({ content, name })
+      if (/\.json\.log(.*)$/.test(dirent)) {
+        let content = await fs.promises.readFile(path.join(logDir, dirent), 'utf8')
+        res.push({ content, name: dirent })
       }
     }
     return res

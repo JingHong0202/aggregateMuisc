@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-29 18:24:47
- * @LastEditTime: 2020-10-14 15:11:24
+ * @LastEditTime: 2020-11-22 14:29:17
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\config\config.default.js
@@ -11,6 +11,7 @@ const path = require('path'),
   fsStore = require('cache-manager-fs-hash')
 
 module.exports = appInfo => {
+  // 角色权限 --- 最大数限制
   let CommonRules = {
     playMaxCount: 3,
     playlistMaxCount: 10,
@@ -30,13 +31,14 @@ module.exports = appInfo => {
       httpOnly: true,
       encrypt: true
     },
+    // email options
     mailer: {
       host: 'smtp.qq.com',
       port: 465,
       secure: true, // true for 465, false for other ports
       auth: {
         user: 'jinghong0202@foxmail.com',
-        pass: 'zwircfiweqcubceb'
+        pass: 'ldtzztisztcrbajc'
       }
     },
     CommonRules,
@@ -57,7 +59,7 @@ module.exports = appInfo => {
     isAdmin: {
       roles: ['admin']
     },
-    middleware: ['gzip','error'],
+    middleware: ['gzip', 'error'],
     cache: {
       default: 'fsStore',
       stores: {

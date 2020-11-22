@@ -7,7 +7,7 @@
  * @FilePath: \music-static\src\views\system\index\page.vue
 -->
 <template>
-  <d2-container class="page " type="ghost" better-scroll>
+  <d2-container class="page " type="ghost" >
     <template slot="header">首頁</template>
     <div class="d2-p-10  m-container m-i-c1">
       <el-card class="d2-card d2-mr">

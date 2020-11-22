@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "749573",
+      "name": "NEXT",
+      "font_class": "next",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "749575",
+      "name": "PREVIOUS",
+      "font_class": "previous",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
       "icon_id": "157226",
       "name": "词",
       "font_class": "ci",

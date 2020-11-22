@@ -1,17 +1,17 @@
 /*
  * @Author: your name
  * @Date: 2020-06-29 18:24:47
- * @LastEditTime: 2020-10-22 20:24:01
+ * @LastEditTime: 2020-11-22 10:32:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\config\config.prod.js
  */
-const path = require('path')
+// const path = require('path')
 
 module.exports = appInfo => {
   return {
     staticDomain: 'http://localhost:8080',
-    domain: 'http://127.0.0.1:7001',
+    domain: '',
     keys: 'aggregateMusic',
     security: {
       csrf: {
@@ -29,7 +29,7 @@ module.exports = appInfo => {
         port: '3306',
         user: 'root',
         password: 'xuyuxin',
-        database: ''
+        database: 'aggregatemusic'
       },
       app: true
     },

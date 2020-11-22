@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-07-01 09:51:34
- * @LastEditTime: 2020-10-13 16:12:05
+ * @LastEditTime: 2020-11-22 17:21:47
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\app\extend\helper.js
@@ -25,7 +25,7 @@ module.exports = {
         ctx.throw('Not Found', n)
         break
       default:
-        ctx.throw('ServerError', 500)
+        ctx.throw(m || 'ServerError', 500)
     }
   },
   ReturnCustomCode(n, m, data = {}) {

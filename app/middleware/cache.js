@@ -1,11 +1,12 @@
 /*
  * @Author: your name
  * @Date: 2020-07-04 21:31:33
- * @LastEditTime: 2020-09-17 17:15:24
+ * @LastEditTime: 2020-11-25 12:28:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\app\middleware\cache.js
  */
+const { verifyDomain } = require('../lib/verify-domain')
 
 module.exports = option => {
   return async function cache(ctx, next) {
@@ -15,6 +16,7 @@ module.exports = option => {
         var { mode, a, p, n } = ctx.query,
           str = `${platform}-${mode}-${a}${p ? `-${p}` : ''}${n ? `-${n}` : ''}`
         if (await ctx.app.cache.has(str)) {
+          await verifyDomain(ctx)
           if (mode === 'search') {
             await ctx.service.tools.Direct(a)
           }

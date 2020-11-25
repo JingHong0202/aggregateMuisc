@@ -1,0 +1,908 @@
+{"level":"INFO","date":"2020-11-24 00:03:41,874","pid":17484,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 00:03:41,953","pid":17484,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 00:03:41,953","pid":17484,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 00:03:42,501","pid":17484,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 00:03:42,502","pid":17484,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 00:03:42,504","pid":17484,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 00:03:42,507","pid":17484,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 00:03:42,508","pid":17484,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 00:03:42,509","pid":17484,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 00:03:42,510","pid":17484,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 00:03:42,510","pid":17484,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 00:03:42,732","pid":17484,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 90ms"}
+{"level":"INFO","date":"2020-11-24 00:03:42,817","pid":17484,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 00:03:42 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 00:03:42,881","pid":17484,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 00:03:42,998","pid":17484,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 102ms"}
+{"level":"INFO","date":"2020-11-24 00:03:52,304","pid":18320,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 00:03:52,362","pid":18320,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 00:03:52,362","pid":18320,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 00:03:52,732","pid":18320,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 00:03:52,733","pid":18320,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 00:03:52,736","pid":18320,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 00:03:52,738","pid":18320,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 00:03:52,739","pid":18320,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 00:03:52,741","pid":18320,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 00:03:52,742","pid":18320,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 00:03:52,742","pid":18320,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 00:03:52,832","pid":18320,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 59ms"}
+{"level":"INFO","date":"2020-11-24 00:03:52,913","pid":18320,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 00:03:52,983","pid":18320,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 00:03:52 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 00:03:53,092","pid":18320,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 74ms"}
+{"level":"INFO","date":"2020-11-24 00:04:52,698","pid":17532,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 00:04:52,742","pid":17532,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 00:04:52,742","pid":17532,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 00:04:53,000","pid":17532,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 00:04:53,001","pid":17532,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 00:04:53,003","pid":17532,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 00:04:53,003","pid":17532,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 00:04:53,004","pid":17532,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 00:04:53,005","pid":17532,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 00:04:53,007","pid":17532,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 00:04:53,007","pid":17532,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 00:04:53,082","pid":17532,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 55ms"}
+{"level":"INFO","date":"2020-11-24 00:04:53,096","pid":17532,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 00:04:53,099","pid":17532,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 00:04:53 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 00:04:53,149","pid":17532,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 49ms"}
+{"level":"INFO","date":"2020-11-24 00:06:24,146","pid":17352,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 00:06:24,196","pid":17352,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 00:06:24,196","pid":17352,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 00:06:24,497","pid":17352,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 00:06:24,498","pid":17352,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 00:06:24,500","pid":17352,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 00:06:24,501","pid":17352,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 00:06:24,503","pid":17352,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 00:06:24,504","pid":17352,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 00:06:24,504","pid":17352,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 00:06:24,505","pid":17352,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 00:06:24,569","pid":17352,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 36ms"}
+{"level":"INFO","date":"2020-11-24 00:06:24,583","pid":17352,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 00:06:24,585","pid":17352,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 00:06:24 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 00:06:24,642","pid":17352,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 55ms"}
+{"level":"INFO","date":"2020-11-24 00:06:44,844","pid":15692,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 00:06:44,893","pid":15692,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 00:06:44,893","pid":15692,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 00:06:45,211","pid":15692,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 00:06:45,211","pid":15692,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 00:06:45,214","pid":15692,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 00:06:45,215","pid":15692,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 00:06:45,217","pid":15692,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 00:06:45,218","pid":15692,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 00:06:45,218","pid":15692,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 00:06:45,219","pid":15692,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 00:06:45,285","pid":15692,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 38ms"}
+{"level":"INFO","date":"2020-11-24 00:06:45,298","pid":15692,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 00:06:45,302","pid":15692,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 00:06:45 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 00:06:45,347","pid":15692,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 44ms"}
+{"level":"INFO","date":"2020-11-24 00:15:08,306","pid":14304,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 00:15:08,355","pid":14304,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 00:15:08,355","pid":14304,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 00:15:08,773","pid":14304,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 00:15:08,774","pid":14304,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 00:15:08,776","pid":14304,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 00:15:08,777","pid":14304,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 00:15:08,779","pid":14304,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 00:15:08,780","pid":14304,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 00:15:08,781","pid":14304,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 00:15:08,781","pid":14304,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 00:15:08,878","pid":14304,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 70ms"}
+{"level":"INFO","date":"2020-11-24 00:15:08,893","pid":14304,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 00:15:08,896","pid":14304,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 00:15:08 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 00:15:13,059","pid":14304,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 4s"}
+{"level":"WARN","date":"2020-11-24 00:17:02,167","pid":14304,"hostname":"DESKTOP-Q1GLNTU","message":"[TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer"}
+{"level":"WARN","date":"2020-11-24 00:17:02,168","pid":14304,"hostname":"DESKTOP-Q1GLNTU","message":"[ClusterClient:Watcher] follower closed, and try to init it again"}
+{"level":"INFO","date":"2020-11-24 00:23:14,313","pid":6540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 00:23:14,361","pid":6540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 00:23:14,362","pid":6540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 00:23:14,771","pid":6540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 00:23:14,771","pid":6540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 00:23:14,774","pid":6540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 00:23:14,775","pid":6540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 00:23:14,776","pid":6540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 00:23:14,777","pid":6540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 00:23:14,778","pid":6540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 00:23:14,778","pid":6540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 00:23:14,853","pid":6540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 45ms"}
+{"level":"INFO","date":"2020-11-24 00:23:14,869","pid":6540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 00:23:14,870","pid":6540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 00:23:14 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 00:23:14,915","pid":6540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 43ms"}
+{"level":"INFO","date":"2020-11-24 00:23:17,306","pid":18328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 00:23:17,354","pid":18328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 00:23:17,355","pid":18328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 00:23:17,689","pid":18328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 00:23:17,690","pid":18328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 00:23:17,692","pid":18328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 00:23:17,693","pid":18328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 00:23:17,695","pid":18328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 00:23:17,696","pid":18328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 00:23:17,697","pid":18328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 00:23:17,697","pid":18328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 00:23:17,768","pid":18328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 44ms"}
+{"level":"INFO","date":"2020-11-24 00:23:17,784","pid":18328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 00:23:17,787","pid":18328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 00:23:17 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 00:23:17,831","pid":18328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 42ms"}
+{"level":"INFO","date":"2020-11-24 00:23:44,633","pid":9992,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 00:23:44,675","pid":9992,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 00:23:44,675","pid":9992,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 00:23:45,026","pid":9992,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 00:23:45,026","pid":9992,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 00:23:45,029","pid":9992,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 00:23:45,030","pid":9992,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 00:23:45,032","pid":9992,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 00:23:45,033","pid":9992,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 00:23:45,034","pid":9992,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 00:23:45,034","pid":9992,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 00:23:45,092","pid":9992,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 34ms"}
+{"level":"INFO","date":"2020-11-24 00:23:45,108","pid":9992,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 00:23:45,112","pid":9992,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 00:23:45 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 00:23:45,167","pid":9992,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 53ms"}
+{"level":"INFO","date":"2020-11-24 00:27:33,780","pid":3328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 00:27:33,833","pid":3328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 00:27:33,834","pid":3328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 00:27:34,200","pid":3328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 00:27:34,200","pid":3328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 00:27:34,203","pid":3328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 00:27:34,204","pid":3328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 00:27:34,205","pid":3328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 00:27:34,206","pid":3328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 00:27:34,207","pid":3328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 00:27:34,207","pid":3328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 00:27:34,280","pid":3328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 45ms"}
+{"level":"INFO","date":"2020-11-24 00:27:34,295","pid":3328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 00:27:34,297","pid":3328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 00:27:34 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 00:27:34,342","pid":3328,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 43ms"}
+{"level":"INFO","date":"2020-11-24 00:27:36,742","pid":4444,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 00:27:36,792","pid":4444,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 00:27:36,793","pid":4444,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 00:27:37,118","pid":4444,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 00:27:37,121","pid":4444,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 00:27:37,125","pid":4444,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 00:27:37,126","pid":4444,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 00:27:37,127","pid":4444,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 00:27:37,128","pid":4444,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 00:27:37,129","pid":4444,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 00:27:37,129","pid":4444,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 00:27:37,198","pid":4444,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 39ms"}
+{"level":"INFO","date":"2020-11-24 00:27:37,215","pid":4444,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 00:27:37,217","pid":4444,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 00:27:37 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 00:27:37,262","pid":4444,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 42ms"}
+{"level":"INFO","date":"2020-11-24 00:28:15,664","pid":17748,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 00:28:15,714","pid":17748,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 00:28:15,714","pid":17748,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 00:28:16,124","pid":17748,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 00:28:16,125","pid":17748,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 00:28:16,128","pid":17748,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:16,129","pid":17748,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:16,130","pid":17748,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:16,132","pid":17748,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:16,133","pid":17748,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:16,133","pid":17748,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:16,211","pid":17748,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 48ms"}
+{"level":"INFO","date":"2020-11-24 00:28:16,229","pid":17748,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 00:28:16,230","pid":17748,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 00:28:16 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 00:28:16,276","pid":17748,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 44ms"}
+{"level":"INFO","date":"2020-11-24 00:28:20,229","pid":4608,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 00:28:20,273","pid":4608,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 00:28:20,273","pid":4608,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 00:28:20,560","pid":4608,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 00:28:20,561","pid":4608,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 00:28:20,563","pid":4608,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:20,564","pid":4608,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:20,565","pid":4608,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:20,565","pid":4608,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:20,566","pid":4608,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:20,566","pid":4608,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:20,621","pid":4608,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 36ms"}
+{"level":"INFO","date":"2020-11-24 00:28:20,636","pid":4608,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 00:28:20,638","pid":4608,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 00:28:20 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 00:28:20,693","pid":4608,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 53ms"}
+{"level":"INFO","date":"2020-11-24 00:28:22,961","pid":15732,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 00:28:23,005","pid":15732,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 00:28:23,005","pid":15732,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 00:28:23,285","pid":15732,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 00:28:23,285","pid":15732,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 00:28:23,287","pid":15732,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:23,288","pid":15732,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:23,289","pid":15732,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:23,290","pid":15732,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:23,291","pid":15732,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:23,291","pid":15732,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:23,346","pid":15732,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 35ms"}
+{"level":"INFO","date":"2020-11-24 00:28:23,363","pid":15732,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 00:28:23,366","pid":15732,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 00:28:23 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 00:28:23,420","pid":15732,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 52ms"}
+{"level":"INFO","date":"2020-11-24 00:28:51,150","pid":2260,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 00:28:51,191","pid":2260,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 00:28:51,192","pid":2260,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 00:28:51,471","pid":2260,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 00:28:51,472","pid":2260,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 00:28:51,474","pid":2260,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:51,475","pid":2260,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:51,476","pid":2260,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:51,477","pid":2260,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:51,478","pid":2260,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:51,478","pid":2260,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 00:28:51,532","pid":2260,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 34ms"}
+{"level":"INFO","date":"2020-11-24 00:28:51,548","pid":2260,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 00:28:51,549","pid":2260,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 00:28:51 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 00:28:51,604","pid":2260,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 53ms"}
+{"level":"INFO","date":"2020-11-24 00:29:34,931","pid":3904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 00:29:34,973","pid":3904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 00:29:34,973","pid":3904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 00:29:35,242","pid":3904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 00:29:35,243","pid":3904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 00:29:35,245","pid":3904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 00:29:35,245","pid":3904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 00:29:35,246","pid":3904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 00:29:35,247","pid":3904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 00:29:35,248","pid":3904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 00:29:35,248","pid":3904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 00:29:35,312","pid":3904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 45ms"}
+{"level":"INFO","date":"2020-11-24 00:29:35,328","pid":3904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 00:29:35,331","pid":3904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 00:29:35 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 00:29:35,375","pid":3904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 43ms"}
+{"level":"INFO","date":"2020-11-24 00:32:46,421","pid":13056,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 00:32:46,467","pid":13056,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 00:32:46,467","pid":13056,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 00:32:46,762","pid":13056,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 00:32:46,762","pid":13056,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 00:32:46,765","pid":13056,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 00:32:46,766","pid":13056,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 00:32:46,767","pid":13056,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 00:32:46,768","pid":13056,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 00:32:46,769","pid":13056,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 00:32:46,769","pid":13056,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 00:32:46,831","pid":13056,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 35ms"}
+{"level":"INFO","date":"2020-11-24 00:32:46,851","pid":13056,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 00:32:46,855","pid":13056,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 00:32:46 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 00:32:46,910","pid":13056,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 54ms"}
+{"level":"INFO","date":"2020-11-24 22:07:46,731","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 22:07:46,775","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 22:07:46,775","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 22:07:47,238","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 22:07:47,239","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 22:07:47,242","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 22:07:47,243","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 22:07:47,245","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 22:07:47,245","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 22:07:47,247","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 22:07:47,247","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 22:07:47,305","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 42ms"}
+{"level":"INFO","date":"2020-11-24 22:07:47,318","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 22:07:47,325","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 22:07:47 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 22:07:47,380","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 53ms"}
+{"level":"INFO","date":"2020-11-24 22:15:56,434","pid":15544,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 22:15:56,479","pid":15544,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 22:15:56,479","pid":15544,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 22:16:05,419","pid":15544,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 22:16:05,419","pid":15544,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 22:16:05,423","pid":15544,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 22:16:05,425","pid":15544,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 22:16:05,427","pid":15544,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 22:16:05,428","pid":15544,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 22:16:05,429","pid":15544,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 22:16:05,429","pid":15544,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 22:16:05,497","pid":15544,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 54ms"}
+{"level":"INFO","date":"2020-11-24 22:16:05,528","pid":15544,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 22:16:05,529","pid":15544,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 22:16:05 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 22:16:05,578","pid":15544,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 46ms"}
+{"level":"INFO","date":"2020-11-24 22:19:28,377","pid":2152,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 22:19:28,426","pid":2152,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 22:19:28,426","pid":2152,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 22:19:34,540","pid":2152,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 22:19:34,540","pid":2152,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 22:19:34,543","pid":2152,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 22:19:34,544","pid":2152,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 22:19:34,546","pid":2152,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 22:19:34,548","pid":2152,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 22:19:34,549","pid":2152,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 22:19:34,549","pid":2152,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 22:19:34,616","pid":2152,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 53ms"}
+{"level":"INFO","date":"2020-11-24 22:19:34,635","pid":2152,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 22:19:34,636","pid":2152,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 22:19:34 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 22:19:34,685","pid":2152,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 46ms"}
+{"level":"INFO","date":"2020-11-24 22:27:17,980","pid":16904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 22:27:18,030","pid":16904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 22:27:18,030","pid":16904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 22:27:18,265","pid":16904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 22:27:18,266","pid":16904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 22:27:18,268","pid":16904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 22:27:18,269","pid":16904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 22:27:18,271","pid":16904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 22:27:18,272","pid":16904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 22:27:18,272","pid":16904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 22:27:18,272","pid":16904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 22:27:18,327","pid":16904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 45ms"}
+{"level":"INFO","date":"2020-11-24 22:27:18,343","pid":16904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 22:27:18,345","pid":16904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 22:27:18 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 22:27:18,390","pid":16904,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 42ms"}
+{"level":"INFO","date":"2020-11-24 22:29:12,036","pid":16564,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 22:29:12,083","pid":16564,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 22:29:12,083","pid":16564,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 22:29:12,374","pid":16564,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 22:29:12,374","pid":16564,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 22:29:12,377","pid":16564,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 22:29:12,378","pid":16564,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 22:29:12,379","pid":16564,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 22:29:12,380","pid":16564,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 22:29:12,381","pid":16564,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 22:29:12,381","pid":16564,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 22:29:12,426","pid":16564,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 34ms"}
+{"level":"INFO","date":"2020-11-24 22:29:12,441","pid":16564,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 22:29:12,443","pid":16564,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 22:29:12 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 22:29:12,497","pid":16564,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 52ms"}
+{"level":"INFO","date":"2020-11-24 22:29:13,997","pid":3096,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 22:29:14,040","pid":3096,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 22:29:14,040","pid":3096,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 22:29:14,258","pid":3096,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 22:29:14,258","pid":3096,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 22:29:14,260","pid":3096,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 22:29:14,261","pid":3096,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 22:29:14,262","pid":3096,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 22:29:14,263","pid":3096,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 22:29:14,264","pid":3096,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 22:29:14,264","pid":3096,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 22:29:14,309","pid":3096,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 35ms"}
+{"level":"INFO","date":"2020-11-24 22:29:14,326","pid":3096,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 22:29:14,328","pid":3096,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 22:29:14 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 22:29:14,382","pid":3096,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 52ms"}
+{"level":"INFO","date":"2020-11-24 22:41:15,017","pid":16020,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 22:41:15,056","pid":16020,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 22:41:15,057","pid":16020,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 22:41:15,320","pid":16020,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 22:41:15,321","pid":16020,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 22:41:15,323","pid":16020,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 22:41:15,324","pid":16020,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 22:41:15,325","pid":16020,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 22:41:15,327","pid":16020,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 22:41:15,327","pid":16020,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 22:41:15,328","pid":16020,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 22:41:15,372","pid":16020,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 34ms"}
+{"level":"INFO","date":"2020-11-24 22:41:15,388","pid":16020,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 22:41:15,389","pid":16020,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 22:41:15 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 22:41:15,444","pid":16020,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 52ms"}
+{"level":"INFO","date":"2020-11-24 22:52:05,508","pid":16712,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 22:52:05,548","pid":16712,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 22:52:05,549","pid":16712,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 22:52:05,816","pid":16712,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 22:52:05,817","pid":16712,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 22:52:05,820","pid":16712,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 22:52:05,821","pid":16712,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 22:52:05,822","pid":16712,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 22:52:05,823","pid":16712,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 22:52:05,824","pid":16712,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 22:52:05,824","pid":16712,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 22:52:05,876","pid":16712,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 39ms"}
+{"level":"INFO","date":"2020-11-24 22:52:05,895","pid":16712,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 22:52:05,896","pid":16712,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 22:52:05 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 22:52:05,941","pid":16712,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 43ms"}
+{"level":"INFO","date":"2020-11-24 22:55:00,858","pid":13852,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 22:55:00,907","pid":13852,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 22:55:00,907","pid":13852,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 22:55:01,233","pid":13852,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 22:55:01,234","pid":13852,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 22:55:01,238","pid":13852,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 22:55:01,240","pid":13852,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 22:55:01,241","pid":13852,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 22:55:01,242","pid":13852,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 22:55:01,243","pid":13852,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 22:55:01,243","pid":13852,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 22:55:01,291","pid":13852,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 35ms"}
+{"level":"INFO","date":"2020-11-24 22:55:01,306","pid":13852,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 22:55:01,308","pid":13852,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 22:55:01 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 22:55:01,352","pid":13852,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 42ms"}
+{"level":"INFO","date":"2020-11-24 23:19:39,565","pid":17076,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 23:19:39,619","pid":17076,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 23:19:39,619","pid":17076,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 23:19:41,960","pid":17076,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 23:19:41,961","pid":17076,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 23:19:41,963","pid":17076,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 23:19:41,964","pid":17076,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 23:19:41,966","pid":17076,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 23:19:41,967","pid":17076,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 23:19:41,968","pid":17076,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 23:19:41,968","pid":17076,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 23:19:42,021","pid":17076,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 42ms"}
+{"level":"INFO","date":"2020-11-24 23:19:42,038","pid":17076,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 23:19:42,041","pid":17076,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 23:19:42 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 23:19:42,096","pid":17076,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 53ms"}
+{"level":"INFO","date":"2020-11-24 23:23:18,611","pid":16684,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 23:23:18,657","pid":16684,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 23:23:18,657","pid":16684,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 23:23:30,002","pid":16684,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 23:23:30,002","pid":16684,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 23:23:30,005","pid":16684,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 23:23:30,006","pid":16684,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 23:23:30,008","pid":16684,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 23:23:30,009","pid":16684,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 23:23:30,010","pid":16684,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 23:23:30,010","pid":16684,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 23:23:30,066","pid":16684,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 43ms"}
+{"level":"INFO","date":"2020-11-24 23:23:30,087","pid":16684,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 23:23:30,088","pid":16684,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 23:23:30 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 23:23:30,148","pid":16684,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 58ms"}
+{"level":"INFO","date":"2020-11-24 23:25:38,321","pid":5376,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 23:25:38,366","pid":5376,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 23:25:38,366","pid":5376,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 23:25:38,688","pid":5376,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 23:25:38,689","pid":5376,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 23:25:38,691","pid":5376,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 23:25:38,692","pid":5376,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 23:25:38,694","pid":5376,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 23:25:38,695","pid":5376,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 23:25:38,696","pid":5376,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 23:25:38,696","pid":5376,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 23:25:38,743","pid":5376,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 35ms"}
+{"level":"INFO","date":"2020-11-24 23:25:38,759","pid":5376,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 23:25:38,762","pid":5376,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 23:25:38 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 23:25:38,819","pid":5376,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 55ms"}
+{"level":"WARN","date":"2020-11-24 23:28:36,881","pid":5376,"hostname":"DESKTOP-Q1GLNTU","message":"[TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer"}
+{"level":"WARN","date":"2020-11-24 23:28:36,883","pid":5376,"hostname":"DESKTOP-Q1GLNTU","message":"[ClusterClient:Watcher] follower closed, and try to init it again"}
+{"level":"INFO","date":"2020-11-24 23:34:13,922","pid":18416,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 23:34:13,967","pid":18416,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 23:34:13,967","pid":18416,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 23:34:14,242","pid":18416,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 23:34:14,243","pid":18416,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 23:34:14,246","pid":18416,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 23:34:14,247","pid":18416,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 23:34:14,249","pid":18416,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 23:34:14,250","pid":18416,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 23:34:14,251","pid":18416,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 23:34:14,251","pid":18416,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 23:34:14,300","pid":18416,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 35ms"}
+{"level":"INFO","date":"2020-11-24 23:34:14,315","pid":18416,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 23:34:14,319","pid":18416,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 23:34:14 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 23:34:14,373","pid":18416,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 52ms"}
+{"level":"INFO","date":"2020-11-24 23:34:29,039","pid":8204,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 23:34:29,092","pid":8204,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 23:34:29,092","pid":8204,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 23:34:29,428","pid":8204,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 23:34:29,430","pid":8204,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 23:34:29,433","pid":8204,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 23:34:29,434","pid":8204,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 23:34:29,436","pid":8204,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 23:34:29,438","pid":8204,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 23:34:29,439","pid":8204,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 23:34:29,439","pid":8204,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 23:34:29,500","pid":8204,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 47ms"}
+{"level":"INFO","date":"2020-11-24 23:34:29,515","pid":8204,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 23:34:29,518","pid":8204,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 23:34:29 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 23:34:29,570","pid":8204,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 50ms"}
+{"level":"INFO","date":"2020-11-24 23:35:03,998","pid":18976,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 23:35:04,043","pid":18976,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 23:35:04,043","pid":18976,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 23:35:04,401","pid":18976,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 23:35:04,402","pid":18976,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 23:35:04,405","pid":18976,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 23:35:04,406","pid":18976,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 23:35:04,407","pid":18976,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 23:35:04,408","pid":18976,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 23:35:04,409","pid":18976,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 23:35:04,409","pid":18976,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 23:35:04,460","pid":18976,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 36ms"}
+{"level":"INFO","date":"2020-11-24 23:35:04,478","pid":18976,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 23:35:04,482","pid":18976,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 23:35:04 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 23:35:04,540","pid":18976,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 55ms"}
+{"level":"INFO","date":"2020-11-24 23:35:06,913","pid":17960,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 23:35:06,956","pid":17960,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 23:35:06,957","pid":17960,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 23:35:07,277","pid":17960,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 23:35:07,278","pid":17960,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 23:35:07,281","pid":17960,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 23:35:07,283","pid":17960,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 23:35:07,284","pid":17960,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 23:35:07,286","pid":17960,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 23:35:07,287","pid":17960,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 23:35:07,287","pid":17960,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 23:35:07,333","pid":17960,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 35ms"}
+{"level":"INFO","date":"2020-11-24 23:35:07,348","pid":17960,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 23:35:07,351","pid":17960,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 23:35:07 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 23:35:07,405","pid":17960,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 52ms"}
+{"level":"INFO","date":"2020-11-24 23:38:30,928","pid":17964,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 23:38:30,984","pid":17964,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 23:38:30,984","pid":17964,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 23:38:31,397","pid":17964,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 23:38:31,398","pid":17964,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 23:38:31,401","pid":17964,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 23:38:31,402","pid":17964,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 23:38:31,404","pid":17964,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 23:38:31,405","pid":17964,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 23:38:31,406","pid":17964,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 23:38:31,406","pid":17964,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 23:38:31,460","pid":17964,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 40ms"}
+{"level":"INFO","date":"2020-11-24 23:38:31,479","pid":17964,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 23:38:31,484","pid":17964,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 23:38:31 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 23:38:31,540","pid":17964,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 54ms"}
+{"level":"INFO","date":"2020-11-24 23:39:34,544","pid":19048,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 23:39:34,591","pid":19048,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 23:39:34,591","pid":19048,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 23:39:35,062","pid":19048,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 23:39:35,064","pid":19048,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 23:39:35,067","pid":19048,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 23:39:35,069","pid":19048,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 23:39:35,071","pid":19048,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 23:39:35,072","pid":19048,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 23:39:35,074","pid":19048,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 23:39:35,074","pid":19048,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 23:39:35,129","pid":19048,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 36ms"}
+{"level":"INFO","date":"2020-11-24 23:39:35,146","pid":19048,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 23:39:35,150","pid":19048,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 23:39:35 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 23:39:35,206","pid":19048,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 54ms"}
+{"level":"INFO","date":"2020-11-24 23:39:40,418","pid":19428,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-24 23:39:40,462","pid":19428,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-24 23:39:40,463","pid":19428,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-24 23:39:40,797","pid":19428,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-24 23:39:40,798","pid":19428,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-24 23:39:40,801","pid":19428,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-24 23:39:40,802","pid":19428,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-24 23:39:40,804","pid":19428,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-24 23:39:40,805","pid":19428,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-24 23:39:40,806","pid":19428,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-24 23:39:40,806","pid":19428,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-24 23:39:40,854","pid":19428,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 35ms"}
+{"level":"INFO","date":"2020-11-24 23:39:40,871","pid":19428,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-24 23:39:40,874","pid":19428,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Tue Nov 24 2020 23:39:40 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-24 23:39:40,929","pid":19428,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 53ms"}
+{"level":"INFO","date":"2020-11-25 11:13:41,025","pid":15816,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 11:13:41,068","pid":15816,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 11:13:41,068","pid":15816,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 11:13:41,714","pid":15816,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 11:13:41,715","pid":15816,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 11:13:41,718","pid":15816,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 11:13:41,719","pid":15816,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 11:13:41,720","pid":15816,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 11:13:41,721","pid":15816,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 11:13:41,724","pid":15816,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 11:13:41,724","pid":15816,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 11:13:41,775","pid":15816,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 40ms"}
+{"level":"INFO","date":"2020-11-25 11:13:41,790","pid":15816,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 11:13:41,796","pid":15816,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 11:13:41 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 11:13:41,851","pid":15816,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 52ms"}
+{"level":"INFO","date":"2020-11-25 11:14:08,485","pid":10900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 11:14:08,539","pid":10900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 11:14:08,539","pid":10900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 11:14:08,848","pid":10900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 11:14:08,849","pid":10900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 11:14:08,851","pid":10900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 11:14:08,853","pid":10900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 11:14:08,854","pid":10900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 11:14:08,855","pid":10900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 11:14:08,856","pid":10900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 11:14:08,856","pid":10900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 11:14:08,906","pid":10900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 38ms"}
+{"level":"INFO","date":"2020-11-25 11:14:08,920","pid":10900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 11:14:08,923","pid":10900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 11:14:08 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 11:14:08,967","pid":10900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 42ms"}
+{"level":"INFO","date":"2020-11-25 11:14:11,012","pid":15900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 11:14:11,053","pid":15900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 11:14:11,054","pid":15900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 11:14:11,345","pid":15900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 11:14:11,346","pid":15900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 11:14:11,348","pid":15900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 11:14:11,349","pid":15900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 11:14:11,351","pid":15900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 11:14:11,352","pid":15900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 11:14:11,353","pid":15900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 11:14:11,353","pid":15900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 11:14:11,399","pid":15900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 35ms"}
+{"level":"INFO","date":"2020-11-25 11:14:11,414","pid":15900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 11:14:11,417","pid":15900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 11:14:11 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 11:14:11,471","pid":15900,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 52ms"}
+{"level":"INFO","date":"2020-11-25 11:17:22,249","pid":3124,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 11:17:22,299","pid":3124,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 11:17:22,299","pid":3124,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 11:17:22,622","pid":3124,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 11:17:22,623","pid":3124,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 11:17:22,627","pid":3124,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 11:17:22,628","pid":3124,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 11:17:22,630","pid":3124,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 11:17:22,631","pid":3124,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 11:17:22,632","pid":3124,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 11:17:22,632","pid":3124,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 11:17:22,716","pid":3124,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 67ms"}
+{"level":"INFO","date":"2020-11-25 11:17:22,733","pid":3124,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 11:17:22,736","pid":3124,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 11:17:22 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 11:17:24,223","pid":3124,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 1s"}
+{"level":"INFO","date":"2020-11-25 12:16:14,903","pid":5224,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 12:16:14,950","pid":5224,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 12:16:14,951","pid":5224,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 12:16:15,255","pid":5224,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 12:16:15,255","pid":5224,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 12:16:15,258","pid":5224,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 12:16:15,260","pid":5224,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 12:16:15,261","pid":5224,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 12:16:15,262","pid":5224,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 12:16:15,264","pid":5224,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 12:16:15,264","pid":5224,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 12:16:15,327","pid":5224,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 50ms"}
+{"level":"INFO","date":"2020-11-25 12:16:15,351","pid":5224,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 12:16:15,356","pid":5224,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 12:16:15 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 12:16:15,404","pid":5224,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 45ms"}
+{"level":"INFO","date":"2020-11-25 12:16:16,987","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 12:16:17,038","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 12:16:17,038","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 12:16:17,280","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 12:16:17,281","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 12:16:17,282","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 12:16:17,283","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 12:16:17,284","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 12:16:17,285","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 12:16:17,286","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 12:16:17,286","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 12:16:17,331","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 34ms"}
+{"level":"INFO","date":"2020-11-25 12:16:17,347","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 12:16:17,350","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 12:16:17 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 12:16:17,406","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 54ms"}
+{"level":"INFO","date":"2020-11-25 12:18:45,730","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 12:18:45,775","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 12:18:45,775","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 12:18:46,036","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 12:18:46,037","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 12:18:46,039","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 12:18:46,041","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 12:18:46,042","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 12:18:46,043","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 12:18:46,044","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 12:18:46,044","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 12:18:46,091","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 35ms"}
+{"level":"INFO","date":"2020-11-25 12:18:46,104","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 12:18:46,111","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 12:18:46 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 12:18:46,165","pid":15668,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 52ms"}
+{"level":"INFO","date":"2020-11-25 12:19:50,415","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 12:19:50,463","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 12:19:50,464","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 12:19:50,732","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 12:19:50,732","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 12:19:50,735","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 12:19:50,736","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 12:19:50,737","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 12:19:50,738","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 12:19:50,739","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 12:19:50,739","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 12:19:50,796","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 46ms"}
+{"level":"INFO","date":"2020-11-25 12:19:50,809","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 12:19:50,815","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 12:19:50 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 12:19:50,868","pid":15680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 51ms"}
+{"level":"INFO","date":"2020-11-25 12:20:48,979","pid":1436,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 12:20:49,023","pid":1436,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 12:20:49,023","pid":1436,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 12:20:49,308","pid":1436,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 12:20:49,310","pid":1436,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 12:20:49,313","pid":1436,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 12:20:49,314","pid":1436,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 12:20:49,317","pid":1436,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 12:20:49,318","pid":1436,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 12:20:49,319","pid":1436,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 12:20:49,319","pid":1436,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 12:20:49,378","pid":1436,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 45ms"}
+{"level":"INFO","date":"2020-11-25 12:20:49,396","pid":1436,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 12:20:49,399","pid":1436,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 12:20:49 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 12:20:55,107","pid":1436,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 6s"}
+{"level":"INFO","date":"2020-11-25 12:21:46,116","pid":16604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 12:21:46,159","pid":16604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 12:21:46,159","pid":16604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 12:21:46,417","pid":16604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 12:21:46,417","pid":16604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 12:21:46,420","pid":16604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 12:21:46,421","pid":16604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 12:21:46,422","pid":16604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 12:21:46,423","pid":16604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 12:21:46,424","pid":16604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 12:21:46,424","pid":16604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 12:21:46,470","pid":16604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 34ms"}
+{"level":"INFO","date":"2020-11-25 12:21:46,486","pid":16604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 12:21:46,488","pid":16604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 12:21:46 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 12:21:46,542","pid":16604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 51ms"}
+{"level":"INFO","date":"2020-11-25 12:23:51,687","pid":16540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 12:23:51,728","pid":16540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 12:23:51,728","pid":16540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 12:23:52,018","pid":16540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 12:23:52,019","pid":16540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 12:23:52,021","pid":16540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 12:23:52,022","pid":16540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 12:23:52,023","pid":16540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 12:23:52,024","pid":16540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 12:23:52,026","pid":16540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 12:23:52,026","pid":16540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 12:23:52,082","pid":16540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 45ms"}
+{"level":"INFO","date":"2020-11-25 12:23:52,101","pid":16540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 12:23:52,102","pid":16540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 12:23:52 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 12:23:52,146","pid":16540,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 42ms"}
+{"level":"INFO","date":"2020-11-25 12:26:10,856","pid":16464,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 12:26:10,906","pid":16464,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 12:26:10,906","pid":16464,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 12:26:11,252","pid":16464,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 12:26:11,253","pid":16464,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 12:26:11,256","pid":16464,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 12:26:11,258","pid":16464,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 12:26:11,259","pid":16464,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 12:26:11,260","pid":16464,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 12:26:11,261","pid":16464,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 12:26:11,262","pid":16464,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 12:26:11,333","pid":16464,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 56ms"}
+{"level":"INFO","date":"2020-11-25 12:26:11,352","pid":16464,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 12:26:11,354","pid":16464,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 12:26:11 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 12:26:11,399","pid":16464,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 43ms"}
+{"level":"INFO","date":"2020-11-25 12:26:13,563","pid":16088,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 12:26:13,607","pid":16088,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 12:26:13,607","pid":16088,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 12:26:13,906","pid":16088,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 12:26:13,906","pid":16088,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 12:26:13,910","pid":16088,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 12:26:13,911","pid":16088,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 12:26:13,912","pid":16088,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 12:26:13,913","pid":16088,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 12:26:13,915","pid":16088,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 12:26:13,915","pid":16088,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 12:26:13,964","pid":16088,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 37ms"}
+{"level":"INFO","date":"2020-11-25 12:26:13,983","pid":16088,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 12:26:13,986","pid":16088,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 12:26:13 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 12:26:14,042","pid":16088,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 54ms"}
+{"level":"INFO","date":"2020-11-25 12:26:16,164","pid":1592,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 12:26:16,209","pid":1592,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 12:26:16,210","pid":1592,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 12:26:16,540","pid":1592,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 12:26:16,540","pid":1592,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 12:26:16,544","pid":1592,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 12:26:16,545","pid":1592,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 12:26:16,547","pid":1592,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 12:26:16,548","pid":1592,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 12:26:16,549","pid":1592,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 12:26:16,549","pid":1592,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 12:26:16,623","pid":1592,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 60ms"}
+{"level":"INFO","date":"2020-11-25 12:26:16,670","pid":1592,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 12:26:16,672","pid":1592,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 12:26:16 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 12:26:16,741","pid":1592,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 65ms"}
+{"level":"INFO","date":"2020-11-25 12:28:47,277","pid":1604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 12:28:47,325","pid":1604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 12:28:47,326","pid":1604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 12:28:47,601","pid":1604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 12:28:47,602","pid":1604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 12:28:47,604","pid":1604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 12:28:47,606","pid":1604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 12:28:47,607","pid":1604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 12:28:47,609","pid":1604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 12:28:47,610","pid":1604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 12:28:47,610","pid":1604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 12:28:47,659","pid":1604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 36ms"}
+{"level":"INFO","date":"2020-11-25 12:28:47,674","pid":1604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 12:28:47,678","pid":1604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 12:28:47 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 12:28:47,733","pid":1604,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 53ms"}
+{"level":"INFO","date":"2020-11-25 12:30:12,998","pid":2788,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 12:30:13,042","pid":2788,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 12:30:13,042","pid":2788,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 12:30:13,280","pid":2788,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 12:30:13,281","pid":2788,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 12:30:13,283","pid":2788,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 12:30:13,284","pid":2788,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 12:30:13,285","pid":2788,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 12:30:13,286","pid":2788,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 12:30:13,287","pid":2788,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 12:30:13,287","pid":2788,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 12:30:13,342","pid":2788,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 45ms"}
+{"level":"INFO","date":"2020-11-25 12:30:13,364","pid":2788,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 12:30:13 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 12:30:13,366","pid":2788,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 12:30:13,411","pid":2788,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 43ms"}
+{"level":"INFO","date":"2020-11-25 20:21:44,166","pid":16680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 20:21:44,213","pid":16680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 20:21:44,213","pid":16680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 20:21:44,696","pid":16680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 20:21:44,697","pid":16680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 20:21:44,700","pid":16680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 20:21:44,701","pid":16680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 20:21:44,702","pid":16680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 20:21:44,703","pid":16680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 20:21:44,705","pid":16680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 20:21:44,706","pid":16680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 20:21:44,763","pid":16680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 46ms"}
+{"level":"INFO","date":"2020-11-25 20:21:44,780","pid":16680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 20:21:44,817","pid":16680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 20:21:44 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 20:21:44,865","pid":16680,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 46ms"}
+{"level":"INFO","date":"2020-11-25 20:40:25,719","pid":7480,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 20:40:25,778","pid":7480,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 20:40:25,779","pid":7480,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 20:40:26,175","pid":7480,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 20:40:26,176","pid":7480,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 20:40:26,180","pid":7480,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 20:40:26,181","pid":7480,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 20:40:26,184","pid":7480,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 20:40:26,185","pid":7480,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 20:40:26,187","pid":7480,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 20:40:26,187","pid":7480,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 20:40:26,239","pid":7480,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 38ms"}
+{"level":"INFO","date":"2020-11-25 20:40:26,255","pid":7480,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 20:40:26,257","pid":7480,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 20:40:26 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 20:40:26,305","pid":7480,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 46ms"}
+{"level":"WARN","date":"2020-11-25 21:04:37,766","pid":7480,"hostname":"DESKTOP-Q1GLNTU","message":"[TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer"}
+{"level":"WARN","date":"2020-11-25 21:04:37,767","pid":7480,"hostname":"DESKTOP-Q1GLNTU","message":"[ClusterClient:Watcher] follower closed, and try to init it again"}
+{"level":"INFO","date":"2020-11-25 21:05:22,906","pid":2764,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 21:05:22,961","pid":2764,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 21:05:22,961","pid":2764,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 21:05:23,378","pid":2764,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 21:05:23,379","pid":2764,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 21:05:23,383","pid":2764,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 21:05:23,385","pid":2764,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 21:05:23,387","pid":2764,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 21:05:23,389","pid":2764,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 21:05:23,390","pid":2764,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 21:05:23,390","pid":2764,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 21:05:23,447","pid":2764,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 39ms"}
+{"level":"INFO","date":"2020-11-25 21:05:23,470","pid":2764,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 21:05:23,473","pid":2764,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 21:05:23 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 21:05:23,542","pid":2764,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 67ms"}
+{"level":"INFO","date":"2020-11-25 21:05:26,445","pid":12280,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 21:05:26,512","pid":12280,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 21:05:26,512","pid":12280,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 21:05:26,948","pid":12280,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 21:05:26,949","pid":12280,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 21:05:26,952","pid":12280,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 21:05:26,954","pid":12280,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 21:05:26,956","pid":12280,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 21:05:26,958","pid":12280,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 21:05:26,959","pid":12280,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 21:05:26,959","pid":12280,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 21:05:27,029","pid":12280,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 55ms"}
+{"level":"INFO","date":"2020-11-25 21:05:27,046","pid":12280,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 21:05:27,049","pid":12280,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 21:05:27 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 21:05:27,097","pid":12280,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 46ms"}
+{"level":"INFO","date":"2020-11-25 21:06:24,758","pid":7044,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 21:06:24,809","pid":7044,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 21:06:24,809","pid":7044,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 21:06:25,182","pid":7044,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 21:06:25,183","pid":7044,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 21:06:25,187","pid":7044,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 21:06:25,188","pid":7044,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 21:06:25,191","pid":7044,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 21:06:25,192","pid":7044,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 21:06:25,193","pid":7044,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 21:06:25,194","pid":7044,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 21:06:25,255","pid":7044,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 46ms"}
+{"level":"INFO","date":"2020-11-25 21:06:25,270","pid":7044,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 21:06:25,272","pid":7044,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 21:06:25 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 21:06:25,346","pid":7044,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 72ms"}
+{"level":"INFO","date":"2020-11-25 21:06:27,909","pid":9208,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 21:06:27,964","pid":9208,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 21:06:27,964","pid":9208,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 21:06:28,339","pid":9208,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 21:06:28,340","pid":9208,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 21:06:28,343","pid":9208,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 21:06:28,345","pid":9208,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 21:06:28,347","pid":9208,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 21:06:28,348","pid":9208,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 21:06:28,350","pid":9208,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 21:06:28,350","pid":9208,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 21:06:28,405","pid":9208,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 41ms"}
+{"level":"INFO","date":"2020-11-25 21:06:28,421","pid":9208,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 21:06:28,424","pid":9208,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 21:06:28 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 21:06:28,487","pid":9208,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 61ms"}
+{"level":"WARN","date":"2020-11-25 21:28:06,319","pid":9208,"hostname":"DESKTOP-Q1GLNTU","message":"[TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer"}
+{"level":"WARN","date":"2020-11-25 21:28:06,320","pid":9208,"hostname":"DESKTOP-Q1GLNTU","message":"[ClusterClient:Watcher] follower closed, and try to init it again"}
+{"level":"INFO","date":"2020-11-25 21:28:11,403","pid":18244,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 21:28:11,456","pid":18244,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 21:28:11,456","pid":18244,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 21:28:11,839","pid":18244,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 21:28:11,840","pid":18244,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 21:28:11,844","pid":18244,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 21:28:11,845","pid":18244,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 21:28:11,848","pid":18244,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 21:28:11,849","pid":18244,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 21:28:11,851","pid":18244,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 21:28:11,851","pid":18244,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 21:28:11,903","pid":18244,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 38ms"}
+{"level":"INFO","date":"2020-11-25 21:28:11,918","pid":18244,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 21:28:11,921","pid":18244,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 21:28:11 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 21:28:11,979","pid":18244,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 56ms"}
+{"level":"INFO","date":"2020-11-25 21:28:14,754","pid":2856,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:logger] init all loggers with options: {\"dir\":\"I:\\\\demo\\\\music\\\\logs\\\\aggregate-music\",\"encoding\":\"utf8\",\"env\":\"local\",\"level\":\"INFO\",\"consoleLevel\":\"INFO\",\"disableConsoleAfterReady\":false,\"outputJSON\":true,\"buffer\":true,\"appLogName\":\"aggregate-music-web.log\",\"coreLogName\":\"egg-web.log\",\"agentLogName\":\"egg-agent.log\",\"errorLogName\":\"common-error.log\",\"coreLogger\":{\"consoleLevel\":\"WARN\"},\"allowDebugAtProd\":false,\"type\":\"application\"}"}
+{"level":"INFO","date":"2020-11-25 21:28:14,810","pid":2856,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-multipart] stream mode enable"}
+{"level":"INFO","date":"2020-11-25 21:28:14,810","pid":2856,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] connecting root@localhost:3306/aggregatemusic"}
+{"level":"INFO","date":"2020-11-25 21:28:15,243","pid":2856,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public"}
+{"level":"INFO","date":"2020-11-25 21:28:15,244","pid":2856,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-static] starting static serve / -> I:\\demo\\music\\app\\public\\dist"}
+{"level":"INFO","date":"2020-11-25 21:28:15,248","pid":2856,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use methodnoallow middleware"}
+{"level":"INFO","date":"2020-11-25 21:28:15,249","pid":2856,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use noopen middleware"}
+{"level":"INFO","date":"2020-11-25 21:28:15,252","pid":2856,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use nosniff middleware"}
+{"level":"INFO","date":"2020-11-25 21:28:15,253","pid":2856,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use xssProtection middleware"}
+{"level":"INFO","date":"2020-11-25 21:28:15,255","pid":2856,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] use dta middleware"}
+{"level":"INFO","date":"2020-11-25 21:28:15,255","pid":2856,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-security] compose 5 middlewares into one security middleware"}
+{"level":"INFO","date":"2020-11-25 21:28:15,310","pid":2856,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after load, 39ms"}
+{"level":"INFO","date":"2020-11-25 21:28:15,327","pid":2856,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-watcher:application] watcher start success"}
+{"level":"INFO","date":"2020-11-25 21:28:15,329","pid":2856,"hostname":"DESKTOP-Q1GLNTU","message":"[egg-mysql] instance[0] status OK, rds currentTime: Wed Nov 25 2020 21:28:15 GMT+0800 (GMT+08:00)"}
+{"level":"INFO","date":"2020-11-25 21:28:15,387","pid":2856,"hostname":"DESKTOP-Q1GLNTU","message":"[egg:core] dump config after ready, 56ms"}

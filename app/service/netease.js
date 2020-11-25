@@ -1,15 +1,16 @@
 /*
  * @Author: your name
  * @Date: 2020-07-03 19:44:21
- * @LastEditTime: 2020-10-23 09:05:49
+ * @LastEditTime: 2020-11-25 12:19:31
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\app\service\netease.js
  */
 
 const egg = require('egg'),
-  netease = require('simple-netease-cloud-music'),
-  nm = new netease()
+  netease = require('./other-api/netease'),
+  nm = new netease(),
+  { verifyDomain } = require('../lib/verify-domain')
 
 class neteaseService extends egg.Service {
   /*
@@ -27,12 +28,7 @@ class neteaseService extends egg.Service {
       { a, mode, p, n } = ctx.method === 'GET' ? ctx.query : ctx.request.body,
       res
     if (!a) ctx.helper.ReturnErrorCode(400)
-
-    let { uuid } = ctx.request.headers
-    if (!uuid) ctx.helper.ReturnErrorCode(401)
-    if (!(await ctx.service.tools.verifyDomain(uuid)))
-      ctx.helper.ReturnErrorCode(403, '域名认证失败，请先绑定域名')
-
+    await verifyDomain(ctx)
     if (nm[mode]) {
       switch (mode) {
         case 'picture':
@@ -57,9 +53,9 @@ class neteaseService extends egg.Service {
           let result = await nm[mode](a)
           try {
             let {
-              playlist: { tracks }
+              playlist: { trackIds }
             } = result
-            res = await this._parse(await Promise.all(await this._normlize(tracks)))
+            res = await this._parse(await Promise.all(await this._normlize_trackIds(trackIds)))
             res = typeof res === 'object' ? Object.keys(res).map(item => res[item]) : res
           } catch (error) {
             ctx.status = 500
@@ -123,9 +119,9 @@ class neteaseService extends egg.Service {
     let res = await nm.playlist(a)
     try {
       let {
-        playlist: { tracks }
+        playlist: { trackIds }
       } = res
-      res = await this._parse(this._normlize(tracks))
+      res = await this._parse(await this._normlize_trackIds(trackIds))
       res = typeof res === 'object' ? Object.keys(res).map(item => res[item]) : res
     } catch (error) {
       ctx.status = 500
@@ -149,6 +145,23 @@ class neteaseService extends egg.Service {
   }
   _normlize(list) {
     return list.map(item => {
+      // let lyric = await nm.lyric(item.id)
+      return {
+        id: item.id,
+        singer: item.ar.map(item => item.name).join('/'),
+        name: item.name,
+        // lyric: lyric.tlyric || lyric.lrc || lyric,
+        image: item.al.picUrl + '?param=250y250',
+        duration: item.dt || 0,
+        // spareUrl: `https://music.163.com/song/media/outer/url?id=${item.id}.mp3`,
+        platform: 'netease'
+      }
+    })
+  }
+  async _normlize_trackIds(list) {
+    let ids = await nm.song(list.map(item => '{"id": ' + item.id + '}').join(','))
+
+    return ids.songs.map(item => {
       // let lyric = await nm.lyric(item.id)
       return {
         id: item.id,

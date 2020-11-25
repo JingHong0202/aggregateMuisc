@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-17 12:40:22
- * @LastEditTime: 2020-10-25 21:28:38
+ * @LastEditTime: 2020-11-25 20:37:50
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\views\play\player\index.vue

@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-24 13:09:59
- * @LastEditTime: 2020-07-30 22:20:48
+ * @LastEditTime: 2020-11-25 20:48:41
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\views\play\components\domainAuthorization\index.vue
@@ -10,7 +10,7 @@
   <div>
     <el-alert
       title="域名授权不包含“http:”和“//”等特殊符号，授权顶级域名则授权所有二级域名（泛域名）
-中文域名请转码后授权，如发现授权或加载异常，请尝试：授权*（星号）关闭域名授权，或加QQ群咨询"
+中文域名请转码后授权，如发现授权或加载异常，请尝试：授权*（星号）关闭域名授权"
       type="success"
       :closable="false"
       style="margin-bottom:15px"
@@ -41,7 +41,9 @@
 export default {
   methods: {
     async addAuth() {
-      if (!this.domain || !/(.+[\.]){1,2}([a-z]+)$/i.test(this.domain)) { return this.$message.warning("域名格式错误"); }
+      if (!this.domain || !/(.+[\.]){1,2}([a-z]+)$/i.test(this.domain)) {
+        return this.$message.warning("域名格式错误");
+      }
       this.$emit("addAuth", {
         domain: this.domain,
         desc: this.desc

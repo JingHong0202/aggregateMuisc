@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-07-08 12:46:51
- * @LastEditTime: 2020-11-22 17:09:43
+ * @LastEditTime: 2020-11-25 21:29:11
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\app\service\tools.js
@@ -87,7 +87,10 @@ class toolsService extends egg.Service {
   async verifyDomain(uuid) {
     let { ctx, app } = this
     let success = false,
-      currentDomain = ctx.request.header['x-forwarded-host'],
+      currentDomain =
+        ctx.request.header['x-forwarded-host'] ||
+        ctx.request.header['referer'] ||
+        ctx.request.header['origin'],
       currentHostDomain = ctx.host
     if (ctx.request.headers['host'].indexOf(currentHostDomain) !== -1) {
       success = true

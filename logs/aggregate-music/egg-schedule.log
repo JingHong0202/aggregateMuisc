@@ -1,0 +1,980 @@
+2020-11-24 00:04:52,741 INFO 17532 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 00:04:52,741 INFO 17532 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 00:04:52,741 INFO 17532 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 00:04:52,741 INFO 17532 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 00:04:53,154 INFO 16932 [Timer] I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 15906847ms at 2020-11-24 04:30:00.001
+2020-11-24 00:04:53,155 INFO 16932 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 86106846ms at 2020-11-25 00:00:00.001
+2020-11-24 00:04:53,157 INFO 16932 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 86107844ms at 2020-11-25 00:00:01.000
+2020-11-24 00:04:53,157 INFO 16932 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:05:53.157
+2020-11-24 00:05:53,158 INFO 16932 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:06:53.158
+2020-11-24 00:06:24,195 INFO 17352 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 00:06:24,195 INFO 17352 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 00:06:24,195 INFO 17352 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 00:06:24,195 INFO 17352 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 00:06:44,892 INFO 15692 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 00:06:44,892 INFO 15692 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 00:06:44,892 INFO 15692 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 00:06:44,892 INFO 15692 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 00:06:53,159 INFO 15692 [Job#1606147613159211031095986122] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:06:53,185 INFO 15692 [Job#1606147613159211031095986122] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-24 00:06:53,160 INFO 16932 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:07:53.160
+2020-11-24 00:07:53,161 INFO 16932 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:08:53.161
+2020-11-24 00:08:18,823 INFO 15692 [Job#1606147673161211631112312503] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:08:18,848 INFO 15692 [Job#1606147673161211631112312503] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-24 00:08:53,163 INFO 16932 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:09:53.163
+2020-11-24 00:08:53,163 INFO 15692 [Job#1606147733163212231127756374] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:08:53,188 INFO 15692 [Job#1606147733163212231127756374] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-24 00:09:53,163 INFO 16932 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:10:53.163
+2020-11-24 00:09:53,163 INFO 15692 [Job#1606147793163212831133328565] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:09:53,190 INFO 15692 [Job#1606147793163212831133328565] I:\demo\music\app\schedule\dashboard.js execute succeed, used 27ms
+2020-11-24 00:10:53,164 INFO 16932 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:11:53.164
+2020-11-24 00:10:53,164 INFO 15692 [Job#1606147853164213431138999226] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:10:53,189 INFO 15692 [Job#1606147853164213431138999226] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-24 00:11:53,165 INFO 16932 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:12:53.165
+2020-11-24 00:12:53,166 INFO 16932 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:13:53.166
+2020-11-24 00:15:08,354 INFO 14304 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 00:15:08,354 INFO 14304 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 00:15:08,354 INFO 14304 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 00:15:08,354 INFO 14304 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 00:15:13,065 INFO 15692 [Timer] I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 15286937ms at 2020-11-24 04:30:00.002
+2020-11-24 00:15:13,066 INFO 15692 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 85486935ms at 2020-11-25 00:00:00.001
+2020-11-24 00:15:13,067 INFO 15692 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 85487934ms at 2020-11-25 00:00:01.001
+2020-11-24 00:15:13,068 INFO 15692 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:16:13.068
+2020-11-24 00:16:13,070 INFO 15692 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:17:13.070
+2020-11-24 00:17:02,164 INFO 14304 [Job#160614817306921663196817281] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:17:02,213 INFO 14304 [Job#160614817306921663196817281] I:\demo\music\app\schedule\dashboard.js execute succeed, used 49ms
+2020-11-24 00:17:13,071 INFO 14304 [Job#160614823307121723210426852] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:17:13,093 INFO 14304 [Job#160614823307121723210426852] I:\demo\music\app\schedule\dashboard.js execute succeed, used 22ms
+2020-11-24 00:17:13,071 INFO 15692 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:18:13.071
+2020-11-24 00:18:13,073 INFO 14304 [Job#160614829307221783226049413] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:18:13,096 INFO 14304 [Job#160614829307221783226049413] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-24 00:18:13,073 INFO 15692 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:19:13.073
+2020-11-24 00:19:13,072 INFO 15692 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:20:13.072
+2020-11-24 00:20:13,073 INFO 15692 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:21:13.073
+2020-11-24 00:21:13,073 INFO 15692 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:22:13.073
+2020-11-24 00:22:13,074 INFO 15692 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:23:13.074
+2020-11-24 00:23:13,075 INFO 15692 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:24:13.075
+2020-11-24 00:23:14,360 INFO 6540 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 00:23:14,360 INFO 6540 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 00:23:14,360 INFO 6540 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 00:23:14,360 INFO 6540 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 00:23:17,353 INFO 18328 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 00:23:17,354 INFO 18328 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 00:23:17,354 INFO 18328 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 00:23:17,354 INFO 18328 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 00:23:44,674 INFO 9992 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 00:23:44,674 INFO 9992 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 00:23:44,674 INFO 9992 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 00:23:44,674 INFO 9992 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 00:23:45,174 INFO 12580 [Timer] I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 14774828ms at 2020-11-24 04:30:00.002
+2020-11-24 00:23:45,175 INFO 12580 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 84974826ms at 2020-11-25 00:00:00.001
+2020-11-24 00:23:45,176 INFO 12580 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 84975825ms at 2020-11-25 00:00:01.001
+2020-11-24 00:23:45,176 INFO 12580 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:24:45.176
+2020-11-24 00:24:45,178 INFO 9992 [Job#1606148685177221751273246031] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:24:45,208 INFO 9992 [Job#1606148685177221751273246031] I:\demo\music\app\schedule\dashboard.js execute succeed, used 30ms
+2020-11-24 00:24:45,178 INFO 12580 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:25:45.178
+2020-11-24 00:25:45,179 INFO 9992 [Job#1606148745178222351286793612] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:25:45,203 INFO 9992 [Job#1606148745178222351286793612] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-24 00:25:45,179 INFO 12580 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:26:45.179
+2020-11-24 00:26:45,180 INFO 9992 [Job#1606148805180222951302379703] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:26:45,205 INFO 9992 [Job#1606148805180222951302379703] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-24 00:26:45,180 INFO 12580 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:27:45.180
+2020-11-24 00:27:33,832 INFO 3328 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 00:27:33,832 INFO 3328 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 00:27:33,832 INFO 3328 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 00:27:33,832 INFO 3328 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 00:27:36,791 INFO 4444 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 00:27:36,791 INFO 4444 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 00:27:36,791 INFO 4444 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 00:27:36,791 INFO 4444 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 00:27:45,181 INFO 12580 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:28:45.181
+2020-11-24 00:28:16,282 INFO 17176 [Timer] I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 14503719ms at 2020-11-24 04:30:00.001
+2020-11-24 00:28:16,283 INFO 17176 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 84703717ms at 2020-11-25 00:00:00.000
+2020-11-24 00:28:16,284 INFO 17176 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 84704717ms at 2020-11-25 00:00:01.001
+2020-11-24 00:28:16,284 INFO 17176 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:29:16.284
+2020-11-24 00:28:15,712 INFO 17748 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 00:28:15,712 INFO 17748 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 00:28:15,712 INFO 17748 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 00:28:15,712 INFO 17748 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 00:28:20,272 INFO 4608 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 00:28:20,272 INFO 4608 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 00:28:20,272 INFO 4608 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 00:28:20,272 INFO 4608 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 00:28:23,004 INFO 15732 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 00:28:23,004 INFO 15732 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 00:28:23,004 INFO 15732 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 00:28:23,004 INFO 15732 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 00:28:51,190 INFO 2260 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 00:28:51,190 INFO 2260 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 00:28:51,190 INFO 2260 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 00:28:51,190 INFO 2260 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 00:28:51,610 INFO 8556 [Timer] I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 14468392ms at 2020-11-24 04:30:00.002
+2020-11-24 00:28:51,611 INFO 8556 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 84668390ms at 2020-11-25 00:00:00.001
+2020-11-24 00:28:51,612 INFO 8556 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 84669389ms at 2020-11-25 00:00:01.001
+2020-11-24 00:28:51,612 INFO 8556 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:29:51.612
+2020-11-24 00:29:34,972 INFO 3904 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 00:29:34,972 INFO 3904 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 00:29:34,972 INFO 3904 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 00:29:34,972 INFO 3904 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 00:29:35,380 INFO 10256 [Timer] I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 14424622ms at 2020-11-24 04:30:00.002
+2020-11-24 00:29:35,381 INFO 10256 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 84624620ms at 2020-11-25 00:00:00.001
+2020-11-24 00:29:35,381 INFO 10256 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 84625619ms at 2020-11-25 00:00:01.000
+2020-11-24 00:29:35,382 INFO 10256 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:30:35.382
+2020-11-24 00:30:35,383 INFO 10256 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:31:35.383
+2020-11-24 00:31:35,384 INFO 10256 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:32:35.384
+2020-11-24 00:32:46,916 INFO 9596 [Timer] I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 14233086ms at 2020-11-24 04:30:00.002
+2020-11-24 00:32:46,917 INFO 9596 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 84433084ms at 2020-11-25 00:00:00.001
+2020-11-24 00:32:46,918 INFO 9596 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 84434083ms at 2020-11-25 00:00:01.001
+2020-11-24 00:32:46,918 INFO 9596 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:33:46.918
+2020-11-24 00:32:46,466 INFO 13056 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 00:32:46,466 INFO 13056 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 00:32:46,466 INFO 13056 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 00:32:46,466 INFO 13056 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 00:33:46,920 INFO 9596 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:34:46.920
+2020-11-24 00:33:46,920 INFO 13056 [Job#1606149226919227168698652311] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:33:46,946 INFO 13056 [Job#1606149226919227168698652311] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-24 00:34:46,921 INFO 9596 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:35:46.921
+2020-11-24 00:34:46,921 INFO 13056 [Job#1606149286921227768712276472] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:34:46,944 INFO 13056 [Job#1606149286921227768712276472] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-24 00:35:46,923 INFO 9596 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:36:46.923
+2020-11-24 00:35:46,923 INFO 13056 [Job#1606149346923228368728019373] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:35:46,952 INFO 13056 [Job#1606149346923228368728019373] I:\demo\music\app\schedule\dashboard.js execute succeed, used 29ms
+2020-11-24 00:36:46,924 INFO 9596 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:37:46.924
+2020-11-24 00:36:46,924 INFO 13056 [Job#1606149406924228968743339264] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:36:46,950 INFO 13056 [Job#1606149406924228968743339264] I:\demo\music\app\schedule\dashboard.js execute succeed, used 26ms
+2020-11-24 00:37:46,926 INFO 9596 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:38:46.926
+2020-11-24 00:37:46,926 INFO 13056 [Job#1606149466926229568759001935] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:37:46,974 INFO 13056 [Job#1606149466926229568759001935] I:\demo\music\app\schedule\dashboard.js execute succeed, used 48ms
+2020-11-24 00:38:46,927 INFO 9596 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:39:46.927
+2020-11-24 00:38:46,927 INFO 13056 [Job#1606149526927230168774584386] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:38:46,957 INFO 13056 [Job#1606149526927230168774584386] I:\demo\music\app\schedule\dashboard.js execute succeed, used 30ms
+2020-11-24 00:39:46,928 INFO 9596 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:40:46.928
+2020-11-24 00:39:46,928 INFO 13056 [Job#1606149586928230768783314637] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:39:46,955 INFO 13056 [Job#1606149586928230768783314637] I:\demo\music\app\schedule\dashboard.js execute succeed, used 27ms
+2020-11-24 00:40:46,930 INFO 9596 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:41:46.930
+2020-11-24 00:40:46,930 INFO 13056 [Job#1606149646930231368800483408] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:40:46,969 INFO 13056 [Job#1606149646930231368800483408] I:\demo\music\app\schedule\dashboard.js execute succeed, used 39ms
+2020-11-24 00:41:46,932 INFO 9596 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:42:46.932
+2020-11-24 00:41:46,931 INFO 13056 [Job#1606149706931231968817433379] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:41:46,974 INFO 13056 [Job#1606149706931231968817433379] I:\demo\music\app\schedule\dashboard.js execute succeed, used 43ms
+2020-11-24 00:42:46,934 INFO 9596 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:43:46.934
+2020-11-24 00:42:46,933 INFO 13056 [Job#16061497669342325688385369610] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:42:46,972 INFO 13056 [Job#16061497669342325688385369610] I:\demo\music\app\schedule\dashboard.js execute succeed, used 38ms
+2020-11-24 00:43:46,935 INFO 13056 [Job#16061498269352331688520517111] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:43:46,969 INFO 13056 [Job#16061498269352331688520517111] I:\demo\music\app\schedule\dashboard.js execute succeed, used 34ms
+2020-11-24 00:43:46,935 INFO 9596 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:44:46.935
+2020-11-24 00:44:46,937 INFO 13056 [Job#16061498869372337688695122212] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:44:46,977 INFO 13056 [Job#16061498869372337688695122212] I:\demo\music\app\schedule\dashboard.js execute succeed, used 40ms
+2020-11-24 00:44:46,937 INFO 9596 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:45:46.937
+2020-11-24 00:45:46,938 INFO 13056 [Job#16061499469382343688868779213] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:45:46,975 INFO 13056 [Job#16061499469382343688868779213] I:\demo\music\app\schedule\dashboard.js execute succeed, used 37ms
+2020-11-24 00:45:46,939 INFO 9596 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:46:46.939
+2020-11-24 00:46:46,941 INFO 13056 [Job#16061500069412349689097574614] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 00:46:46,966 INFO 13056 [Job#16061500069412349689097574614] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-24 00:46:46,941 INFO 9596 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 00:47:46.941
+2020-11-24 22:07:47,385 INFO 15852 [Timer] I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 22932617ms at 2020-11-25 04:30:00.002
+2020-11-24 22:07:47,385 INFO 15852 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 6732615ms at 2020-11-25 00:00:00.000
+2020-11-24 22:07:47,386 INFO 15852 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 6733615ms at 2020-11-25 00:00:01.001
+2020-11-24 22:07:47,386 INFO 15852 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:08:47.386
+2020-11-24 22:07:46,773 INFO 15668 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 22:07:46,774 INFO 15668 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 22:07:46,774 INFO 15668 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 22:07:46,774 INFO 15668 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 22:08:47,388 INFO 15852 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:09:47.388
+2020-11-24 22:08:47,388 INFO 15668 [Job#1606226927387147723371614151] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:08:47,441 INFO 15668 [Job#1606226927387147723371614151] I:\demo\music\app\schedule\dashboard.js execute succeed, used 52ms
+2020-11-24 22:09:47,388 INFO 15852 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:10:47.388
+2020-11-24 22:09:47,388 INFO 15668 [Job#1606226987387148323374713862] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:09:47,410 INFO 15668 [Job#1606226987387148323374713862] I:\demo\music\app\schedule\dashboard.js execute succeed, used 22ms
+2020-11-24 22:10:47,388 INFO 15852 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:11:47.388
+2020-11-24 22:10:47,388 INFO 15668 [Job#1606227047388148923379534833] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:10:47,420 INFO 15668 [Job#1606227047388148923379534833] I:\demo\music\app\schedule\dashboard.js execute succeed, used 31ms
+2020-11-24 22:11:47,388 INFO 15852 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:12:47.388
+2020-11-24 22:11:47,389 INFO 15668 [Job#1606227107388149523384756934] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:11:47,421 INFO 15668 [Job#1606227107388149523384756934] I:\demo\music\app\schedule\dashboard.js execute succeed, used 32ms
+2020-11-24 22:12:47,389 INFO 15852 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:13:47.389
+2020-11-24 22:12:47,390 INFO 15668 [Job#1606227167389150123389439325] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:12:47,423 INFO 15668 [Job#1606227167389150123389439325] I:\demo\music\app\schedule\dashboard.js execute succeed, used 33ms
+2020-11-24 22:13:47,391 INFO 15852 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:14:47.391
+2020-11-24 22:13:47,391 INFO 15668 [Job#1606227227391150723404317936] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:13:47,413 INFO 15668 [Job#1606227227391150723404317936] I:\demo\music\app\schedule\dashboard.js execute succeed, used 22ms
+2020-11-24 22:14:47,391 INFO 15852 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:15:47.391
+2020-11-24 22:14:47,392 INFO 15668 [Job#1606227287391151323409321237] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:14:47,414 INFO 15668 [Job#1606227287391151323409321237] I:\demo\music\app\schedule\dashboard.js execute succeed, used 22ms
+2020-11-24 22:15:56,478 INFO 15544 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 22:15:56,478 INFO 15544 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 22:15:56,478 INFO 15544 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 22:15:56,478 INFO 15544 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 22:16:05,585 INFO 6872 [Timer] I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 22434417ms at 2020-11-25 04:30:00.002
+2020-11-24 22:16:05,585 INFO 6872 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 6234415ms at 2020-11-25 00:00:00.000
+2020-11-24 22:16:05,585 INFO 6872 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 6235415ms at 2020-11-25 00:00:01.000
+2020-11-24 22:16:05,585 INFO 6872 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:17:05.585
+2020-11-24 22:17:05,589 INFO 6872 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:18:05.589
+2020-11-24 22:17:05,590 INFO 15544 [Job#1606227425588152705384668681] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:17:05,620 INFO 15544 [Job#1606227425588152705384668681] I:\demo\music\app\schedule\dashboard.js execute succeed, used 30ms
+2020-11-24 22:18:05,591 INFO 15544 [Job#1606227485591153305407489852] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:18:05,591 INFO 6872 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:19:05.591
+2020-11-24 22:18:05,616 INFO 15544 [Job#1606227485591153305407489852] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-24 22:19:05,593 INFO 15544 [Job#1606227545592153905422193423] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:19:05,617 INFO 15544 [Job#1606227545592153905422193423] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-24 22:19:05,593 INFO 6872 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:20:05.593
+2020-11-24 22:19:28,425 INFO 2152 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 22:19:28,425 INFO 2152 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 22:19:28,425 INFO 2152 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 22:19:28,425 INFO 2152 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 22:19:34,692 INFO 17212 [Timer] I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 22225310ms at 2020-11-25 04:30:00.002
+2020-11-24 22:19:34,692 INFO 17212 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 6025308ms at 2020-11-25 00:00:00.000
+2020-11-24 22:19:34,692 INFO 17212 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 6026308ms at 2020-11-25 00:00:01.000
+2020-11-24 22:19:34,693 INFO 17212 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:20:34.693
+2020-11-24 22:20:34,695 INFO 17212 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:21:34.695
+2020-11-24 22:20:34,696 INFO 2152 [Job#1606227634695154796450765091] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:20:34,716 INFO 2152 [Job#1606227634695154796450765091] I:\demo\music\app\schedule\dashboard.js execute succeed, used 19ms
+2020-11-24 22:21:34,697 INFO 2152 [Job#1606227694696155396463685422] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:21:34,718 INFO 2152 [Job#1606227694696155396463685422] I:\demo\music\app\schedule\dashboard.js execute succeed, used 21ms
+2020-11-24 22:21:34,697 INFO 17212 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:22:34.697
+2020-11-24 22:22:34,698 INFO 2152 [Job#1606227754698155996478633323] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:22:34,723 INFO 2152 [Job#1606227754698155996478633323] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-24 22:22:34,698 INFO 17212 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:23:34.698
+2020-11-24 22:23:34,700 INFO 2152 [Job#1606227814699156596489227044] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:23:34,721 INFO 2152 [Job#1606227814699156596489227044] I:\demo\music\app\schedule\dashboard.js execute succeed, used 21ms
+2020-11-24 22:23:34,699 INFO 17212 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:24:34.699
+2020-11-24 22:24:34,701 INFO 2152 [Job#1606227874701157196504196825] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:24:34,724 INFO 2152 [Job#1606227874701157196504196825] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-24 22:24:34,701 INFO 17212 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:25:34.701
+2020-11-24 22:25:34,702 INFO 2152 [Job#1606227934701157796509123546] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:25:34,723 INFO 2152 [Job#1606227934701157796509123546] I:\demo\music\app\schedule\dashboard.js execute succeed, used 21ms
+2020-11-24 22:25:34,701 INFO 17212 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:26:34.701
+2020-11-24 22:26:34,704 INFO 2152 [Job#1606227994704158396533859237] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:26:34,727 INFO 2152 [Job#1606227994704158396533859237] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-24 22:26:34,704 INFO 17212 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:27:34.704
+2020-11-24 22:27:18,028 INFO 16904 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 22:27:18,029 INFO 16904 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 22:27:18,029 INFO 16904 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 22:27:18,029 INFO 16904 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 22:27:18,397 INFO 16940 [Timer] I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 21761605ms at 2020-11-25 04:30:00.002
+2020-11-24 22:27:18,397 INFO 16940 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 5561603ms at 2020-11-25 00:00:00.000
+2020-11-24 22:27:18,397 INFO 16940 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 5562603ms at 2020-11-25 00:00:01.000
+2020-11-24 22:27:18,397 INFO 16940 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:28:18.397
+2020-11-24 22:28:18,399 INFO 16904 [Job#1606228098398159433482080561] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:28:18,420 INFO 16904 [Job#1606228098398159433482080561] I:\demo\music\app\schedule\dashboard.js execute succeed, used 19ms
+2020-11-24 22:28:18,398 INFO 16940 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:29:18.398
+2020-11-24 22:29:12,082 INFO 16564 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 22:29:12,082 INFO 16564 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 22:29:12,082 INFO 16564 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 22:29:12,082 INFO 16564 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 22:29:14,039 INFO 3096 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 22:29:14,039 INFO 3096 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 22:29:14,039 INFO 3096 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 22:29:14,039 INFO 3096 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 22:29:18,399 INFO 3096 [Job#1606228158398160033484983352] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:29:18,417 INFO 3096 [Job#1606228158398160033484983352] I:\demo\music\app\schedule\dashboard.js execute succeed, used 18ms
+2020-11-24 22:29:18,399 INFO 16940 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:30:18.399
+2020-11-24 22:30:18,400 INFO 3096 [Job#1606228218399160633491806363] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:30:18,431 INFO 3096 [Job#1606228218399160633491806363] I:\demo\music\app\schedule\dashboard.js execute succeed, used 31ms
+2020-11-24 22:30:18,400 INFO 16940 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:31:18.400
+2020-11-24 22:31:18,401 INFO 3096 [Job#1606228278400161233500416274] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:31:18,426 INFO 3096 [Job#1606228278400161233500416274] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-24 22:31:18,400 INFO 16940 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:32:18.400
+2020-11-24 22:32:18,402 INFO 3096 [Job#1606228338402161833515462635] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:32:18,426 INFO 3096 [Job#1606228338402161833515462635] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-24 22:32:18,402 INFO 16940 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:33:18.402
+2020-11-24 22:33:18,402 INFO 16940 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:34:18.402
+2020-11-24 22:33:18,403 INFO 3096 [Job#1606228398402162433520323716] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:33:18,427 INFO 3096 [Job#1606228398402162433520323716] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-24 22:34:18,404 INFO 16940 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:35:18.404
+2020-11-24 22:34:18,404 INFO 3096 [Job#1606228458404163033535293497] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:34:18,428 INFO 3096 [Job#1606228458404163033535293497] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-24 22:35:18,404 INFO 16940 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:36:18.404
+2020-11-24 22:35:18,405 INFO 3096 [Job#1606228518404163633540274918] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:35:18,427 INFO 3096 [Job#1606228518404163633540274918] I:\demo\music\app\schedule\dashboard.js execute succeed, used 22ms
+2020-11-24 22:36:18,406 INFO 16940 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:37:18.406
+2020-11-24 22:36:18,406 INFO 3096 [Job#1606228578406164233555058719] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:36:18,428 INFO 3096 [Job#1606228578406164233555058719] I:\demo\music\app\schedule\dashboard.js execute succeed, used 21ms
+2020-11-24 22:37:18,407 INFO 16940 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:38:18.407
+2020-11-24 22:37:18,408 INFO 3096 [Job#16062286384071648335698899110] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:37:18,437 INFO 3096 [Job#16062286384071648335698899110] I:\demo\music\app\schedule\dashboard.js execute succeed, used 29ms
+2020-11-24 22:38:18,409 INFO 3096 [Job#16062286984081654335804034011] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:38:18,408 INFO 16940 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:39:18.408
+2020-11-24 22:38:18,432 INFO 3096 [Job#16062286984081654335804034011] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-24 22:39:18,409 INFO 3096 [Job#16062287584091660335854212912] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:39:18,432 INFO 3096 [Job#16062287584091660335854212912] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-24 22:39:18,409 INFO 16940 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:40:18.409
+2020-11-24 22:40:18,410 INFO 3096 [Job#16062288184091666335902787213] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:40:18,442 INFO 3096 [Job#16062288184091666335902787213] I:\demo\music\app\schedule\dashboard.js execute succeed, used 32ms
+2020-11-24 22:40:18,409 INFO 16940 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:41:18.409
+2020-11-24 22:41:15,055 INFO 16020 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 22:41:15,055 INFO 16020 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 22:41:15,055 INFO 16020 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 22:41:15,055 INFO 16020 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 22:41:15,450 INFO 15372 [Timer] I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 20924552ms at 2020-11-25 04:30:00.002
+2020-11-24 22:41:15,450 INFO 15372 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 4724550ms at 2020-11-25 00:00:00.000
+2020-11-24 22:41:15,450 INFO 15372 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 4725550ms at 2020-11-25 00:00:01.000
+2020-11-24 22:41:15,450 INFO 15372 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:42:15.450
+2020-11-24 22:42:15,452 INFO 15372 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:43:15.452
+2020-11-24 22:43:15,454 INFO 15372 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:44:15.454
+2020-11-24 22:44:15,454 INFO 15372 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:45:15.454
+2020-11-24 22:45:15,456 INFO 15372 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:46:15.456
+2020-11-24 22:46:15,457 INFO 15372 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:47:15.457
+2020-11-24 22:47:15,457 INFO 15372 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:48:15.457
+2020-11-24 22:48:15,459 INFO 15372 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:49:15.459
+2020-11-24 22:49:15,460 INFO 15372 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:50:15.460
+2020-11-24 22:50:15,462 INFO 15372 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:51:15.462
+2020-11-24 22:51:15,463 INFO 15372 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:52:15.463
+2020-11-24 22:52:05,948 INFO 16020 [Timer] I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 20274054ms at 2020-11-25 04:30:00.002
+2020-11-24 22:52:05,948 INFO 16020 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 4074052ms at 2020-11-25 00:00:00.000
+2020-11-24 22:52:05,948 INFO 16020 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 4075052ms at 2020-11-25 00:00:01.000
+2020-11-24 22:52:05,948 INFO 16020 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:53:05.948
+2020-11-24 22:52:05,547 INFO 16712 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 22:52:05,547 INFO 16712 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 22:52:05,547 INFO 16712 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 22:52:05,547 INFO 16712 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 22:53:05,950 INFO 16020 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:54:05.950
+2020-11-24 22:53:05,951 INFO 16712 [Job#1606229585949174308996047321] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:53:05,978 INFO 16712 [Job#1606229585949174308996047321] I:\demo\music\app\schedule\dashboard.js execute succeed, used 27ms
+2020-11-24 22:54:05,952 INFO 16020 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:55:05.952
+2020-11-24 22:54:05,953 INFO 16712 [Job#1606229645952174909019072702] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:54:05,981 INFO 16712 [Job#1606229645952174909019072702] I:\demo\music\app\schedule\dashboard.js execute succeed, used 28ms
+2020-11-24 22:55:00,905 INFO 13852 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 22:55:00,905 INFO 13852 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 22:55:00,905 INFO 13852 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 22:55:00,905 INFO 13852 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 22:55:05,953 INFO 16020 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:56:05.953
+2020-11-24 22:55:07,071 INFO 13852 [Job#1606229705953175509024604773] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:55:07,091 INFO 13852 [Job#1606229705953175509024604773] I:\demo\music\app\schedule\dashboard.js execute succeed, used 20ms
+2020-11-24 22:56:05,954 INFO 13852 [Job#1606229765953176109028988134] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 22:56:05,980 INFO 13852 [Job#1606229765953176109028988134] I:\demo\music\app\schedule\dashboard.js execute succeed, used 26ms
+2020-11-24 22:56:05,953 INFO 16020 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 22:57:05.953
+2020-11-24 23:19:39,617 INFO 17076 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 23:19:39,617 INFO 17076 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 23:19:39,618 INFO 17076 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 23:19:39,618 INFO 17076 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 23:19:42,103 INFO 18384 [Timer] I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 18617899ms at 2020-11-25 04:30:00.002
+2020-11-24 23:19:42,103 INFO 18384 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 2417897ms at 2020-11-25 00:00:00.000
+2020-11-24 23:19:42,103 INFO 18384 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 2418897ms at 2020-11-25 00:00:01.000
+2020-11-24 23:19:42,103 INFO 18384 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 23:20:42.103
+2020-11-24 23:20:42,104 INFO 18384 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 23:21:42.104
+2020-11-24 23:23:18,656 INFO 16684 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 23:23:18,656 INFO 16684 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 23:23:18,656 INFO 16684 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 23:23:18,656 INFO 16684 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 23:23:30,154 INFO 11844 [Timer] I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 18389847ms at 2020-11-25 04:30:00.001
+2020-11-24 23:23:30,155 INFO 11844 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 2189845ms at 2020-11-25 00:00:00.000
+2020-11-24 23:23:30,155 INFO 11844 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 2190845ms at 2020-11-25 00:00:01.000
+2020-11-24 23:23:30,155 INFO 11844 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 23:24:30.155
+2020-11-24 23:24:30,158 INFO 11844 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 23:25:30.158
+2020-11-24 23:24:30,158 INFO 16684 [Job#1606231470157193151068692881] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 23:24:30,179 INFO 16684 [Job#1606231470157193151068692881] I:\demo\music\app\schedule\dashboard.js execute succeed, used 21ms
+2020-11-24 23:25:30,160 INFO 11844 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 23:26:30.160
+2020-11-24 23:25:30,160 INFO 16684 [Job#1606231530159193751091586982] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 23:25:30,184 INFO 16684 [Job#1606231530159193751091586982] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-24 23:25:38,365 INFO 5376 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 23:25:38,365 INFO 5376 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 23:25:38,365 INFO 5376 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 23:25:38,365 INFO 5376 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 23:26:30,160 INFO 5376 [Job#1606231590160194351096499113] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 23:26:30,189 INFO 5376 [Job#1606231590160194351096499113] I:\demo\music\app\schedule\dashboard.js execute succeed, used 28ms
+2020-11-24 23:26:30,160 INFO 11844 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 23:27:30.160
+2020-11-24 23:27:30,161 INFO 11844 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 23:28:30.161
+2020-11-24 23:27:30,291 INFO 5376 [Job#1606231650161194951111403254] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 23:27:30,348 INFO 5376 [Job#1606231650161194951111403254] I:\demo\music\app\schedule\dashboard.js execute succeed, used 57ms
+2020-11-24 23:28:30,161 INFO 11844 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 23:29:30.161
+2020-11-24 23:28:36,870 INFO 5376 [Job#1606231710161195551116253395] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 23:28:36,910 INFO 5376 [Job#1606231710161195551116253395] I:\demo\music\app\schedule\dashboard.js execute succeed, used 40ms
+2020-11-24 23:29:30,162 INFO 11844 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 23:30:30.162
+2020-11-24 23:29:30,163 INFO 5376 [Job#1606231770162196151121231166] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 23:29:30,189 INFO 5376 [Job#1606231770162196151121231166] I:\demo\music\app\schedule\dashboard.js execute succeed, used 26ms
+2020-11-24 23:30:30,164 INFO 11844 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 23:31:30.164
+2020-11-24 23:31:11,373 INFO 5376 [Job#1606231830164196751136346817] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 23:31:11,409 INFO 5376 [Job#1606231830164196751136346817] I:\demo\music\app\schedule\dashboard.js execute succeed, used 36ms
+2020-11-24 23:31:30,165 INFO 11844 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 23:32:30.164
+2020-11-24 23:31:31,010 INFO 5376 [Job#1606231890164197351141251648] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 23:31:31,034 INFO 5376 [Job#1606231890164197351141251648] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-24 23:32:30,165 INFO 11844 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 23:33:30.165
+2020-11-24 23:32:51,347 INFO 5376 [Job#1606231950165197951146342469] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 23:32:51,374 INFO 5376 [Job#1606231950165197951146342469] I:\demo\music\app\schedule\dashboard.js execute succeed, used 26ms
+2020-11-24 23:33:30,165 INFO 5376 [Job#16062320101651985511509045110] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 23:33:30,186 INFO 5376 [Job#16062320101651985511509045110] I:\demo\music\app\schedule\dashboard.js execute succeed, used 21ms
+2020-11-24 23:33:30,165 INFO 11844 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 23:34:30.165
+2020-11-24 23:34:13,966 INFO 18416 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 23:34:13,966 INFO 18416 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 23:34:13,966 INFO 18416 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 23:34:13,966 INFO 18416 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 23:34:29,091 INFO 8204 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 23:34:29,091 INFO 8204 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 23:34:29,091 INFO 8204 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 23:34:29,091 INFO 8204 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 23:34:30,166 INFO 11844 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 23:35:30.166
+2020-11-24 23:34:30,166 INFO 8204 [Job#16062320701661991511558166411] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 23:34:30,190 INFO 8204 [Job#16062320701661991511558166411] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-24 23:35:04,042 INFO 18976 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 23:35:04,042 INFO 18976 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 23:35:04,042 INFO 18976 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 23:35:04,042 INFO 18976 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 23:35:06,955 INFO 17960 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 23:35:06,955 INFO 17960 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 23:35:06,955 INFO 17960 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 23:35:06,956 INFO 17960 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 23:35:30,166 INFO 11844 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 23:36:30.166
+2020-11-24 23:36:30,168 INFO 11844 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 23:37:30.168
+2020-11-24 23:37:30,168 INFO 11844 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 23:38:30.168
+2020-11-24 23:38:30,170 INFO 11844 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 23:39:30.170
+2020-11-24 23:38:30,982 INFO 17964 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 23:38:30,982 INFO 17964 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 23:38:30,982 INFO 17964 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 23:38:30,982 INFO 17964 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 23:39:30,171 INFO 11844 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 23:40:30.171
+2020-11-24 23:39:34,590 INFO 19048 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 23:39:34,590 INFO 19048 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 23:39:34,590 INFO 19048 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 23:39:34,590 INFO 19048 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 23:39:40,461 INFO 19428 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-24 23:39:40,461 INFO 19428 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-24 23:39:40,461 INFO 19428 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-24 23:39:40,461 INFO 19428 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-24 23:40:30,171 INFO 11844 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-24 23:41:30.171
+2020-11-24 23:40:30,172 INFO 19428 [Job#16062324301712027512109331517] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-24 23:40:30,205 INFO 19428 [Job#16062324301712027512109331517] I:\demo\music\app\schedule\dashboard.js execute succeed, used 32ms
+2020-11-25 11:13:41,067 INFO 15816 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 11:13:41,067 INFO 15816 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 11:13:41,067 INFO 15816 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 11:13:41,067 INFO 15816 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 11:13:41,858 INFO 8160 [Timer] I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 62178144ms at 2020-11-26 04:30:00.002
+2020-11-25 11:13:41,858 INFO 8160 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 45978142ms at 2020-11-26 00:00:00.000
+2020-11-25 11:13:41,858 INFO 8160 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 45979142ms at 2020-11-26 00:00:01.000
+2020-11-25 11:13:41,859 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:14:41.859
+2020-11-25 11:14:08,538 INFO 10900 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 11:14:08,538 INFO 10900 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 11:14:08,538 INFO 10900 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 11:14:08,538 INFO 10900 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 11:14:11,052 INFO 15900 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 11:14:11,052 INFO 15900 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 11:14:11,053 INFO 15900 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 11:14:11,053 INFO 15900 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 11:14:41,859 INFO 15900 [Job#160627408185910148089039871] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:14:41,895 INFO 15900 [Job#160627408185910148089039871] I:\demo\music\app\schedule\dashboard.js execute succeed, used 35ms
+2020-11-25 11:14:41,859 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:15:41.859
+2020-11-25 11:15:41,860 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:16:41.860
+2020-11-25 11:15:41,860 INFO 15900 [Job#160627414186010748098590652] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:15:41,885 INFO 15900 [Job#160627414186010748098590652] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 11:16:41,862 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:17:41.862
+2020-11-25 11:16:41,862 INFO 15900 [Job#160627420186111348114246033] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:16:41,885 INFO 15900 [Job#160627420186111348114246033] I:\demo\music\app\schedule\dashboard.js execute succeed, used 22ms
+2020-11-25 11:17:22,298 INFO 3124 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 11:17:22,298 INFO 3124 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 11:17:22,298 INFO 3124 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 11:17:22,298 INFO 3124 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 11:17:41,862 INFO 3124 [Job#160627426186211948120099034] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:17:41,890 INFO 3124 [Job#160627426186211948120099034] I:\demo\music\app\schedule\dashboard.js execute succeed, used 28ms
+2020-11-25 11:17:41,862 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:18:41.862
+2020-11-25 11:18:41,863 INFO 3124 [Job#160627432186312548125926495] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:18:41,886 INFO 3124 [Job#160627432186312548125926495] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 11:18:41,863 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:19:41.863
+2020-11-25 11:19:41,863 INFO 3124 [Job#160627438186313148126017666] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:19:41,888 INFO 3124 [Job#160627438186313148126017666] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 11:19:41,863 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:20:41.863
+2020-11-25 11:20:41,863 INFO 3124 [Job#160627444186313748129303367] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:20:41,897 INFO 3124 [Job#160627444186313748129303367] I:\demo\music\app\schedule\dashboard.js execute succeed, used 34ms
+2020-11-25 11:20:41,863 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:21:41.863
+2020-11-25 11:21:41,864 INFO 3124 [Job#160627450186414348138690038] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:21:41,889 INFO 3124 [Job#160627450186414348138690038] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 11:21:41,864 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:22:41.864
+2020-11-25 11:22:41,866 INFO 3124 [Job#160627456186514948151395219] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:22:41,888 INFO 3124 [Job#160627456186514948151395219] I:\demo\music\app\schedule\dashboard.js execute succeed, used 22ms
+2020-11-25 11:22:41,865 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:23:41.865
+2020-11-25 11:23:41,866 INFO 3124 [Job#1606274621866155481601801710] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:23:41,888 INFO 3124 [Job#1606274621866155481601801710] I:\demo\music\app\schedule\dashboard.js execute succeed, used 22ms
+2020-11-25 11:23:41,866 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:24:41.866
+2020-11-25 11:24:41,867 INFO 3124 [Job#1606274681867161481745665011] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:24:41,892 INFO 3124 [Job#1606274681867161481745665011] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 11:24:41,868 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:25:41.868
+2020-11-25 11:25:41,868 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:26:41.868
+2020-11-25 11:25:41,868 INFO 3124 [Job#1606274741868167481803429112] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:25:41,890 INFO 3124 [Job#1606274741868167481803429112] I:\demo\music\app\schedule\dashboard.js execute succeed, used 22ms
+2020-11-25 11:26:41,870 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:27:41.870
+2020-11-25 11:26:41,870 INFO 3124 [Job#1606274801870173481959654813] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:26:41,890 INFO 3124 [Job#1606274801870173481959654813] I:\demo\music\app\schedule\dashboard.js execute succeed, used 20ms
+2020-11-25 11:27:41,870 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:28:41.870
+2020-11-25 11:27:41,870 INFO 3124 [Job#1606274861870179482019351714] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:27:41,895 INFO 3124 [Job#1606274861870179482019351714] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 11:28:41,872 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:29:41.872
+2020-11-25 11:28:41,872 INFO 3124 [Job#1606274921872185482174702115] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:28:41,897 INFO 3124 [Job#1606274921872185482174702115] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 11:29:41,872 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:30:41.872
+2020-11-25 11:29:41,872 INFO 3124 [Job#1606274981872191482234399016] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:29:41,897 INFO 3124 [Job#1606274981872191482234399016] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 11:30:41,873 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:31:41.873
+2020-11-25 11:30:41,873 INFO 3124 [Job#1606275041873197482292819517] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:30:41,896 INFO 3124 [Job#1606275041873197482292819517] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 11:31:41,873 INFO 3124 [Job#1606275101873203482351021218] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:31:41,874 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:32:41.874
+2020-11-25 11:31:41,906 INFO 3124 [Job#1606275101873203482351021218] I:\demo\music\app\schedule\dashboard.js execute succeed, used 32ms
+2020-11-25 11:32:41,875 INFO 3124 [Job#1606275161875209482508340919] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:32:41,897 INFO 3124 [Job#1606275161875209482508340919] I:\demo\music\app\schedule\dashboard.js execute succeed, used 22ms
+2020-11-25 11:32:41,875 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:33:41.875
+2020-11-25 11:33:41,876 INFO 3124 [Job#1606275221876215482567454320] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:33:41,901 INFO 3124 [Job#1606275221876215482567454320] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 11:33:41,876 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:34:41.876
+2020-11-25 11:34:41,876 INFO 3124 [Job#1606275281876221482625400821] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:34:41,902 INFO 3124 [Job#1606275281876221482625400821] I:\demo\music\app\schedule\dashboard.js execute succeed, used 26ms
+2020-11-25 11:34:41,876 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:35:41.876
+2020-11-25 11:35:41,877 INFO 3124 [Job#1606275341877227482683201422] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:35:41,902 INFO 3124 [Job#1606275341877227482683201422] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 11:35:41,877 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:36:41.877
+2020-11-25 11:36:41,878 INFO 3124 [Job#1606275401878233482840922223] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:36:41,897 INFO 3124 [Job#1606275401878233482840922223] I:\demo\music\app\schedule\dashboard.js execute succeed, used 19ms
+2020-11-25 11:36:41,879 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:37:41.879
+2020-11-25 11:37:41,879 INFO 3124 [Job#1606275461879239482899269824] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:37:41,903 INFO 3124 [Job#1606275461879239482899269824] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 11:37:41,879 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:38:41.879
+2020-11-25 11:38:41,881 INFO 3124 [Job#1606275521881245483056954125] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:38:41,902 INFO 3124 [Job#1606275521881245483056954125] I:\demo\music\app\schedule\dashboard.js execute succeed, used 21ms
+2020-11-25 11:38:41,881 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:39:41.881
+2020-11-25 11:39:41,880 INFO 3124 [Job#1606275581880251483015417926] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:39:41,905 INFO 3124 [Job#1606275581880251483015417926] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 11:39:41,880 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:40:41.880
+2020-11-25 11:40:41,881 INFO 3124 [Job#1606275641881257483074093727] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:40:41,904 INFO 3124 [Job#1606275641881257483074093727] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 11:40:41,881 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:41:41.881
+2020-11-25 11:41:41,881 INFO 3124 [Job#1606275701881263483132076628] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:41:41,903 INFO 3124 [Job#1606275701881263483132076628] I:\demo\music\app\schedule\dashboard.js execute succeed, used 22ms
+2020-11-25 11:41:41,881 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:42:41.881
+2020-11-25 11:42:41,882 INFO 3124 [Job#1606275761882269483190387829] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:42:41,912 INFO 3124 [Job#1606275761882269483190387829] I:\demo\music\app\schedule\dashboard.js execute succeed, used 30ms
+2020-11-25 11:42:41,882 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:43:41.882
+2020-11-25 11:43:41,883 INFO 3124 [Job#1606275821883275483347962730] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:43:41,907 INFO 3124 [Job#1606275821883275483347962730] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 11:43:41,884 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:44:41.884
+2020-11-25 11:44:41,885 INFO 3124 [Job#1606275881884281483405690431] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:44:41,908 INFO 3124 [Job#1606275881884281483405690431] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 11:44:41,884 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:45:41.884
+2020-11-25 11:45:41,886 INFO 3124 [Job#1606275941886287483563994732] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:45:41,918 INFO 3124 [Job#1606275941886287483563994732] I:\demo\music\app\schedule\dashboard.js execute succeed, used 32ms
+2020-11-25 11:45:41,886 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:46:41.886
+2020-11-25 11:46:41,887 INFO 3124 [Job#1606276001886293483621321233] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:46:41,910 INFO 3124 [Job#1606276001886293483621321233] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 11:46:41,886 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:47:41.886
+2020-11-25 11:47:41,888 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:48:41.888
+2020-11-25 11:47:41,888 INFO 3124 [Job#1606276061888299483779589034] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:47:41,911 INFO 3124 [Job#1606276061888299483779589034] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 11:48:41,890 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:49:41.889
+2020-11-25 11:48:41,890 INFO 3124 [Job#1606276121889305483937820435] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:48:41,915 INFO 3124 [Job#1606276121889305483937820435] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 11:49:41,890 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:50:41.890
+2020-11-25 11:49:41,890 INFO 3124 [Job#1606276181890311483995657436] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:49:41,912 INFO 3124 [Job#1606276181890311483995657436] I:\demo\music\app\schedule\dashboard.js execute succeed, used 21ms
+2020-11-25 11:50:41,892 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:51:41.892
+2020-11-25 11:50:41,892 INFO 3124 [Job#1606276241892317484153560637] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:50:41,916 INFO 3124 [Job#1606276241892317484153560637] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 11:51:41,892 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:52:41.892
+2020-11-25 11:51:41,893 INFO 3124 [Job#1606276301892323484211798838] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:51:41,917 INFO 3124 [Job#1606276301892323484211798838] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 11:52:41,894 INFO 3124 [Job#1606276361894329484369227939] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:52:41,894 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:53:41.894
+2020-11-25 11:52:41,918 INFO 3124 [Job#1606276361894329484369227939] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 11:53:41,894 INFO 3124 [Job#1606276421893335484327618740] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:53:41,918 INFO 3124 [Job#1606276421893335484327618740] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 11:53:41,893 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:54:41.893
+2020-11-25 11:54:41,894 INFO 3124 [Job#1606276481894341484385382941] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:54:41,916 INFO 3124 [Job#1606276481894341484385382941] I:\demo\music\app\schedule\dashboard.js execute succeed, used 22ms
+2020-11-25 11:54:41,894 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:55:41.894
+2020-11-25 11:55:41,895 INFO 3124 [Job#1606276541894347484445371542] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:55:41,926 INFO 3124 [Job#1606276541894347484445371542] I:\demo\music\app\schedule\dashboard.js execute succeed, used 31ms
+2020-11-25 11:55:41,895 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:56:41.895
+2020-11-25 11:56:41,895 INFO 3124 [Job#1606276601895353484502223943] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:56:41,919 INFO 3124 [Job#1606276601895353484502223943] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 11:56:41,895 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:57:41.895
+2020-11-25 11:57:41,896 INFO 3124 [Job#1606276661896359484560462144] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:57:41,916 INFO 3124 [Job#1606276661896359484560462144] I:\demo\music\app\schedule\dashboard.js execute succeed, used 20ms
+2020-11-25 11:57:41,896 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:58:41.896
+2020-11-25 11:58:41,897 INFO 3124 [Job#1606276721896365484618882645] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:58:41,920 INFO 3124 [Job#1606276721896365484618882645] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 11:58:41,896 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 11:59:41.896
+2020-11-25 11:59:41,898 INFO 3124 [Job#1606276781898371484777515146] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 11:59:41,923 INFO 3124 [Job#1606276781898371484777515146] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 11:59:41,898 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:00:41.898
+2020-11-25 12:00:41,899 INFO 3124 [Job#1606276841898377484835279247] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:00:41,922 INFO 3124 [Job#1606276841898377484835279247] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 12:00:41,898 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:01:41.898
+2020-11-25 12:01:41,899 INFO 3124 [Job#1606276901899383484893116348] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:01:41,921 INFO 3124 [Job#1606276901899383484893116348] I:\demo\music\app\schedule\dashboard.js execute succeed, used 22ms
+2020-11-25 12:01:41,899 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:02:41.899
+2020-11-25 12:02:41,900 INFO 3124 [Job#1606276961899389484951172149] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:02:41,930 INFO 3124 [Job#1606276961899389484951172149] I:\demo\music\app\schedule\dashboard.js execute succeed, used 30ms
+2020-11-25 12:02:41,900 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:03:41.900
+2020-11-25 12:03:41,901 INFO 3124 [Job#1606277021900395485009300950] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:03:41,924 INFO 3124 [Job#1606277021900395485009300950] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 12:03:41,900 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:04:41.900
+2020-11-25 12:04:41,901 INFO 3124 [Job#1606277081901401485067721451] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:04:41,925 INFO 3124 [Job#1606277081901401485067721451] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 12:04:41,901 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:05:41.901
+2020-11-25 12:05:41,902 INFO 3124 [Job#1606277141901407485124938552] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:05:41,937 INFO 3124 [Job#1606277141901407485124938552] I:\demo\music\app\schedule\dashboard.js execute succeed, used 35ms
+2020-11-25 12:05:41,901 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:06:41.901
+2020-11-25 12:06:41,904 INFO 3124 [Job#1606277201902413485184270853] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:06:41,927 INFO 3124 [Job#1606277201902413485184270853] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 12:06:41,902 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:07:41.902
+2020-11-25 12:07:41,904 INFO 3124 [Job#1606277261903419485341699854] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:07:41,927 INFO 3124 [Job#1606277261903419485341699854] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 12:07:41,904 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:08:41.904
+2020-11-25 12:08:41,904 INFO 3124 [Job#1606277321904425485399938055] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:08:41,926 INFO 3124 [Job#1606277321904425485399938055] I:\demo\music\app\schedule\dashboard.js execute succeed, used 22ms
+2020-11-25 12:08:41,904 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:09:41.904
+2020-11-25 12:09:41,906 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:10:41.906
+2020-11-25 12:09:41,906 INFO 3124 [Job#1606277381906431485557877756] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:09:41,929 INFO 3124 [Job#1606277381906431485557877756] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 12:10:41,907 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:11:41.907
+2020-11-25 12:10:41,907 INFO 3124 [Job#1606277441907437485690946657] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:10:41,932 INFO 3124 [Job#1606277441907437485690946657] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 12:11:41,908 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:12:41.908
+2020-11-25 12:11:41,909 INFO 3124 [Job#1606277501908443485821791158] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:11:41,934 INFO 3124 [Job#1606277501908443485821791158] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 12:12:41,909 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:13:41.909
+2020-11-25 12:12:41,909 INFO 3124 [Job#1606277561909449485908072659] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:12:41,933 INFO 3124 [Job#1606277561909449485908072659] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 12:13:41,911 INFO 3124 [Job#1606277621911455486066121660] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:13:41,935 INFO 3124 [Job#1606277621911455486066121660] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 12:13:41,911 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:14:41.911
+2020-11-25 12:14:41,912 INFO 3124 [Job#1606277681911461486124797461] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:14:41,929 INFO 3124 [Job#1606277681911461486124797461] I:\demo\music\app\schedule\dashboard.js execute succeed, used 17ms
+2020-11-25 12:14:41,911 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:15:41.911
+2020-11-25 12:15:41,912 INFO 3124 [Job#1606277741912467486183108562] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:15:41,933 INFO 3124 [Job#1606277741912467486183108562] I:\demo\music\app\schedule\dashboard.js execute succeed, used 21ms
+2020-11-25 12:15:41,912 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:16:41.912
+2020-11-25 12:16:14,949 INFO 5224 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 12:16:14,949 INFO 5224 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 12:16:14,949 INFO 5224 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 12:16:14,950 INFO 5224 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 12:16:17,037 INFO 15680 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 12:16:17,037 INFO 15680 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 12:16:17,037 INFO 15680 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 12:16:17,037 INFO 15680 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 12:16:41,912 INFO 15680 [Job#1606277801912473486241784363] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:16:41,940 INFO 15680 [Job#1606277801912473486241784363] I:\demo\music\app\schedule\dashboard.js execute succeed, used 26ms
+2020-11-25 12:16:41,912 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:17:41.912
+2020-11-25 12:17:41,913 INFO 15680 [Job#1606277861913479486299584964] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:17:41,937 INFO 15680 [Job#1606277861913479486299584964] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 12:17:41,913 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:18:41.913
+2020-11-25 12:18:41,914 INFO 15680 [Job#1606277921914485486357422065] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:18:41,946 INFO 15680 [Job#1606277921914485486357422065] I:\demo\music\app\schedule\dashboard.js execute succeed, used 32ms
+2020-11-25 12:18:41,914 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:19:41.914
+2020-11-25 12:18:45,774 INFO 15668 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 12:18:45,774 INFO 15668 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 12:18:45,774 INFO 15668 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 12:18:45,774 INFO 15668 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 12:19:41,914 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:20:41.914
+2020-11-25 12:19:50,462 INFO 15680 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 12:19:50,462 INFO 15680 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 12:19:50,462 INFO 15680 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 12:19:50,462 INFO 15680 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 12:20:41,914 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:21:41.914
+2020-11-25 12:20:41,915 INFO 15680 [Job#1606278041914497486427876767] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:20:41,942 INFO 15680 [Job#1606278041914497486427876767] I:\demo\music\app\schedule\dashboard.js execute succeed, used 27ms
+2020-11-25 12:20:49,022 INFO 1436 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 12:20:49,022 INFO 1436 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 12:20:49,022 INFO 1436 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 12:20:49,022 INFO 1436 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 12:21:41,916 INFO 1436 [Job#1606278101916503486585852868] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:21:41,940 INFO 1436 [Job#1606278101916503486585852868] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 12:21:41,916 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:22:41.916
+2020-11-25 12:21:46,158 INFO 16604 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 12:21:46,158 INFO 16604 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 12:21:46,158 INFO 16604 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 12:21:46,158 INFO 16604 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 12:22:41,917 INFO 16604 [Job#1606278161916509486644419269] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:22:41,935 INFO 16604 [Job#1606278161916509486644419269] I:\demo\music\app\schedule\dashboard.js execute succeed, used 18ms
+2020-11-25 12:22:41,917 INFO 8160 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:23:41.917
+2020-11-25 12:23:51,727 INFO 16540 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 12:23:51,727 INFO 16540 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 12:23:51,727 INFO 16540 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 12:23:51,727 INFO 16540 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 12:23:52,152 INFO 4068 [Timer] I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 57967850ms at 2020-11-26 04:30:00.002
+2020-11-25 12:23:52,153 INFO 4068 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 41767848ms at 2020-11-26 00:00:00.001
+2020-11-25 12:23:52,153 INFO 4068 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 41768847ms at 2020-11-26 00:00:01.000
+2020-11-25 12:23:52,153 INFO 4068 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:24:52.153
+2020-11-25 12:24:52,155 INFO 4068 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:25:52.155
+2020-11-25 12:25:52,156 INFO 4068 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:26:52.156
+2020-11-25 12:26:10,905 INFO 16464 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 12:26:10,905 INFO 16464 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 12:26:10,905 INFO 16464 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 12:26:10,905 INFO 16464 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 12:26:13,606 INFO 16088 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 12:26:13,606 INFO 16088 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 12:26:13,606 INFO 16088 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 12:26:13,606 INFO 16088 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 12:26:16,208 INFO 1592 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 12:26:16,208 INFO 1592 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 12:26:16,208 INFO 1592 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 12:26:16,208 INFO 1592 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 12:26:52,157 INFO 4068 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:27:52.157
+2020-11-25 12:27:08,989 INFO 1592 [Job#160627841215653451064172503] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:27:25,898 INFO 1592 [Job#160627841215653451064172503] I:\demo\music\app\schedule\dashboard.js execute succeed, used 16909ms
+2020-11-25 12:27:52,157 INFO 4068 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:28:52.157
+2020-11-25 12:27:52,368 INFO 1592 [Job#160627847215754051070714724] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:27:53,499 INFO 1592 [Job#160627847215754051070714724] I:\demo\music\app\schedule\dashboard.js execute succeed, used 1131ms
+2020-11-25 12:28:47,324 INFO 1604 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 12:28:47,324 INFO 1604 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 12:28:47,324 INFO 1604 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 12:28:47,324 INFO 1604 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 12:28:52,161 INFO 1604 [Job#160627853216054651105074165] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:28:52,207 INFO 1604 [Job#160627853216054651105074165] I:\demo\music\app\schedule\dashboard.js execute succeed, used 45ms
+2020-11-25 12:28:52,161 INFO 4068 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:29:52.161
+2020-11-25 12:29:52,162 INFO 1604 [Job#160627859216155251111496046] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:29:52,181 INFO 1604 [Job#160627859216155251111496046] I:\demo\music\app\schedule\dashboard.js execute succeed, used 19ms
+2020-11-25 12:29:52,161 INFO 4068 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:30:52.161
+2020-11-25 12:30:13,041 INFO 2788 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 12:30:13,041 INFO 2788 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 12:30:13,041 INFO 2788 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 12:30:13,041 INFO 2788 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 12:30:13,419 INFO 1684 [Timer] I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 57586583ms at 2020-11-26 04:30:00.002
+2020-11-25 12:30:13,419 INFO 1684 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 41386581ms at 2020-11-26 00:00:00.000
+2020-11-25 12:30:13,419 INFO 1684 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 41387581ms at 2020-11-26 00:00:01.000
+2020-11-25 12:30:13,419 INFO 1684 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:31:13.419
+2020-11-25 12:31:13,421 INFO 2788 [Job#160627867342056063700859931] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:31:13,453 INFO 2788 [Job#160627867342056063700859931] I:\demo\music\app\schedule\dashboard.js execute succeed, used 32ms
+2020-11-25 12:31:13,421 INFO 1684 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:32:13.421
+2020-11-25 12:32:13,422 INFO 2788 [Job#160627873342256663717602042] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:32:13,445 INFO 2788 [Job#160627873342256663717602042] I:\demo\music\app\schedule\dashboard.js execute succeed, used 22ms
+2020-11-25 12:32:13,422 INFO 1684 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:33:13.422
+2020-11-25 12:33:13,424 INFO 1684 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:34:13.424
+2020-11-25 12:33:13,424 INFO 2788 [Job#160627879342357263735066203] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:33:13,457 INFO 2788 [Job#160627879342357263735066203] I:\demo\music\app\schedule\dashboard.js execute succeed, used 33ms
+2020-11-25 12:34:13,425 INFO 1684 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:35:13.425
+2020-11-25 12:34:13,425 INFO 2788 [Job#160627885342557863746210594] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:34:13,446 INFO 2788 [Job#160627885342557863746210594] I:\demo\music\app\schedule\dashboard.js execute succeed, used 21ms
+2020-11-25 12:35:13,425 INFO 1684 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 12:36:13.425
+2020-11-25 12:35:13,425 INFO 2788 [Job#160627891342558463748708605] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 12:35:13,447 INFO 2788 [Job#160627891342558463748708605] I:\demo\music\app\schedule\dashboard.js execute succeed, used 22ms
+2020-11-25 20:21:44,212 INFO 16680 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 20:21:44,212 INFO 16680 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 20:21:44,212 INFO 16680 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 20:21:44,212 INFO 16680 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 20:21:44,872 INFO 16464 [Timer] I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js next time will execute after 29295130ms at 2020-11-26 04:30:00.002
+2020-11-25 20:21:44,872 INFO 16464 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 13095128ms at 2020-11-26 00:00:00.000
+2020-11-25 20:21:44,872 INFO 16464 [Timer] I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 13096128ms at 2020-11-26 00:00:01.000
+2020-11-25 20:21:44,873 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:22:44.873
+2020-11-25 20:22:44,875 INFO 16680 [Job#1606306964874122658241089611] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:22:44,957 INFO 16680 [Job#1606306964874122658241089611] I:\demo\music\app\schedule\dashboard.js execute succeed, used 82ms
+2020-11-25 20:22:44,875 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:23:44.875
+2020-11-25 20:23:44,875 INFO 16680 [Job#1606307024875123258248995692] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:23:44,903 INFO 16680 [Job#1606307024875123258248995692] I:\demo\music\app\schedule\dashboard.js execute succeed, used 27ms
+2020-11-25 20:23:44,875 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:24:44.875
+2020-11-25 20:24:44,877 INFO 16680 [Job#1606307084876123858263411163] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:24:44,904 INFO 16680 [Job#1606307084876123858263411163] I:\demo\music\app\schedule\dashboard.js execute succeed, used 27ms
+2020-11-25 20:24:44,877 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:25:44.877
+2020-11-25 20:25:44,877 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:26:44.877
+2020-11-25 20:25:44,877 INFO 16680 [Job#1606307144877124458268407174] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:25:44,903 INFO 16680 [Job#1606307144877124458268407174] I:\demo\music\app\schedule\dashboard.js execute succeed, used 26ms
+2020-11-25 20:26:44,878 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:27:44.878
+2020-11-25 20:26:44,879 INFO 16680 [Job#1606307204878125058283004985] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:26:44,904 INFO 16680 [Job#1606307204878125058283004985] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 20:27:44,880 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:28:44.880
+2020-11-25 20:27:44,880 INFO 16680 [Job#1606307264880125658298197206] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:27:44,905 INFO 16680 [Job#1606307264880125658298197206] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 20:28:44,881 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:29:44.881
+2020-11-25 20:28:44,882 INFO 16680 [Job#1606307324881126258312908067] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:28:44,908 INFO 16680 [Job#1606307324881126258312908067] I:\demo\music\app\schedule\dashboard.js execute succeed, used 26ms
+2020-11-25 20:29:44,883 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:30:44.883
+2020-11-25 20:29:44,883 INFO 16680 [Job#1606307384883126858327746568] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:29:44,907 INFO 16680 [Job#1606307384883126858327746568] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 20:30:44,883 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:31:44.883
+2020-11-25 20:30:44,884 INFO 16680 [Job#1606307444883127458332326839] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:30:44,908 INFO 16680 [Job#1606307444883127458332326839] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 20:31:44,885 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:32:44.885
+2020-11-25 20:31:44,885 INFO 16680 [Job#16063075048851280583469355910] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:31:44,908 INFO 16680 [Job#16063075048851280583469355910] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 20:32:44,885 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:33:44.885
+2020-11-25 20:32:44,886 INFO 16680 [Job#16063075648851286583516982011] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:32:44,908 INFO 16680 [Job#16063075648851286583516982011] I:\demo\music\app\schedule\dashboard.js execute succeed, used 22ms
+2020-11-25 20:33:44,887 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:34:44.887
+2020-11-25 20:33:44,887 INFO 16680 [Job#16063076248871292583663251812] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:33:44,911 INFO 16680 [Job#16063076248871292583663251812] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 20:34:44,887 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:35:44.887
+2020-11-25 20:34:44,888 INFO 16680 [Job#16063076848871298583710732113] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:34:44,921 INFO 16680 [Job#16063076848871298583710732113] I:\demo\music\app\schedule\dashboard.js execute succeed, used 33ms
+2020-11-25 20:35:44,889 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:36:44.889
+2020-11-25 20:35:44,889 INFO 16680 [Job#16063077448891304583858241814] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:35:44,914 INFO 16680 [Job#16063077448891304583858241814] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 20:36:44,889 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:37:44.889
+2020-11-25 20:36:44,890 INFO 16680 [Job#16063078048891310583904409315] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:36:44,914 INFO 16680 [Job#16063078048891310583904409315] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 20:37:44,891 INFO 16680 [Job#16063078648901316584052538916] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:37:44,891 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:38:44.891
+2020-11-25 20:37:44,915 INFO 16680 [Job#16063078648901316584052538916] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 20:38:44,891 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:39:44.891
+2020-11-25 20:38:44,891 INFO 16680 [Job#16063079248911322584099836917] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:38:44,914 INFO 16680 [Job#16063079248911322584099836917] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 20:39:44,893 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:40:44.893
+2020-11-25 20:39:44,893 INFO 16680 [Job#16063079848921328584247674818] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:39:44,918 INFO 16680 [Job#16063079848921328584247674818] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 20:40:25,777 INFO 7480 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 20:40:25,777 INFO 7480 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 20:40:25,777 INFO 7480 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 20:40:25,777 INFO 7480 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 20:40:44,893 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:41:44.893
+2020-11-25 20:40:44,893 INFO 7480 [Job#16063080448931334584295009219] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:40:44,922 INFO 7480 [Job#16063080448931334584295009219] I:\demo\music\app\schedule\dashboard.js execute succeed, used 29ms
+2020-11-25 20:41:44,895 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:42:44.895
+2020-11-25 20:41:44,895 INFO 7480 [Job#16063081048941340584441497820] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:41:44,918 INFO 7480 [Job#16063081048941340584441497820] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 20:42:44,895 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:43:44.895
+2020-11-25 20:42:44,895 INFO 7480 [Job#16063081648951346584489014621] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:42:44,926 INFO 7480 [Job#16063081648951346584489014621] I:\demo\music\app\schedule\dashboard.js execute succeed, used 31ms
+2020-11-25 20:43:44,897 INFO 7480 [Job#16063082248961352584634299822] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:43:44,897 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:44:44.896
+2020-11-25 20:43:44,916 INFO 7480 [Job#16063082248961352584634299822] I:\demo\music\app\schedule\dashboard.js execute succeed, used 19ms
+2020-11-25 20:44:44,897 INFO 7480 [Job#16063082848971358584682181223] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:44:44,919 INFO 7480 [Job#16063082848971358584682181223] I:\demo\music\app\schedule\dashboard.js execute succeed, used 22ms
+2020-11-25 20:44:44,897 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:45:44.897
+2020-11-25 20:45:44,899 INFO 7480 [Job#16063083448981364584828268724] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:45:44,924 INFO 7480 [Job#16063083448981364584828268724] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 20:45:44,898 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:46:44.898
+2020-11-25 20:46:44,900 INFO 7480 [Job#16063084049001370584976799525] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:46:44,925 INFO 7480 [Job#16063084049001370584976799525] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 20:46:44,900 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:47:44.900
+2020-11-25 20:47:44,902 INFO 7480 [Job#16063084649001376585027671226] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:47:44,940 INFO 7480 [Job#16063084649001376585027671226] I:\demo\music\app\schedule\dashboard.js execute succeed, used 38ms
+2020-11-25 20:47:44,901 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:48:44.901
+2020-11-25 20:48:44,902 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:49:44.902
+2020-11-25 20:48:44,902 INFO 7480 [Job#16063085249021382585170622627] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:48:44,924 INFO 7480 [Job#16063085249021382585170622627] I:\demo\music\app\schedule\dashboard.js execute succeed, used 22ms
+2020-11-25 20:49:44,902 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:50:44.902
+2020-11-25 20:49:44,903 INFO 7480 [Job#16063085849021388585218978128] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:49:44,929 INFO 7480 [Job#16063085849021388585218978128] I:\demo\music\app\schedule\dashboard.js execute succeed, used 26ms
+2020-11-25 20:50:44,904 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:51:44.904
+2020-11-25 20:50:44,904 INFO 7480 [Job#16063086449041394585364628029] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:50:44,926 INFO 7480 [Job#16063086449041394585364628029] I:\demo\music\app\schedule\dashboard.js execute succeed, used 22ms
+2020-11-25 20:51:44,904 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:52:44.904
+2020-11-25 20:51:44,905 INFO 7480 [Job#16063087049041400585412618830] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:51:44,930 INFO 7480 [Job#16063087049041400585412618830] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 20:52:44,905 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:53:44.905
+2020-11-25 20:52:44,905 INFO 7480 [Job#16063087649051406585459479131] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:52:44,930 INFO 7480 [Job#16063087649051406585459479131] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 20:53:44,905 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:54:44.905
+2020-11-25 20:53:44,906 INFO 7480 [Job#16063088249051412585506448832] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:53:44,931 INFO 7480 [Job#16063088249051412585506448832] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 20:54:44,906 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:55:44.906
+2020-11-25 20:54:44,906 INFO 7480 [Job#16063088849061418585554877233] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:54:44,929 INFO 7480 [Job#16063088849061418585554877233] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 20:55:44,906 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:56:44.906
+2020-11-25 20:55:44,906 INFO 7480 [Job#16063089449061424585601154134] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:55:44,940 INFO 7480 [Job#16063089449061424585601154134] I:\demo\music\app\schedule\dashboard.js execute succeed, used 33ms
+2020-11-25 20:56:44,908 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:57:44.908
+2020-11-25 20:56:44,907 INFO 7480 [Job#16063090049071430585747825035] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:56:44,933 INFO 7480 [Job#16063090049071430585747825035] I:\demo\music\app\schedule\dashboard.js execute succeed, used 26ms
+2020-11-25 20:57:44,908 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:58:44.908
+2020-11-25 20:57:44,908 INFO 7480 [Job#16063090649081436585795487636] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:57:44,931 INFO 7480 [Job#16063090649081436585795487636] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 20:58:44,910 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 20:59:44.910
+2020-11-25 20:58:44,910 INFO 7480 [Job#16063091249101442585958641837] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:58:44,946 INFO 7480 [Job#16063091249101442585958641837] I:\demo\music\app\schedule\dashboard.js execute succeed, used 36ms
+2020-11-25 20:59:44,911 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:00:44.910
+2020-11-25 20:59:44,910 INFO 7480 [Job#16063091849101448586034821738] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 20:59:44,935 INFO 7480 [Job#16063091849101448586034821738] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 21:00:44,912 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:01:44.912
+2020-11-25 21:00:44,911 INFO 7480 [Job#16063092449121454586175402739] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:00:44,945 INFO 7480 [Job#16063092449121454586175402739] I:\demo\music\app\schedule\dashboard.js execute succeed, used 34ms
+2020-11-25 21:01:44,912 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:02:44.912
+2020-11-25 21:01:44,912 INFO 7480 [Job#16063093049121460586214568440] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:01:44,939 INFO 7480 [Job#16063093049121460586214568440] I:\demo\music\app\schedule\dashboard.js execute succeed, used 27ms
+2020-11-25 21:02:44,913 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:03:44.913
+2020-11-25 21:02:44,913 INFO 7480 [Job#16063093649131466586260517141] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:02:44,944 INFO 7480 [Job#16063093649131466586260517141] I:\demo\music\app\schedule\dashboard.js execute succeed, used 31ms
+2020-11-25 21:03:44,913 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:04:44.913
+2020-11-25 21:04:37,760 INFO 7480 [Job#16063094249131472586307523342] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:04:37,790 INFO 7480 [Job#16063094249131472586307523342] I:\demo\music\app\schedule\dashboard.js execute succeed, used 30ms
+2020-11-25 21:04:44,914 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:05:44.914
+2020-11-25 21:04:44,913 INFO 7480 [Job#16063094849141478586356389343] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:04:44,931 INFO 7480 [Job#16063094849141478586356389343] I:\demo\music\app\schedule\dashboard.js execute succeed, used 18ms
+2020-11-25 21:05:22,960 INFO 2764 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 21:05:22,960 INFO 2764 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 21:05:22,960 INFO 2764 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 21:05:22,960 INFO 2764 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 21:05:26,511 INFO 12280 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 21:05:26,511 INFO 12280 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 21:05:26,511 INFO 12280 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 21:05:26,511 INFO 12280 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 21:05:44,914 INFO 12280 [Job#16063095449151484586459627944] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:05:44,938 INFO 12280 [Job#16063095449151484586459627944] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 21:05:44,915 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:06:44.915
+2020-11-25 21:06:24,808 INFO 7044 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 21:06:24,808 INFO 7044 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 21:06:24,808 INFO 7044 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 21:06:24,808 INFO 7044 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 21:06:27,963 INFO 9208 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 21:06:27,963 INFO 9208 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 21:06:27,963 INFO 9208 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 21:06:27,963 INFO 9208 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 21:06:44,916 INFO 9208 [Job#16063096049151490586506597645] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:06:44,915 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:07:44.915
+2020-11-25 21:06:44,945 INFO 9208 [Job#16063096049151490586506597645] I:\demo\music\app\schedule\dashboard.js execute succeed, used 29ms
+2020-11-25 21:07:44,917 INFO 9208 [Job#16063096649171496586654180346] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:07:44,942 INFO 9208 [Job#16063096649171496586654180346] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 21:07:44,917 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:08:44.917
+2020-11-25 21:08:44,917 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:09:44.917
+2020-11-25 21:09:02,990 INFO 9208 [Job#16063097249171502586701150047] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:09:03,021 INFO 9208 [Job#16063097249171502586701150047] I:\demo\music\app\schedule\dashboard.js execute succeed, used 31ms
+2020-11-25 21:09:44,919 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:10:44.919
+2020-11-25 21:09:44,919 INFO 9208 [Job#16063097849181508586848331548] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:09:44,943 INFO 9208 [Job#16063097849181508586848331548] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 21:10:44,920 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:11:44.920
+2020-11-25 21:10:44,920 INFO 9208 [Job#16063098449201514586994455549] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:10:44,943 INFO 9208 [Job#16063098449201514586994455549] I:\demo\music\app\schedule\dashboard.js execute succeed, used 23ms
+2020-11-25 21:11:44,922 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:12:44.922
+2020-11-25 21:11:44,922 INFO 9208 [Job#16063099049211520587142001750] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:11:44,947 INFO 9208 [Job#16063099049211520587142001750] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 21:12:44,922 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:13:44.922
+2020-11-25 21:12:44,922 INFO 9208 [Job#16063099649221526587189080851] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:12:44,948 INFO 9208 [Job#16063099649221526587189080851] I:\demo\music\app\schedule\dashboard.js execute succeed, used 26ms
+2020-11-25 21:13:44,924 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:14:44.923
+2020-11-25 21:13:44,924 INFO 9208 [Job#16063100249231532587336262352] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:13:44,949 INFO 9208 [Job#16063100249231532587336262352] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 21:14:44,924 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:15:44.924
+2020-11-25 21:14:44,924 INFO 9208 [Job#16063100849241538587383049753] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:14:44,950 INFO 9208 [Job#16063100849241538587383049753] I:\demo\music\app\schedule\dashboard.js execute succeed, used 26ms
+2020-11-25 21:15:44,924 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:16:44.924
+2020-11-25 21:15:44,925 INFO 9208 [Job#16063101449241544587430894754] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:15:44,950 INFO 9208 [Job#16063101449241544587430894754] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 21:16:44,925 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:17:44.925
+2020-11-25 21:16:44,925 INFO 9208 [Job#16063102049251550587477973855] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:16:44,961 INFO 9208 [Job#16063102049251550587477973855] I:\demo\music\app\schedule\dashboard.js execute succeed, used 36ms
+2020-11-25 21:17:44,925 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:18:44.925
+2020-11-25 21:17:44,925 INFO 9208 [Job#16063102649251556587525308256] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:17:44,950 INFO 9208 [Job#16063102649251556587525308256] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 21:18:44,926 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:19:44.926
+2020-11-25 21:18:44,926 INFO 9208 [Job#16063103249261562587572715557] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:18:44,950 INFO 9208 [Job#16063103249261562587572715557] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 21:19:44,926 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:20:44.926
+2020-11-25 21:19:44,927 INFO 9208 [Job#16063103849261568587620195858] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:19:44,963 INFO 9208 [Job#16063103849261568587620195858] I:\demo\music\app\schedule\dashboard.js execute succeed, used 36ms
+2020-11-25 21:20:44,928 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:21:44.928
+2020-11-25 21:20:44,928 INFO 9208 [Job#16063104449281574587766903259] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:20:44,953 INFO 9208 [Job#16063104449281574587766903259] I:\demo\music\app\schedule\dashboard.js execute succeed, used 25ms
+2020-11-25 21:21:44,928 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:22:44.928
+2020-11-25 21:21:44,929 INFO 9208 [Job#16063105049281580587813435360] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:21:44,953 INFO 9208 [Job#16063105049281580587813435360] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 21:22:44,930 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:23:44.930
+2020-11-25 21:22:44,930 INFO 9208 [Job#16063105649301586587965211761] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:22:44,963 INFO 9208 [Job#16063105649301586587965211761] I:\demo\music\app\schedule\dashboard.js execute succeed, used 33ms
+2020-11-25 21:23:44,930 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:24:44.930
+2020-11-25 21:23:44,931 INFO 9208 [Job#16063106249301592588008170162] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:23:44,955 INFO 9208 [Job#16063106249301592588008170162] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 21:24:44,931 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:25:44.931
+2020-11-25 21:24:44,931 INFO 9208 [Job#16063106849311598588054702263] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:24:44,955 INFO 9208 [Job#16063106849311598588054702263] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 21:25:44,932 INFO 9208 [Job#16063107449311604588104224664] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:25:44,956 INFO 9208 [Job#16063107449311604588104224664] I:\demo\music\app\schedule\dashboard.js execute succeed, used 24ms
+2020-11-25 21:25:44,931 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:26:44.931
+2020-11-25 21:26:44,933 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:27:44.933
+2020-11-25 21:27:44,933 INFO 16464 [Timer] I:\demo\music\app\schedule\dashboard.js next time will execute after 60000ms at 2020-11-25 21:28:44.933
+2020-11-25 21:28:06,310 INFO 9208 [Job#16063108049321610588248817065] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:28:06,316 INFO 9208 [Job#16063108649331616588296844266] I:\demo\music\app\schedule\dashboard.js executing by app
+2020-11-25 21:28:06,354 INFO 9208 [Job#16063108049321610588248817065] I:\demo\music\app\schedule\dashboard.js execute succeed, used 44ms
+2020-11-25 21:28:06,356 INFO 9208 [Job#16063108649331616588296844266] I:\demo\music\app\schedule\dashboard.js execute succeed, used 40ms
+2020-11-25 21:28:11,455 INFO 18244 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 21:28:11,455 INFO 18244 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 21:28:11,455 INFO 18244 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 21:28:11,455 INFO 18244 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js
+2020-11-25 21:28:14,809 INFO 2856 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-multipart\app\schedule\clean_tmpdir.js
+2020-11-25 21:28:14,809 INFO 2856 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\clean_log.js
+2020-11-25 21:28:14,809 INFO 2856 [egg-schedule]: register schedule I:\demo\music\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2020-11-25 21:28:14,809 INFO 2856 [egg-schedule]: register schedule I:\demo\music\app\schedule\dashboard.js

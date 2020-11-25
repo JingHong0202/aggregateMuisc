@@ -1,0 +1,112 @@
+2020-11-24 00:12:51,068 ERROR 16932 nodejs.ClusterClientNoResponseError: client no response in 72236ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (I:\demo\music\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 16932
+hostname: DESKTOP-Q1GLNTU
+
+2020-11-24 00:16:46,252 ERROR 15692 nodejs.ClusterClientNoResponseError: client no response in 77357ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (I:\demo\music\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 15692
+hostname: DESKTOP-Q1GLNTU
+
+2020-11-24 00:19:46,259 ERROR 15692 nodejs.ClusterClientNoResponseError: client no response in 64073ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (I:\demo\music\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 15692
+hostname: DESKTOP-Q1GLNTU
+
+2020-11-24 00:30:53,110 ERROR 10256 nodejs.ClusterClientNoResponseError: client no response in 77785ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (I:\demo\music\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 10256
+hostname: DESKTOP-Q1GLNTU
+
+2020-11-24 22:43:13,251 ERROR 15372 nodejs.ClusterClientNoResponseError: client no response in 77861ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (I:\demo\music\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 15372
+hostname: DESKTOP-Q1GLNTU
+
+2020-11-24 23:24:13,410 ERROR 16684 [-/127.0.0.1/-/9ms GET /api/netease?mode=song&a=%221455706958%22] TypeError: Cannot read property 'createCipheriv' of undefined
+2020-11-24 23:28:36,386 ERROR 11844 nodejs.ClusterClientNoResponseError: client no response in 66094ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (I:\demo\music\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 11844
+hostname: DESKTOP-Q1GLNTU
+
+2020-11-24 23:36:16,394 ERROR 11844 nodejs.ClusterClientNoResponseError: client no response in 69050ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (I:\demo\music\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 11844
+hostname: DESKTOP-Q1GLNTU
+
+2020-11-25 12:21:10,210 ERROR 1436 [-/127.0.0.1/-/8ms GET /api/netease?mode=lyric&a=1435317766] ReferenceError: ctx is not defined
+2020-11-25 12:21:10,235 ERROR 1436 [-/127.0.0.1/-/22ms POST /api/netease] ReferenceError: ctx is not defined
+2020-11-25 12:21:15,364 ERROR 1436 [-/127.0.0.1/-/3ms GET /api/netease?mode=parseRankList&a=180106] ReferenceError: verifyDomain is not defined
+2020-11-25 12:21:59,095 ERROR 16604 [-/127.0.0.1/-/6ms GET /api/netease?mode=parseRankList&a=180106] ReferenceError: ctx is not defined
+2020-11-25 12:22:05,893 ERROR 16604 [-/127.0.0.1/-/4ms GET /api/netease?mode=lyric&a=1435553225] ReferenceError: ctx is not defined
+2020-11-25 12:22:05,925 ERROR 16604 [-/127.0.0.1/-/22ms POST /api/netease] ReferenceError: ctx is not defined
+2020-11-25 12:22:07,253 ERROR 16604 [-/127.0.0.1/-/1ms GET /api/netease?mode=lyric&a=1435317766] ReferenceError: ctx is not defined
+2020-11-25 12:22:07,259 ERROR 16604 [-/127.0.0.1/-/1ms POST /api/netease] ReferenceError: ctx is not defined
+2020-11-25 12:22:13,332 ERROR 16604 [-/127.0.0.1/-/2ms GET /api/netease?mode=lyric&a=1435317766] ReferenceError: ctx is not defined
+2020-11-25 12:22:13,343 ERROR 16604 [-/127.0.0.1/-/2ms GET /api/netease?mode=url&a=1435317766] ReferenceError: ctx is not defined
+2020-11-25 12:22:13,352 ERROR 16604 [-/127.0.0.1/-/2ms POST /api/netease] ReferenceError: ctx is not defined
+2020-11-25 12:22:32,637 ERROR 16604 [-/127.0.0.1/-/2ms GET /api/netease?mode=lyric&a=1435553225] ReferenceError: ctx is not defined
+2020-11-25 12:22:32,645 ERROR 16604 [-/127.0.0.1/-/2ms GET /api/netease?mode=url&a=1435553225] ReferenceError: ctx is not defined
+2020-11-25 12:22:32,666 ERROR 16604 [-/127.0.0.1/-/2ms POST /api/netease] ReferenceError: ctx is not defined
+2020-11-25 12:22:35,403 ERROR 16604 [-/127.0.0.1/-/2ms GET /api/netease?mode=lyric&a=1435317766] ReferenceError: ctx is not defined
+2020-11-25 12:24:19,456 ERROR 16540 [-/127.0.0.1/-/4967ms GET /api/netease?mode=parseRankList&a=180106] ReferenceError: ctx is not defined
+2020-11-25 12:26:09,838 ERROR 4068 nodejs.ClusterClientNoResponseError: client no response in 77734ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (I:\demo\music\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 4068
+hostname: DESKTOP-Q1GLNTU
+
+2020-11-25 12:26:12,857 ERROR 16464 [-/127.0.0.1/-/1335ms GET /api/netease?mode=parseRankList&a=180106] TypeError: Cannot read property 'headers' of undefined
+2020-11-25 12:26:30,579 ERROR 1592 [-/127.0.0.1/-/6745ms GET /api/netease?mode=parseRankList&a=180106] TypeError: Cannot read property 'headers' of undefined
+2020-11-25 12:28:10,608 ERROR 1592 [-/127.0.0.1/-/5471ms GET /api/netease?mode=parseRankList&a=180106] TypeError: Cannot read property 'headers' of undefined
+2020-11-25 12:28:21,204 ERROR 1592 [-/127.0.0.1/-/3ms GET /api/netease?mode=parseRankList&a=180106] TypeError: Cannot read property 'headers' of undefined
+2020-11-25 21:04:21,900 ERROR 16464 nodejs.ClusterClientNoResponseError: client no response in 75607ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (I:\demo\music\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 16464
+hostname: DESKTOP-Q1GLNTU
+
+2020-11-25 21:05:23,692 ERROR 2764 [-/127.0.0.1/-/21ms GET /api/netease?mode=lyric&a=1494267291] ForbiddenError: 域名认证失败，请先绑定域名
+2020-11-25 21:05:42,398 ERROR 12280 [-/127.0.0.1/-/8ms GET /api/netease?mode=parseRankList&a=19723756] ForbiddenError: 域名认证失败，请先绑定域名
+2020-11-25 21:05:45,046 ERROR 12280 [-/127.0.0.1/-/3ms GET /api/netease?mode=parseRankList&a=3779629] ForbiddenError: 域名认证失败，请先绑定域名
+2020-11-25 21:05:50,575 ERROR 12280 [-/127.0.0.1/-/4ms GET /api/netease?mode=parseRankList&a=2884035] ForbiddenError: 域名认证失败，请先绑定域名
+2020-11-25 21:05:55,748 ERROR 12280 [-/127.0.0.1/-/6ms GET /api/netease?mode=lyric&a=1435317766] ForbiddenError: 域名认证失败，请先绑定域名
+2020-11-25 21:05:55,888 ERROR 12280 [-/127.0.0.1/-/25ms POST /api/netease] ForbiddenError: 域名认证失败，请先绑定域名
+2020-11-25 21:06:00,099 ERROR 12280 [-/127.0.0.1/-/5ms GET /api/netease?mode=lyric&a=1435553225] ForbiddenError: 域名认证失败，请先绑定域名
+2020-11-25 21:06:00,134 ERROR 12280 [-/127.0.0.1/-/2ms POST /api/netease] ForbiddenError: 域名认证失败，请先绑定域名
+2020-11-25 21:06:01,417 ERROR 12280 [-/127.0.0.1/-/2ms GET /api/netease?mode=lyric&a=1435317766] ForbiddenError: 域名认证失败，请先绑定域名
+2020-11-25 21:06:01,440 ERROR 12280 [-/127.0.0.1/-/2ms GET /api/netease?mode=url&a=1435317766] ForbiddenError: 域名认证失败，请先绑定域名
+2020-11-25 21:06:01,453 ERROR 12280 [-/127.0.0.1/-/2ms POST /api/netease] ForbiddenError: 域名认证失败，请先绑定域名
+2020-11-25 21:27:01,934 ERROR 16464 nodejs.ClusterClientNoResponseError: client no response in 78918ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (I:\demo\music\node_modules\cluster-client\lib\leader.js:77:23)
+    at listOnTimeout (internal/timers.js:549:17)
+    at processTimers (internal/timers.js:492:7)
+name: "ClusterClientNoResponseError"
+pid: 16464
+hostname: DESKTOP-Q1GLNTU
+

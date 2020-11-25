@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-07-18 10:36:11
- * @LastEditTime: 2020-11-22 00:28:56
+ * @LastEditTime: 2020-11-25 20:40:22
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\app\service\player.js
@@ -56,8 +56,8 @@ class playerService extends egg.Service {
           album: '',
           interval: 1,
           // position: 'leftBottom',
-          color: '#81eefffa',
-          style: '',
+          color: 'rgba(47, 255, 248, 0.88)',
+          style: 'normlize',
           mode: '1'
         })
       })

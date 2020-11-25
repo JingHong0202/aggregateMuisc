@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-24 13:09:59
- * @LastEditTime: 2020-11-22 22:40:15
+ * @LastEditTime: 2020-11-25 20:36:22
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\views\play\components\domainAuthorization\index.vue
@@ -192,7 +192,7 @@
       <el-col :lg="9" :md="24" class="d2-mt-20">
         <div flex="dir:left">
           <span class="prepend">默认颜色</span>
-          <el-color-picker v-model="setting.color"></el-color-picker>
+          <el-color-picker v-model="setting.color" show-alpha></el-color-picker>
         </div>
       </el-col>
     </el-row>

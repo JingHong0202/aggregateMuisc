@@ -1,11 +1,3 @@
-/*
- * @Author: your name
- * @Date: 2020-08-07 18:14:15
- * @LastEditTime: 2020-11-25 21:01:22
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \music\app\public\js\player.js
- */
 ;(async function () {
   const Element = document.getElementById('aggregate'),
     uuid = Element.getAttribute('key'),
@@ -31,9 +23,6 @@
   function $(select, all) {
     return !all ? document.querySelector(select) : document.querySelectorAll(select)
   }
-  //  function verifyDomain() {
-  //      if ()
-  //  }
   class Notice {
     constructor(msg) {
       this.timer = null
@@ -81,7 +70,7 @@
       let notice = document.createElement('div')
       let playerStyle = document.createElement('style')
       playerStyle.innerText = `    
-            .aggregate-notice{position:fixed;top:5%;right:0;z-index:10002;display:flex;box-sizing:border-box;margin-right:15px;padding:10px 20px 10px 20px;max-width:75%;min-width:130px;border:solid #fff 2px;border-radius:5px;background-color:#fff;box-shadow:0 2px 12px 0 rgba(0,0,0,.1);color:#7b7474;font-family:Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,微软雅黑,Arial,sans-serif;transition:all .5s;justify-content:center;flex-direction:column}.a-x-hide{transform:translate(110%,0)}@font-face{font-family:iconfont;src:url(${domain}/iconfont/iconfont.eot);src:url(${domain}/iconfont/iconfont.eot?#iefix) format('embedded-opentype'),url(${domain}/iconfont/iconfont.woff2) format('woff2'),url(${domain}/iconfont/iconfont.woff) format('woff'),url(${domain}/iconfont/iconfont.ttf) format('truetype'),url(${domain}/iconfont/iconfont.svg#iconfont) format('svg')}.iconfont{font-style:normal;font-size:16px;font-family:iconfont!important;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}#aggregate-run{z-index:10001;position:fixed;bottom:20px;left:20px;display:flex;overflow:hidden;width:150px;height:100px;border-radius:10px;background:#fff;box-shadow:5px 5px 9px 0 #0000004f;font-family:Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,微软雅黑,Arial,sans-serif;user-select:none;flex-direction:column}#aggregate-run>.aggregate-run-pic{position:relative;display:flex;background-image:linear-gradient(to bottom right,#12c2e9 0,#c471ed 50%,#f64f59 100%);background-position:center;background-position:center;background-size:100%;background-repeat:no-repeat;cursor:move;flex:1;flex-direction:column;justify-content:center}#aggregate-run>.aggregate-run-desc{display:flex;padding:0 6px;color:#65656d;cursor:pointer;flex:1;flex-direction:column;justify-content:center}#aggregate-run .aggregate-run-line{position:absolute;right:0;bottom:0;left:0;width:0;height:5px;border-radius:50px;background:#81eefffa}.aggregate-run-desc p{margin:0;font-size:10px}.aggregate-run-btn *{cursor:pointer}.aggregate-run-btn{display:flex;color:#fff;flex-direction:row-reverse}.aggregate-run-btn>.player-next:hover{opacity:1!important}.aggregate-run-btn>.player-prev:hover{opacity:1!important}.aggregate-player{position:fixed;top:0;right:0;bottom:0;left:0;z-index:10001;width:100vw;height:100vh;background:#222;font-family:Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,微软雅黑,Arial,sans-serif;user-select:none}.a-c-trs{transition:all .5s}.a-c-flex{display:flex}.a-c-text{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.a-c-block{display:block}.a-c-w50{width:50%}.a-c-hide{display:none}.a-p-hide{border-radius:50%;opacity:.5;transform:scale(0);transform-origin:center}.aggregate-close{position:absolute;top:10px;right:20px;z-index:10003;width:40px;height:40px;cursor:pointer}.aggregate-close::after,.aggregate-close::before{position:absolute;left:20px;display:block;width:4px;height:inherit;background:#fff;content:''}.aggregate-close::after{transition:all .7s;transform:rotate(45deg)}.aggregate-close::before{transition:all .35s;transform:rotate(-45deg)}.a-close-hide::after{transform:rotate(45deg) translate(50px,-210px)!important}.a-close-hide::before{transform:rotate(-45deg) translate(-50px,-210px)!important}.aggregate-make{width:100%;height:100%;background-position:center;background-size:cover;background-size:100% 100%;background-repeat:no-repeat;filter:blur(35px)}.aggregate-make>.make{width:100%;height:100%;background:rgba(0,0,0,.2)}.aggregate-main{position:fixed;right:0;bottom:0;left:0;display:flex;width:inherit;max-height:224px;box-shadow:0 1px 5px 0 #000;color:#fff;flex-direction:column}.aggregate-main-top>img{padding:20px;width:90px;height:90px}.aggregate-main-top>div{display:flex;overflow:hidden;justify-content:center;flex-direction:column}.aggregate-main-top>img{padding:20px;width:90px;height:90px}.aggregate-main-top>div>span{margin-top:10px}.aggregate-main-top>div>h3{margin:0}.aggregate-main>.aggregate-main-center{padding:0 20px;font-size:14px;justify-content:space-evenly;align-items:center}.aggregate-main-center>div{height:7px;border-radius:5px;background:rgba(0,0,0,.2);flex:1}.aggregate-main-center>span:nth-of-type(1){padding-right:10px}.aggregate-progress-block{width:0%;height:7px;border-radius:5px;background:#fff}.aggregate-main-center>span:nth-child(3){padding-left:10px}.aggregate-main>.aggregate-main-bottom{display:flex;margin:20px;justify-content:space-between}.aggregate-main-bottom i{font-weight:100;font-size:20px;cursor:pointer}.aggregate-main-bottom div:nth-of-type(1) div:hover,.aggregate-main-bottom div:nth-of-type(2) div:hover{background:#b19a9a81}.aggregate-main-bottom div:nth-of-type(1) div,.aggregate-main-bottom div:nth-of-type(2) div{display:flex;margin-right:5px;padding:5px;width:25px;height:25px;border-radius:50%;justify-content:center;align-items:center}.aggregate-center{position:absolute;bottom:225px;overflow:auto;box-sizing:border-box;padding:5px 20px 5px 20px;width:100%;height:calc(100% - 285px);border-radius:10px;background:#c7c7c729}.aggregate-list{margin:0;padding:0;width:100%;border:none;border-collapse:collapse;color:#fff;table-layout:fixed;border-spacing:0}.aggregate-lyric{padding:0;transition:transform 1s ease-in-out}.aggregate-lyric>li{color:#e2e2e36b;list-style:none;text-align:center;white-space:nowrap;font-weight:700;font-size:20px;line-height:3;transition:all .35s}@media screen and (max-width:400px){.aggregate-lyric>li{font-size:15px!important}}.aggregate-active-lyric-item{color:#fff!important}.aggregate-list tr{padding-left:10px;line-height:2.5;cursor:pointer;transition:all .3s}.aggregate-list tr:hover{background:#edeff140}.aggregate-current-song{background:#00000047}.aggregate-media{margin:0;padding:0;height:100%}
+            .aggregate-notice{position:fixed;top:5%;right:0;z-index:10002;display:flex;box-sizing:border-box;margin-right:15px;padding:10px 20px 10px 20px;max-width:75%;min-width:130px;border:solid #fff 2px;border-radius:5px;background-color:#fff;box-shadow:0 2px 12px 0 rgba(0,0,0,.1);color:#7b7474;font-family:Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,微软雅黑,Arial,sans-serif;transition:all .5s;justify-content:center;flex-direction:column}.a-x-hide{transform:translate(110%,0)}@font-face{font-family:iconfont;src:url(${domain}/iconfont/iconfont.eot);src:url(${domain}/iconfont/iconfont.eot?#iefix) format('embedded-opentype'),url(${domain}/iconfont/iconfont.woff2) format('woff2'),url(${domain}/iconfont/iconfont.woff) format('woff'),url(${domain}/iconfont/iconfont.ttf) format('truetype'),url(${domain}/iconfont/iconfont.svg#iconfont) format('svg')}.iconfont{font-style:normal;font-size:16px;font-family:iconfont!important;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:.2px;-moz-osx-font-smoothing:grayscale}#aggregate-run{z-index:10001;position:fixed;bottom:20px;left:20px;display:flex;overflow:hidden;width:150px;height:100px;border-radius:10px;background:#fff;box-shadow:5px 5px 9px 0 #0000004f;font-family:Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,微软雅黑,Arial,sans-serif;user-select:none;flex-direction:column}#aggregate-run>.aggregate-run-pic{position:relative;display:flex;background-image:linear-gradient(to bottom right,#12c2e9 0,#c471ed 50%,#f64f59 100%);background-position:center;background-position:center;background-size:100%;background-repeat:no-repeat;cursor:move;flex:1;flex-direction:column;justify-content:center}#aggregate-run>.aggregate-run-desc{display:flex;padding:0 6px;color:#65656d;cursor:pointer;flex:1;flex-direction:column;justify-content:center}#aggregate-run .aggregate-run-line{position:absolute;right:0;bottom:0;left:0;width:0;height:5px;border-radius:50px;background:#81eefffa}.aggregate-run-desc p{margin:0;font-size:10px}.aggregate-run-btn *{cursor:pointer}.aggregate-run-btn{display:flex;color:#fff;flex-direction:row-reverse}.aggregate-run-btn>.player-next:hover{opacity:1!important}.aggregate-run-btn>.player-prev:hover{opacity:1!important}.aggregate-player * {box-sizing:content-box  !important ;}.aggregate-player{position:fixed;top:0;right:0;bottom:0;left:0;z-index:10001;width:100vw;height:100vh;background:#222;font-family:Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,微软雅黑,Arial,sans-serif;user-select:none}.a-c-trs{transition:all .5s}.a-c-flex{display:flex}.a-c-text{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.a-c-block{display:block}.a-c-w50{width:50%}.a-c-hide{display:none}.a-p-hide{border-radius:50%;opacity:.5;transform:scale(0);transform-origin:center}.aggregate-close{position:absolute;top:10px;right:20px;z-index:10003;width:40px;height:40px;cursor:pointer}.aggregate-close::after,.aggregate-close::before{position:absolute;left:20px;display:block;width:4px;height:inherit;background:#fff;content:''}.aggregate-close::after{transition:all .7s;transform:rotate(45deg)}.aggregate-close::before{transition:all .35s;transform:rotate(-45deg)}.a-close-hide::after{transform:rotate(45deg) translate(50px,-210px)!important}.a-close-hide::before{transform:rotate(-45deg) translate(-50px,-210px)!important}.aggregate-make{width:100%;height:100%;background-position:center;background-size:cover;background-size:100% 100%;background-repeat:no-repeat;filter:blur(35px)}.aggregate-make>.make{width:100%;height:100%;background:rgba(0,0,0,.2)}.aggregate-main{position:fixed;right:0;bottom:0;left:0;display:flex;width:inherit;max-height:224px;box-shadow:0 1px 5px 0 #000;color:#fff;flex-direction:column}.aggregate-main-top>img{padding:20px;width:90px;height:90px}.aggregate-main-top>div{display:flex;overflow:hidden;justify-content:center;flex-direction:column}.aggregate-main-top>img{padding:20px;width:90px;height:90px}.aggregate-main-top>div>span{margin-top:10px}.aggregate-main-top>div>h3{margin:0}.aggregate-main>.aggregate-main-center{padding:0 20px;font-size:14px;justify-content:space-evenly;align-items:center}.aggregate-main-center>div{height:7px;border-radius:5px;background:rgba(0,0,0,.2);flex:1}.aggregate-main-center>span:nth-of-type(1){padding-right:10px}.aggregate-progress-block{width:0%;height:7px;border-radius:5px;background:#fff}.aggregate-main-center>span:nth-child(3){padding-left:10px}.aggregate-main>.aggregate-main-bottom{display:flex;margin:20px;justify-content:space-between}.aggregate-main-bottom i{font-weight:100;font-size:20px;cursor:pointer}.aggregate-main-bottom div:nth-of-type(1) div:hover,.aggregate-main-bottom div:nth-of-type(2) div:hover{background:#b19a9a81}.aggregate-main-bottom div:nth-of-type(1) div,.aggregate-main-bottom div:nth-of-type(2) div{display:flex;margin-right:5px;padding:5px;width:25px;height:25px;border-radius:50%;justify-content:center;align-items:center}.aggregate-center{position:absolute;bottom:225px;overflow:auto;box-sizing:border-box;padding:5px 20px 5px 20px;width:100%;height:calc(100% - 285px);border-radius:10px;background:#c7c7c729}.aggregate-list{margin:0;padding:0;width:100%;border:none;border-collapse:collapse;color:#fff;table-layout:fixed;border-spacing:0}.aggregate-lyric{padding:0;transition:transform 1s ease-in-out}.aggregate-lyric>li{color:#e2e2e36b;list-style:none;text-align:center;white-space:nowrap;font-weight:700;font-size:20px;line-height:3;transition:all .35s}@media screen and (max-width:400px){.aggregate-lyric>li{font-size:15px!important}}.aggregate-active-lyric-item{color:#fff!important}.aggregate-list > tbody tr{background-color: transparent;padding-left:10px;line-height:2.5;cursor:pointer;transition:all .3s}.aggregate-list tr:hover{background:#edeff140}.aggregate-current-song{background:#00000047}.aggregate-media{margin:0;padding:0;height:100%}.aggregate-list td,.aggregate-list tr{border: none !important;}
             `
 
       document.head.appendChild(playerStyle)
@@ -145,7 +134,7 @@
         $('.aggregate-player').className = 'aggregate-player a-p-hide a-c-trs'
       }
       $('.song-list').addEventListener('click', () => {
-        this.togglePanel('list')
+        this.togglePanel('playlist')
         this.lyricState = false
       })
       this.onTr()
@@ -172,7 +161,7 @@
       }
     }
     async select(current) {
-      let title = $('.aggregate-list caption')
+      let title = $('.aggregate-center h2')
       if (title.innerHTML.indexOf('歌单') !== -1) {
         let find = loadedPlayList.filter(
             item =>
@@ -204,12 +193,12 @@
           $('.aggregate-list tbody').innerHTML = str
           this.onTr()
           title.innerHTML =
-            '<h2 style="font-size:16px;">  <i class="iconfont  return-playlist" style="font-weight: 100; font-size: 25px; cursor: pointer;">&#xe987; </i>   <i class="iconfont" style="font-weight: 100; font-size: 25px;margin:10px">&#xe620;</i>歌曲列表: <span>' +
+            ' <i class="iconfont  return-playlist" style="font-weight: 100; font-size: 25px; cursor: pointer;">&#xe987; </i>   <i class="iconfont" style="font-weight: 100; font-size: 25px;margin:10px">&#xe620;</i>歌曲列表: <span>' +
             current.firstElementChild.innerText +
-            '</span></h2>'
+            '</span>'
           $('.return-playlist').onclick = () => {
             title.innerHTML =
-              '<h2 style="font-size:16px;"><i class="iconfont" style="font-weight: 100; font-size: 25px;margin:10px;vertical-align: sub">&#xe65f;</i>歌单列表</h2>'
+              '<i class="iconfont" style="font-weight: 100; font-size: 25px;margin:10px;vertical-align: sub">&#xe65f;</i>歌单列表'
             $('.aggregate-list tbody').innerHTML = this.loadedPlayList
             this.onTr()
           }
@@ -557,12 +546,12 @@
     }
     togglePanel(target, flag) {
       let eles = {
-        list: $('.aggregate-list'),
+        playlist: $('.aggregate-playlist'),
         lyric: $('.aggregate-lyric'),
         media: $('.aggregate-media')
       }
 
-      if (target !== 'list') eles.list.className = 'aggregate-list a-c-hide'
+      if (target !== 'playlist') eles.playlist.className = 'aggregate-playlist a-c-hide'
       if (target !== 'lyric') eles.lyric.className = 'aggregate-lyric a-c-hide'
       if (target !== 'media') eles.media.className = 'aggregate-media a-c-hide'
       $('.aggregate-center').style.overflow = ''
@@ -581,7 +570,7 @@
             this.mediaAnimate(this.analyser, $('.aggregate-media canvas').getContext('2d'))
             this.lyricState = false
           }
-          if (target === 'list') {
+          if (target === 'playlist') {
             this.lyricState = false
             cancelAnimationFrame(this.mediaRequestAnimateFrame)
           }
@@ -765,17 +754,19 @@
                           <div class="make"></div>
                         </div>
                         <div class="aggregate-center">
-                          <table class="aggregate-list a-c-hide">
-                            <caption style="text-align: left">
-                              <h2 style='font-size:16px' >
+                          <div class="aggregate-playlist">
+                              <h2 style='font-size:16px;text-align: left;color:white' >
                                 <i class="iconfont" style="font-weight: 100; vertical-align: sub; font-size: 25px;margin:10px">&#xe65f;</i>
                                 歌单列表
                               </h2>
-                            </caption>
-                            <tbody>
-                              ${this.loadedPlayList}
-                            </tbody>
-                          </table>
+                              <table class="aggregate-list">
+                          
+                            
+                                <tbody>
+                                  ${this.loadedPlayList}
+                                </tbody>
+                              </table>
+                          </div>
                           <ul class='aggregate-lyric a-c-hide' >
                             <li></li>
                           </ul>
@@ -840,6 +831,7 @@
     setting = JSON.parse(setting)
     domains = JSON.parse(domains)
     loadedPlayList = JSON.parse(loadedPlayList)
+    if (!setting.welcome) throw Error()
     setTimeout(() => {
       const notice = new Notice(setting.welcome)
       const player = new Player(notice)

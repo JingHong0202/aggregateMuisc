@@ -9,16 +9,24 @@ services:
     container_name: aggregate
     restart: always
     depends_on:
-      - aggregateMusic_db
+      - aggregatemusic_db
 
-  aggregateMusic_db:
+  aggregatemusic_db:
     image: mariadb
     command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
     restart: always
-    container_name: aggregateMusic_db
+    container_name: aggregatemusic_db
     volumes:
       - mariadb:/var/lib/mysql
     env_file:
       - ./env/db.env
+      
+  aggregatemusic_proxy:
+    build: ./docker_files/nginx
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+    container_name: aggregatemusic_proxy
 volumes:
   mariadb:

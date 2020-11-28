@@ -7,5 +7,6 @@ run/
 *.swp
 cache/*
 data/
+logs/aggregate-music/*.log
 
 

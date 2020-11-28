@@ -19,6 +19,7 @@ module.exports = appInfo => {
     domainMaxCount: 5
   }
   return {
+  	proxy: true,
     logger: {
       outputJSON: true
     },

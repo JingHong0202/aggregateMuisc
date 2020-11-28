@@ -11,7 +11,7 @@
 module.exports = appInfo => {
   return {
     staticDomain: 'http://localhost:8080',
-    domain: '',
+    domain: 'https://120.25.153.46',
     keys: 'aggregateMusic',
     security: {
       csrf: {
@@ -25,10 +25,10 @@ module.exports = appInfo => {
     },
     mysql: {
       client: {
-        host: 'localhost',
+        host: 'aggregateMusic_db',
         port: '3306',
-        user: 'root',
-        password: 'xuyuxin',
+        user: 'aggregatemusic',
+        password: 'yinger2015',
         database: 'aggregatemusic'
       },
       app: true

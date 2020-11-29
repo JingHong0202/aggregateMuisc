@@ -4,8 +4,6 @@ services:
 
   aggregate:
     build: .
-    ports: 
-      - 7001:7001 
     container_name: aggregate
     restart: always
     depends_on:

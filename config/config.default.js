@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-29 18:24:47
- * @LastEditTime: 2020-11-22 14:29:17
+ * @LastEditTime: 2020-11-29 17:57:38
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\config\config.default.js
@@ -19,7 +19,7 @@ module.exports = appInfo => {
     domainMaxCount: 5
   }
   return {
-  	proxy: true,
+    proxy: true,
     logger: {
       outputJSON: true
     },
@@ -50,9 +50,9 @@ module.exports = appInfo => {
         path.join(appInfo.baseDir, 'app/public/dist')
       ],
       dynamic: true,
-      preload: false,
+      preload: true,
       maxAge: 86400,
-      buffer: false
+      buffer: true
     },
     gzip: {
       threshold: 1024
@@ -60,7 +60,7 @@ module.exports = appInfo => {
     isAdmin: {
       roles: ['admin']
     },
-    middleware: ['gzip', 'error'],
+    middleware: ['error'],
     cache: {
       default: 'fsStore',
       stores: {

@@ -1,13 +1,13 @@
 <!--
  * @Author: Jing Hong0202
  * @Date: 2020-06-29 18:24:47
- * @LastEditTime: 2020-12-02 14:20:34
+ * @LastEditTime: 2020-12-02 14:46:58
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\README.md
 -->
 # 网页嵌入式音乐播放器
-> 该demo由以下技术栈组成, 具有用户管理、播放器管理、歌单管理的 CMS
+> 该demo由以下技术栈组成, 具有用户管理、权限管理、播放器管理、歌单管理的 CMS
 > 外置播放器技术栈用的是原生JS，没有使用任何第三方库
 
 ## 技术栈： 

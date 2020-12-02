@@ -1,5 +1,5 @@
 <!--
- * @Author: your name
+ * @Author: Jing Hong0202
  * @Date: 2020-06-29 18:24:47
  * @LastEditTime: 2020-12-02 14:20:34
  * @LastEditors: Please set LastEditors
@@ -7,10 +7,11 @@
  * @FilePath: \music\README.md
 -->
 # 网页嵌入式音乐播放器
->  该demo由以下技术栈组成的一个小CMS DEMO
+> 该demo由以下技术栈组成, 具有用户管理、播放器管理、歌单管理的 CMS
+> 外置播放器技术栈用的是原生JS，没有使用任何第三方库
 
 ## 技术栈： 
->  Front： D2Admin Vue2.6 VueRouter Vuex element-ui axios  
+>  Front： D2Admin Vue2.6 VueRouter Vuex element-ui axios  原生JS
 >  back:  Egg  
 >  database:  Mysql  
 >  cache:  File-cache 

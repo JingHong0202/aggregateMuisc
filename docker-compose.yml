@@ -11,6 +11,8 @@ services:
 
   aggregatemusic_db:
     image: mariadb
+    # ports: 
+    #   - 3306:3306
     command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
     restart: always
     container_name: aggregatemusic_db

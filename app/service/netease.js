@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-07-03 19:44:21
- * @LastEditTime: 2020-11-25 12:19:31
+ * @LastEditTime: 2020-12-01 09:50:19
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\app\service\netease.js
@@ -28,7 +28,7 @@ class neteaseService extends egg.Service {
       { a, mode, p, n } = ctx.method === 'GET' ? ctx.query : ctx.request.body,
       res
     if (!a) ctx.helper.ReturnErrorCode(400)
-    await verifyDomain(ctx)
+    await verifyDomain(ctx, mode)
     if (nm[mode]) {
       switch (mode) {
         case 'picture':

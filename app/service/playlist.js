@@ -1,13 +1,15 @@
 /*
  * @Author: your name
  * @Date: 2020-07-18 10:36:18
- * @LastEditTime: 2020-10-23 08:59:16
+ * @LastEditTime: 2020-12-01 10:38:52
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\app\service\playlist.js
  */
 
 const egg = require('egg')
+const { verifyDomain } = require('../lib/verify-domain')
+
 
 class playlistService extends egg.Service {
   async init() {
@@ -123,6 +125,28 @@ class playlistService extends egg.Service {
       await conn.rollback()
       ctx.helper.ReturnErrorCode(403, message || error)
     }
+  }
+  async other_find() {
+    let { ctx, app } = this
+    let { username, uuid } = ctx.query,
+      res = null
+    if (username) {
+      res = await app.mysql.select('playlist', {
+        where: { username },
+        columns: ['name', 'uuid']
+      })
+    } else if (uuid) {
+      await verifyDomain(ctx, 'playlist')
+      let { username, name, desc } = await app.mysql.get('playlist', {
+        uuid
+      })
+      res = {
+        name,
+        desc,
+        playlist: await ctx.service.tools.playListFile(uuid, username)
+      }
+    }
+    return res
   }
   async find() {
     let { ctx, app } = this

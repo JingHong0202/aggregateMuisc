@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-07-04 21:31:33
- * @LastEditTime: 2020-11-25 12:28:44
+ * @LastEditTime: 2020-12-01 09:51:50
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\app\middleware\cache.js
@@ -13,10 +13,10 @@ module.exports = option => {
     let platform = ctx.params[0]
     switch (platform) {
       case 'netease':
-        var { mode, a, p, n } = ctx.query,
+       var { a, mode, p, n } = ctx.method === 'GET' ? ctx.query : ctx.request.body,
           str = `${platform}-${mode}-${a}${p ? `-${p}` : ''}${n ? `-${n}` : ''}`
         if (await ctx.app.cache.has(str)) {
-          await verifyDomain(ctx)
+          await verifyDomain(ctx, mode)
           if (mode === 'search') {
             await ctx.service.tools.Direct(a)
           }

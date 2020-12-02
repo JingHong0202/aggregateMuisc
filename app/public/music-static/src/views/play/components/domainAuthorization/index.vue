@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-24 13:09:59
- * @LastEditTime: 2020-11-25 20:48:41
+ * @LastEditTime: 2020-12-02 13:36:17
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\views\play\components\domainAuthorization\index.vue
@@ -41,13 +41,19 @@
 export default {
   methods: {
     async addAuth() {
-      if (!this.domain || !/(.+[\.]){1,2}([a-z]+)$/i.test(this.domain)) {
+      if (!this.domain) return;
+      if (
+        /^[^\.](.+[\.]){1,2}([a-z]+[^\.])$/i.test(this.domain) ||
+        /^(\d*\.){3}\d*$/gi.test(this.domain) ||
+        this.domain === "*"
+      ) {
+        this.$emit("addAuth", {
+          domain: this.domain,
+          desc: this.desc
+        });
+      } else {
         return this.$message.warning("域名格式错误");
       }
-      this.$emit("addAuth", {
-        domain: this.domain,
-        desc: this.desc
-      });
     }
   },
   data() {

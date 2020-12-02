@@ -36,6 +36,7 @@ const pages = undefined;
 
 module.exports = {
   // 根据你的实际情况更改这里
+  outputDir: "../dist",
   publicPath,
   lintOnSave: true,
   devServer: {

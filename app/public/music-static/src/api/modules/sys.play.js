@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-07-17 22:21:02
- * @LastEditTime: 2020-10-25 22:23:09
+ * @LastEditTime: 2020-12-01 09:08:28
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\api\modules\sys.play.js
@@ -95,10 +95,10 @@ export default ({ service, request, faker, tools }) => ({
       url: `/api/${option.platform}?mode=${option.mode}&a=${
         option.action
       }&p=${option.page || 1}${option.limit ? `&n=${option.limit}` : ""}`,
-      method: "GET",
-      headers: {
-        uuid: option.uuid
-      }
+      method: "GET"
+      // headers: {
+      //   uuid: option.uuid
+      // }
     });
   },
   /**
@@ -110,10 +110,10 @@ export default ({ service, request, faker, tools }) => ({
   SYS_PLAYLIST_LIST(option = {}) {
     return request({
       url: `/api/${option.platform}?mode=${option.mode}&a=${option.action}`,
-      method: "GET",
-      headers: {
-        uuid: option.uuid
-      }
+      method: "GET"
+      // headers: {
+      //   uuid: option.uuid
+      // }
     });
   },
   /**

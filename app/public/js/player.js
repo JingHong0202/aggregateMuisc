@@ -8,15 +8,23 @@
       if (!option.requestObj) {
         option.requestObj = {}
         option.requestObj.headers = {
-          uuid
+          uuid,
+          referer: window.location.origin
         }
       } else {
         option.requestObj.headers.uuid = uuid
+        option.requestObj.headers.referer = window.location.origin
       }
       fetch(url, option.requestObj)
-        .then(res => res[option.dataType || 'json']())
-        .then(res => resolve(res))
-        .catch(err => reject(err))
+        .then(async res => {
+          let state = res,
+            content
+          content = await res[option.dataType || 'json']()
+          return resolve(content, state)
+        })
+        .catch(err => {
+          return reject(err)
+        })
     })
   }
 
@@ -149,15 +157,19 @@
             domain + '/api/' + playlist.platform + '?mode=parseRankList&a=' + playlist.uuid
           )
         } else {
-          res = JSON.parse(
-            (await request(domain + '/play/playlist?a=find&uuid=' + playlist.uuid)).data.playlist
-          )
+          res = await request(domain + '/play/playlist?a=other_find&uuid=' + playlist.uuid)
+
+          if (!res.msg) {
+            res = JSON.parse(res.data.playlist)
+            playlist.songs = res
+            this.currentPlayList = res
+            setTimeout(() => {
+              this.setCurrentSong(this.currentPlayList[0])
+            }, 1500)
+          } else {
+            this.notice.show(res)
+          }
         }
-        playlist.songs = res
-        this.currentPlayList = res
-        setTimeout(() => {
-          this.setCurrentSong(this.currentPlayList[0])
-        }, 1500)
       }
     }
     async select(current) {
@@ -182,9 +194,13 @@
           if (find.songs) {
             res = find.songs
           } else {
-            res = await request(domain + '/play/playlist?a=find&uuid=' + uid)
-            res = JSON.parse(res.data.playlist)
-            find.songs = res
+            res = await request(domain + '/play/playlist?a=other_find&uuid=' + uid)
+            if (!res.msg) {
+              res = JSON.parse(res.data.playlist)
+              find.songs = res
+            } else {
+              this.notice.show(res)
+            }
           }
         }
 

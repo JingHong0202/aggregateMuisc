@@ -6,12 +6,12 @@
  * @Description: In User Settings Edit
  * @FilePath: \music\README.md
 -->
-# 网页嵌入式音乐播放器
-> 技术栈： 
-> > Front： D2Admin Vue2.6 VueRouter Vuex element-ui axios  
-> > back:  Egg  
-> > database:  Mysql  
-> > cache:  File-cache 
+# 网页嵌入式音乐播放器 (前端vue + 后端 egg + 数据库mysql)
+## 技术栈： 
+>  Front： D2Admin Vue2.6 VueRouter Vuex element-ui axios  
+>  back:  Egg  
+>  database:  Mysql  
+>  cache:  File-cache 
 
 ## Dir
 - app/public/music-static Front

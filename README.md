@@ -6,7 +6,9 @@
  * @Description: In User Settings Edit
  * @FilePath: \music\README.md
 -->
-# 网页嵌入式音乐播放器 (前端vue + 后端 egg + 数据库mysql)
+# 网页嵌入式音乐播放器
+>  该demo由以下技术栈组成的一个小CMS DEMO
+
 ## 技术栈： 
 >  Front： D2Admin Vue2.6 VueRouter Vuex element-ui axios  
 >  back:  Egg  

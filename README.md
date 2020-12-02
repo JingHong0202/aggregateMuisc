@@ -11,7 +11,7 @@
 > 外置播放器技术栈用的是原生JS，没有使用任何第三方库
 
 ## 技术栈： 
->  Front： D2Admin Vue2.6 VueRouter Vuex element-ui axios  原生JS
+>  Front： D2Admin Vue2.6 VueRouter Vuex element-ui axios  原生JS  
 >  back:  Egg  
 >  database:  Mysql  
 >  cache:  File-cache 

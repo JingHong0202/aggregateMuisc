@@ -6,7 +6,7 @@
  * @Description: In User Settings Edit
  * @FilePath: \music\README.md
 -->
-# aggregate-Music
+# 网页嵌入式音乐播放器
 > 技术栈： 
 > > Front： D2Admin Vue2.6 VueRouter Vuex element-ui axios  
 > > back:  Egg  

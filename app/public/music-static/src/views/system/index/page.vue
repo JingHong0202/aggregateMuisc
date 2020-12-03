@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-06-29 18:45:16
- * @LastEditTime: 2020-10-25 21:57:02
+ * @LastEditTime: 2020-12-03 14:15:08
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\views\system\index\page.vue
@@ -268,17 +268,17 @@ export default {
       }
 
       const usedMaxVal = Object.keys(data.used);
+      let usedSum  = 0
       if (usedMaxVal.length) {
-        this.dashboardNumber.used =
-          data.used[usedMaxVal[usedMaxVal.length - 1]];
         this.used.usedChartData.rows = usedMaxVal.map(item => {
           const current = data.used[item];
-          console.log(current);
+          usedSum += current
           return {
             日期: item,
             访问用户: current
           };
         });
+        this.dashboardNumber.used = usedSum
       }
     },
     setUser(data) {
@@ -291,7 +291,6 @@ export default {
         };
       });
       this.userDesc.userDescChartData.rows = dashboard;
-      console.log(data.sumRole);
     }
   },
   data() {

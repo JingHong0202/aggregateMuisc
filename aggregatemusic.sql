@@ -53,7 +53,7 @@ CREATE TABLE `playlist`  (
 -- ----------------------------
 DROP TABLE IF EXISTS `role`;
 CREATE TABLE `role`  (
-  `id` int(20) NOT NULL,
+  `id` int(20) NOT NULL AUTO_INCREMENT,
   `rolename` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `roledesc` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `permissions` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,

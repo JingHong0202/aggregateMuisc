@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-29 18:45:13
- * @LastEditTime: 2020-10-14 14:25:18
+ * @LastEditTime: 2020-12-08 13:54:30
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\api\service.js
@@ -22,8 +22,8 @@ function createService() {
   const service = axios.create();
   // 请求拦截
   service.interceptors.request.use(
-    config => config,
-    error => {
+    (config) => config,
+    (error) => {
       // 发送失败
       console.log(error);
       return Promise.reject(error);
@@ -31,7 +31,7 @@ function createService() {
   );
   // 响应拦截
   service.interceptors.response.use(
-    response => {
+    (response) => {
       // dataAxios 是 axios 返回数据中的 data
       // // 这个状态码是和后端约定的
       // const { code } = dataAxios;
@@ -51,10 +51,12 @@ function createService() {
       //       break;
       //   }
       // }
-      if (response.status < 400 && response.data.msg) { Message.success({ message: response.data.msg, type: "success" }); }
+      if (response.status < 400 && response.data.msg) {
+        Message.success({ message: response.data.msg, type: "success" });
+      }
       return response.data;
     },
-    error => {
+    (error) => {
       if (error.response.status === 401) {
         util.cookies.remove("token");
         util.cookies.remove("uuid");
@@ -77,7 +79,7 @@ function CustomMessage() {
   return new Promise((resolve, reject) => {
     Message.error({
       message: "登录状态失效,请重新登录",
-      type: "error"
+      type: "error",
     });
     setTimeout(() => {
       resolve();
@@ -90,17 +92,17 @@ function CustomMessage() {
  * @param {Object} service axios 实例
  */
 function createRequestFunction(service) {
-  return function(config) {
+  return function (config) {
     const token = util.cookies.get("token");
     const configDefault = {
       headers: {
         Authorization: token,
-        "Content-Type": get(config, "headers.Content-Type", "application/json")
+        "Content-Type": get(config, "headers.Content-Type", "application/json"),
       },
       withCredentials: true,
       timeout: 15000,
-      // baseURL: process.env.VUE_APP_API,
-      data: {}
+      baseURL: process.env.VUE_APP_API,
+      data: {},
     };
     return service(Object.assign(configDefault, config));
   };

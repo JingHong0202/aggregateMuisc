@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-07-08 12:46:51
- * @LastEditTime: 2020-12-02 13:35:00
+ * @LastEditTime: 2020-12-22 21:12:24
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music\app\service\tools.js
@@ -98,13 +98,11 @@ class toolsService extends egg.Service {
     ) {
       success = true
     } else {
-      let domains = JSON.parse(
-        (
-          await app.mysql.get('player', {
-            uuid
-          })
-        ).domains
-      )
+      let get = await app.mysql.get('player', {
+        uuid
+      })
+      if (!get) return false
+      let domains = JSON.parse(get.domains)
       domains.forEach(({ domainName }) => {
         if (referer.indexOf(domainName) > -1 || domainName === '*') {
           success = true

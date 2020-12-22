@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-06-29 18:45:13
- * @LastEditTime: 2020-10-20 16:09:02
+ * @LastEditTime: 2020-12-08 13:56:28
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \music-static\src\api\modules\sys.user.js
@@ -29,7 +29,7 @@ export default ({ service, request, faker, tools }) => ({
     return request({
       url: "/login",
       method: "POST",
-      data
+      data,
     });
   },
 
@@ -42,7 +42,7 @@ export default ({ service, request, faker, tools }) => ({
     return request({
       url: "/registry",
       method: "POST",
-      data
+      data,
     });
   },
 
@@ -56,7 +56,7 @@ export default ({ service, request, faker, tools }) => ({
   SYS_USER_LIST(page = "", num = "", wd = "") {
     return request({
       url: "/admin.user?a=list&page=" + page + "&num=" + num + "&wd=" + wd,
-      method: "GET"
+      method: "GET",
     });
   },
 
@@ -70,7 +70,7 @@ export default ({ service, request, faker, tools }) => ({
     return request({
       url: "/admin.user?a=update" + "&username=" + option.username,
       method: "POST",
-      data
+      data,
     });
   },
 
@@ -78,14 +78,14 @@ export default ({ service, request, faker, tools }) => ({
     return request({
       url: "/forget",
       method: "POST",
-      data
+      data,
     });
   },
   SYS_USER_FORGET_UPDATE(email, captcha, data) {
     return request({
       url: "/ForgetPassWord/" + email + "?a=ForgetPassWord&captcha=" + captcha,
       method: "POST",
-      data
+      data,
     });
   },
   /**
@@ -95,12 +95,12 @@ export default ({ service, request, faker, tools }) => ({
    */
   SYS_USER_DELETE(username, email) {
     return request({
-      url: "admin.user?a=delete",
+      url: "/admin.user?a=delete",
       method: "POST",
       data: {
         username,
-        email
-      }
+        email,
+      },
     });
   },
 
@@ -111,9 +111,9 @@ export default ({ service, request, faker, tools }) => ({
 
   SYS_USER_ADD(data = {}) {
     return request({
-      url: "admin.user?a=add",
+      url: "/admin.user?a=add",
       method: "POST",
-      data
+      data,
     });
-  }
+  },
 });

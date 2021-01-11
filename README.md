@@ -37,4 +37,6 @@
 - 执行 docker-compose build --pull && docker-compose up -d
 
 ## perview
-!()[https://cdn.jsdelivr.net/gh/JingHong0202/blog_images/images/cc643f.png]
+![index](https://cdn.jsdelivr.net/gh/JingHong0202/blog_images/images/cc643f.png)
+![player](https://cdn.jsdelivr.net/gh/JingHong0202/blog_images/images/65f2c9.png)
+![playlist](https://cdn.jsdelivr.net/gh/JingHong0202/blog_images/images/3a5a39.png)

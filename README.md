@@ -35,3 +35,6 @@
 ### 一键安装
 - > 前提条件安装docker
 - 执行 docker-compose build --pull && docker-compose up -d
+
+## perview
+!()[https://cdn.jsdelivr.net/gh/JingHong0202/blog_images/images/cc643f.png]

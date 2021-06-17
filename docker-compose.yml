@@ -11,13 +11,14 @@ services:
 
   aggregatemusic_db:
     image: mariadb
-    # ports: 
+    #ports: 
     #   - 3306:3306
     command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
     restart: always
     container_name: aggregatemusic_db
     volumes:
       - mariadb:/var/lib/mysql
+      - ./sql/:/docker-entrypoint-initdb.d
     env_file:
       - ./env/db.env
       
